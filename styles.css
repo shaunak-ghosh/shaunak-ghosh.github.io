@@ -1,0 +1,78 @@
+*
+{
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+}
+.nav
+{
+    top: 0;
+    padding-top: 15%;
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 30px;
+    height: 100vh;
+    width: 40vh;
+    left: 10px;
+    z-index: 5;
+}
+.main
+{
+    display: flex;
+    margin-top: 2%;
+    background-color: rgb(244, 186, 163);
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.tab
+{
+    list-style: none;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.tablink
+{
+    text-decoration: none;
+    color: black;
+}
+.image
+{
+    margin-top: 3%;
+    justify-content: center;
+    text-align: center;
+    height: 40vh;
+}
+#textbox
+{
+    left: 0;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+}
+#hello
+{
+    font-weight: bolder;
+    font-size: 90px;
+}
+#lorem
+{
+    font-size: 30px;
+}
+#about
+{
+    border-bottom: 2px solid rgb(139, 53, 0);
+}
+.stuff
+{
+    justify-content: center;
+    text-align: center;
+}
+.div
+{
+    justify-content: center;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+}
