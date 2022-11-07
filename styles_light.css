@@ -64,22 +64,14 @@
 }
 #para
 {
-    
-line-height: 1.5;
-    
-width: 30vw;
-    
-margin-right: -5%;
-    
-font-size: 35px;
-    
-width: auto;
-    
-z-index: 3;
-    
-margin-top: 4%;
-    
-color: rgb(73, 73, 73);
+    line-height: 1.5;
+    width: 30vw;
+    margin-right: -5%;
+    font-size: 35px;
+    width: auto;
+    z-index: 3;
+    margin-top: 4%;
+    color: rgb(73, 73, 73);
 }
 strong
 {
@@ -172,9 +164,22 @@ strong
         border-radius: 0;
         border: none;
     }
-    .para
+    #para
     {
-        justify-content: left;
-        
+        padding-left: 10vw;
+        text-align: left;
+        line-height: 1.5;
+        width: 100vw;
+        height: 18vh;
+        align-self: left;
+        color: rgb(73, 73, 73);
+        z-index: 0;
+        padding-right: 50vw;
+    }
+    #paraspan
+    {
+        margin-right: 90px;
+        width: 20%;
+        font-size: 30px;
     }
 }
