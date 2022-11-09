@@ -135,10 +135,6 @@ strong
         margin-left: -10px;
         background-color: rgb(250, 185, 162);
     }
-    .nav:active
-    {
-        text-decoration: none;
-    }
     .tab
     {
         top: 0;
