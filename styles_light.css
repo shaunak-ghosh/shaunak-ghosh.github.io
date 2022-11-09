@@ -67,7 +67,6 @@
     width: 30vw;
     margin-right: -5%;
     font-size: 35px;
-    width: auto;
     z-index: 3;
     color: rgb(73, 73, 73);
 }
@@ -136,6 +135,10 @@ strong
         margin-left: -10px;
         background-color: rgb(250, 185, 162);
     }
+    .nav:active
+    {
+        text-decoration: none;
+    }
     .tab
     {
         top: 0;
@@ -162,19 +165,14 @@ strong
     #para
     {
         justify-content: left;
-        padding-top: 2%;
         font-size: 25px;
-        margin-top: 0;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-left: 6vw;
         text-align: left;
-        width: 100vw;
-        height: auto;
-        align-self: left;
         color: rgb(73, 73, 73);
-        z-index: 0;
-        padding-right: 50vw;
-        word-wrap:unset;
+        /*background-color: cadetblue;*/
+        width: 90vw;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
     #paraspan
     {
@@ -193,5 +191,10 @@ strong
         left: 0;
         padding-left: 10%;
         padding-right: 10%;
+        margin-top: 0;
     }
+    /*#hello
+    {
+        margin-top: -3%;
+    }*/
 }
