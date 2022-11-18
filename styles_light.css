@@ -20,7 +20,7 @@
 .main
 {
     margin-top: 2%;
-    background-color: rgb(244, 186, 163);
+    background-color: rgb(255, 208, 188);
     margin-left: 8%;
     margin-right: 8%;
 }
@@ -133,7 +133,9 @@ strong
         justify-content: center;
         width: 100vw;
         margin-left: -10px;
-        background-color: rgb(250, 185, 162);
+        background-color: rgb(255, 160, 126);
+        padding-left: 3%;
+        /*overflow: scroll;*/
     }
     .tab
     {
@@ -149,6 +151,7 @@ strong
         flex-direction: column-reverse;
         margin:0;
         z-index: -2;
+        width: 20%;
     }
     #faceimage
     {
