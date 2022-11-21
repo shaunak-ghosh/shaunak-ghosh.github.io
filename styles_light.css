@@ -49,22 +49,28 @@
 {
     display: flex;
     margin-top: 3%;
+    margin-bottom: -10%;
     justify-content: center;
     text-align: center;
     height: auto;
-    margin-bottom: -7%;
     margin-right: -12%;
+}
+.realimage
+{
+    z-index: 3;
 }
 #faceimage
 {
     border: 2px solid #000; 
     border-radius: 10px;
-    width: 30%;
+    width: 20%;
 }
 #para
 {
+    margin-top: 8%;
     line-height: 1.5;
     width: 30vw;
+    height: 20vh;
     margin-right: -5%;
     font-size: 35px;
     z-index: 3;
@@ -74,17 +80,16 @@ strong
 {
     color: black;
     z-index: 2;
-    font-weight: bold; 
-    font-family: 'Roboto Mono', monospace; 
-    text-align: right;
-    justify-content: right;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
 }
 #textbox
 {
     left: 0;
     padding-left: 30%;
     padding-right: 30%;
-    margin-top: 10%;
+    padding-top: 10%;
+    z-index: 1;
 }
 #hello
 {
@@ -95,10 +100,6 @@ strong
 {
     font-size: 25px;
     padding-bottom: 20vh;
-}
-#about
-{
-    border-bottom: 2px solid rgb(139, 53, 0);
 }
 .stuff
 {
@@ -112,14 +113,77 @@ strong
     margin-left: 8%;
     margin-right: 8%;
 }
-#vertnav
+@media screen and (max-width: 1024px)
 {
-    text-align: right;
-    margin-right: 5%;
-    padding-top: 2%;
-    margin-bottom: -1%;
+    .nav
+    {
+        position: fixed;
+        flex-direction: row;
+        list-style: none;
+        z-index: 3;
+        padding-top: 0;
+        width: 100vw;
+        justify-content: center;
+    }
+    .tablink
+    {
+        font-size: 110%;
+    }
+    .tab
+    {
+        top: 0;
+        padding: 3%;
+    }
+    .image
+    {
+        flex-direction: column-reverse;
+        margin: 0;
+        width: 20%;
+        z-index: 3;
+    }
+    #faceimage
+    {
+        margin: 0;
+        z-index: 2;
+        top: 0;
+        width: 100vw;
+        border-radius: 0;
+        border: none;
+    }
+    #para
+    {
+        width: 100vw;
+        height: 15vh;
+        z-index: 0;
+        justify-content: left;
+        background-color: rgb(255, 208, 188);
+        margin-top: 0;
+        padding-top: 25%;
+    }
+    #paraspan
+    {
+        margin-right: 90px;
+        width: 20%;
+        font-size: 30px;
+        justify-content: left;
+        text-align: left;
+    }
+    .main
+    {
+        margin: 0;
+        size-adjust: auto;
+        justify-content: center;
+    }
+    #textbox
+    {
+        padding-top: 0;
+        left: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 0;
+    }
 }
-@media screen and (max-width: 900px)
+@media screen and (max-width: 442px)
 {
     .nav
     {
@@ -131,31 +195,32 @@ strong
         padding-top: 0;
         width: 100vw;
         justify-content: center;
-        width: 100vw;
         margin-left: -10px;
         background-color: rgb(255, 160, 126);
-        padding-left: 3%;
-        /*overflow: scroll;*/
+        padding-left: 8%;
+        overflow: scroll;
+    }
+    .tablink
+    {
+        font-size: 100%;
     }
     .tab
     {
         top: 0;
         padding: 3%;
     }
-    #vertnav
-    {
-        visibility: hidden;
-    }
     .image
     {
         flex-direction: column-reverse;
-        margin:0;
-        z-index: -2;
+        margin: 0;
         width: 20%;
+        z-index: 3;
+        margin-top: 11.5%
     }
     #faceimage
     {
-        z-index: -1;
+        margin: 0;
+        z-index: 2;
         top: 0;
         width: 100vw;
         border-radius: 0;
@@ -163,21 +228,21 @@ strong
     }
     #para
     {
+        width: 100vw;
+        height: 15vh;
+        z-index: 0;
         justify-content: left;
-        font-size: 25px;
-        padding-left: 6vw;
-        text-align: left;
-        color: rgb(73, 73, 73);
-        /*background-color: cadetblue;*/
-        width: 90vw;
-        margin-top: 2%;
-        margin-bottom: 2%;
+        background-color: rgb(255, 208, 188);
+        margin-top: 0;
+        padding-top: 25%;
     }
     #paraspan
     {
         margin-right: 90px;
         width: 20%;
         font-size: 30px;
+        justify-content: left;
+        text-align: left;
     }
     .main
     {
@@ -187,13 +252,10 @@ strong
     }
     #textbox
     {
+        padding-top: 0;
         left: 0;
         padding-left: 10%;
         padding-right: 10%;
         margin-top: 0;
     }
-    /*#hello
-    {
-        margin-top: -3%;
-    }*/
 }
