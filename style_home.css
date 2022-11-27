@@ -3,6 +3,14 @@
     margin: 0;
     font-family: 'Space Mono', monospace;
 }
+body
+{
+    background-color: rgba(140, 163, 243, 0.433);
+}
+strong
+{
+    font-family: 'Roboto Mono', monospace;;
+}
 .nav
 {
     top: 0;
@@ -12,14 +20,15 @@
     flex-direction: column;
     text-align: right;
     height: 100vh;
-    width: 12%;
+    width: 15%;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 20px;
 }
 .main
 {
-    background-color: rgba(0, 53, 227, 0.266);
+    background-color: rgba(0, 53, 227, 0.219);
     margin: 7%;
+    padding-bottom: 7%;
 }
 .tab
 {
@@ -40,26 +49,23 @@
     display: flex;
     flex-direction: row;
 }
-.image
+.intro
 {
     display: flex;
     margin-top: 3%;
     margin-bottom: -10%;
+    margin-left: 10%;
+    padding-right: -40%;
     justify-content: center;
     text-align: center;
     height: auto;
-    width: 100vw;
     max-width: 98vw;
-}
-.realimage
-{
-    z-index: 3;
+    right: 10%;
 }
 #faceimage
 {
     border: 2px solid #000; 
     width: 23%;
-    box-shadow: 10px 10px rgb(0, 0, 0)
 }
 #para
 {
@@ -72,7 +78,11 @@
     z-index: 3;
     color: rgb(73, 73, 73);
 }
-strong
+#name
+{
+    font-size: 60px;
+}
+#stronghello
 {
     color: black;
     z-index: 2;
@@ -123,12 +133,12 @@ strong
 #save_water
 {
     width: 40%;
-    border: 3px solid black;
-    box-shadow: 5px 5px rgb(0, 0, 0)
+    height: 40%;
+    border: 2px solid black;
 }
 .label
 {
-    margin-top: 10%;
+    margin-top: 8%;
     margin-left: 7%;
 }
 .heading
@@ -140,161 +150,151 @@ strong
 {
     font-size: 18px;
 }
-@media screen and (max-width: 1441px)
+#extra
 {
-    #textbox
-    {
-        margin: 0;
-    }
+    padding-top: 2%;
+    margin-top: 6%;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+#links
+{
+    padding-top: 1%;
+    align-items: center;
+}
+#strong_hello, #name
+{
+    color: black;
+}
+#strong_hello
+{
+    font-size: 48px;
+}
+@media screen and (max-width: 1702px)
+{
     #para
     {
-        
+        margin-top: 8%;
+        line-height: 1.5;
+        width: 30vw;
+        height: 20vh;
+        margin-right: -5%;
+        font-size: 28px;
+        z-index: 3;
+    }
+    #name
+    {
+        font-size: 45px;
     }
 }
-@media screen and (max-width: 1024px) /*text allign*/
+@media screen and (max-width: 1173px)
 {
+    #para
+    {
+        margin-top: 8%;
+        line-height: 1.5;
+        width: 30vw;
+        height: 20vh;
+        margin-right: -5%;
+        font-size: 25px;
+        z-index: 3;
+    }
+    #name
+    {
+        font-size: 38px;
+    }
+    #strong_hello
+    {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 1030px)
+{
+    body
+    {
+        width: 100vw;
+    }
     .nav
     {
-        position: fixed;
-        flex-direction: row;
-        list-style: none;
-        z-index: 3;
-        padding-top: 0;
-        width: 100vw;
-        justify-content: center;
+        text-align: right;
+        height: 100vh;
+        width: 20%;
+        font-weight: bolder;
+        font-size: 18px;
     }
-    .tablink
+    #save_water
     {
-        font-size: 110%;
-    }
-    .tab
-    {
-        top: 0;
-        padding: 3%;
+        width: 40%;
+        height: 40%;
+        border: 2px solid black;
     }
     .image
     {
-        flex-direction: column-reverse;
-        margin: 0;
-        width: 20%;
-        z-index: 3;
-    }
-    #faceimage
-    {
-        margin: 0;
-        z-index: 2;
-        top: 0;
-        width: 100vw;
-        border-radius: 0;
-        border: none;
-    }
-    #para
-    {
-        width: 100vw;
-        height: 15vh;
-        z-index: 0;
-        justify-content: left;
-        background-color: rgb(255, 208, 188);
-        margin-top: 0;
-        padding-top: 25%;
-    }
-    #paraspan
-    {
-        margin-right: 90px;
-        width: 20%;
-        font-size: 30px;
-        justify-content: left;
-        text-align: left;
-    }
-    .main
-    {
-        margin: 0;
-        size-adjust: auto;
-        justify-content: center;
-        width: 100vw;
-    }
-    #textbox
-    {
-        padding-top: 0;
-        left: 0;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-top: 0;
-    }
-}
-@media screen and (max-width: 442px)
-{
-    .nav
-    {
-        position: fixed;
+        position: relative;
+        display: flex;
+        margin-top: 3%;
+        margin-bottom: -10%;
+        padding-right: -50%;
+        text-align: end;
         height: auto;
-        flex-direction: row;
-        list-style: none;
-        z-index: 3;
-        padding-top: 0;
-        width: 100vw;
-        justify-content: center;
-        margin-left: -10px;
-        background-color: rgb(255, 160, 126);
-        padding-left: 8%;
-        overflow: scroll;
-    }
-    .tablink
-    {
-        font-size: 100%;
-    }
-    .tab
-    {
-        top: 0;
-        padding: 3%;
-    }
-    .image
-    {
-        flex-direction: column-reverse;
-        margin: 0;
-        width: 20%;
-        z-index: 3;
-        margin-top: 11.5%
-    }
-    #faceimage
-    {
-        margin: 0;
-        z-index: 2;
-        top: 0;
-        width: 100vw;
-        border-radius: 0;
-        border: none;
+        right: -20%;
+        width: 78vw;
     }
     #para
     {
-        width: 100vw;
-        height: 15vh;
-        z-index: 0;
-        justify-content: left;
-        background-color: rgb(255, 208, 188);
-        margin-top: 0;
-        padding-top: 25%;
-    }
-    #paraspan
-    {
-        margin-right: 90px;
-        width: 20%;
-        font-size: 30px;
-        justify-content: left;
-        text-align: left;
+        margin-right: -4%;
+        margin-top: 16%;
+        width: 40vw;
+        font-size: 29px;
+        color: rgb(73, 73, 73);
     }
     .main
     {
         margin: 0;
-        size-adjust: auto;
-        justify-content: center;
+        margin-top: 8%;
+        padding-bottom: 7%;
     }
-    #textbox
+    #faceimage
     {
-        padding-top: 0;
-        left: 0;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-top: 0;
+        width: 33%;
+        height: 33%;
+    }
+    #strong_hello
+    {
+        font-size: 40px;
+    }
+    #name
+    {
+        font-size: 46px;
+    }
+    .label
+    {
+        margin-top: 4.5%;
+        margin-left: 5%;
+    }
+    .field
+    {
+        margin-top: 8%;
+        display: flex;
+        width: 70vw;
+        line-height: 35px;
+    }
+    .heading
+    {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    #about_heading
+    {
+        font-size: 16px;
+    }
+    #extra
+    {
+        padding-top: 2%;
+        margin-top: 6%;
+        font-size: 17px;
+        text-align: center;
+        align-items: center;
     }
 }
