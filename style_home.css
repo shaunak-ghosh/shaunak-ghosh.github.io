@@ -97,10 +97,6 @@ strong
     padding-top: 8%;
     z-index: 1;
 }
-#hello
-{
-    font-size: 20px;
-}
 #lorem
 {
     font-size: 25px;
@@ -120,6 +116,7 @@ strong
 }
 #what_do_i_do
 {
+    font-size: 20px;
     width: 46vw;
     text-align: end;
 }
@@ -171,6 +168,10 @@ strong
 {
     font-size: 48px;
 }
+.icon
+{
+    height: 38px;
+}
 @media screen and (max-width: 1702px)
 {
     #para
@@ -209,7 +210,7 @@ strong
         font-size: 35px;
     }
 }
-@media screen and (max-width: 1030px)
+@media screen and (max-width: 1030px)/*complete*/
 {
     body
     {
@@ -225,20 +226,19 @@ strong
     }
     #save_water
     {
-        width: 40%;
-        height: 40%;
+        width: 32%;
+        height: 32%;
         border: 2px solid black;
     }
-    .image
+    .intro
     {
         position: relative;
-        display: flex;
-        margin-top: 3%;
-        margin-bottom: -10%;
-        padding-right: -50%;
+        margin-top: 6%;
+        margin-right: 10%;
+        right: 40%;
         text-align: end;
         height: auto;
-        right: -20%;
+        right: -12%;
         width: 78vw;
     }
     #para
@@ -246,7 +246,7 @@ strong
         margin-right: -4%;
         margin-top: 16%;
         width: 40vw;
-        font-size: 29px;
+        font-size: 22px;
         color: rgb(73, 73, 73);
     }
     .main
@@ -262,11 +262,11 @@ strong
     }
     #strong_hello
     {
-        font-size: 40px;
+        font-size: 30px;
     }
     #name
     {
-        font-size: 46px;
+        font-size: 38px;
     }
     .label
     {
@@ -296,5 +296,15 @@ strong
         font-size: 17px;
         text-align: center;
         align-items: center;
+    }
+    .icon
+    {
+        height: 26px;
+    }
+    #what_do_i_do
+    {
+        font-size: 17px;
+        width: 56vw;
+        text-align: end;
     }
 }
