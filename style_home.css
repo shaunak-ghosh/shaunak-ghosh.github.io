@@ -23,6 +23,7 @@ strong
     width: 15%;
     font-weight: bolder;
     font-size: 20px;
+    z-index: 1;
 }
 .main
 {
@@ -39,6 +40,11 @@ strong
 {
     text-decoration: none;
     color: black;
+}
+.active
+{
+    text-decoration: none;
+    border-bottom: 2px solid rgb(20, 0, 135); 
 }
 .tablink:hover
 {
@@ -61,10 +67,11 @@ strong
     height: auto;
     max-width: 98vw;
     right: 10%;
+    z-index: 2;
 }
 #faceimage
 {
-    border: 2px solid #000; 
+    border: 2px solid #000;
     width: 23%;
 }
 #para
@@ -306,5 +313,81 @@ strong
         font-size: 17px;
         width: 56vw;
         text-align: end;
+    }
+}
+@media screen and (max-width: 780px)
+{
+    .nav
+    {
+        overflow-x: scroll;
+        padding-top: 2%;
+        padding-bottom: 3%;
+        flex-direction: row;
+        height: 5vh;
+        width: 100%;
+        font-weight: bolder;
+        font-size: 23px;
+        width: 100%;
+        padding-right: 1%;
+    }
+    .tablink, .active
+    {
+        padding: 15px 35px;
+        text-decoration: none;
+        color: black;
+        background-color: cornflowerblue;
+    }
+    .intro
+    {
+        /*background-color:tomato;*/
+        display: flex;
+        margin-top: 14%;
+        margin-bottom: -12%;
+        margin-left: -5.5%;
+        justify-content: flex-end;
+        max-width: 90vw;
+        height: fit-content;
+        left: 12%;
+        z-index: 1;
+    }
+    #faceimage
+    {
+        border: 2px solid #000;
+        width: auto;
+        height: 320px;
+    }
+    #para
+    {
+        margin-top: 24%;
+        width: 50vw;
+        font-size: 24px;
+        z-index: 3;
+    }
+    .stuff
+    {
+        justify-content: left;
+        text-align: center;
+    }
+    .field
+    {
+        margin-top: 8%;
+        display: flex;
+        width: 80vw;
+        line-height: 35px;
+    }
+    #textbox
+    {
+        left: 0;
+        padding-left: 15%;
+    }
+    #save_water
+    {
+        width: 38%;
+        height: 38%;
+        border: 2px solid black;
+    }
+    .label
+    {
+        vertical-align: middle;
     }
 }
