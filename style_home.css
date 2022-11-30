@@ -7,6 +7,14 @@ body
 {
     background-color: rgba(140, 163, 243, 0.433);
 }
+.sun
+{
+    /*background-color:tomato;*/
+    height: 190px;
+    margin-left: 10%;
+    margin-bottom: -10%;
+    z-index: 5;
+}
 strong
 {
     font-family: 'Roboto Mono', monospace;;
@@ -14,6 +22,7 @@ strong
 .nav
 {
     top: 0;
+    margin-top: 0;
     padding-top: 20%;
     position: fixed;
     display: flex;
@@ -33,6 +42,7 @@ strong
 }
 .tab
 {
+    margin-top: 0;
     list-style: none;
     padding-bottom: 30px;
 }
@@ -44,7 +54,7 @@ strong
 .active
 {
     text-decoration: none;
-    border-bottom: 2px solid rgb(20, 0, 135); 
+    border-bottom: 5px solid rgb(20, 0, 135); 
 }
 .tablink:hover
 {
@@ -61,7 +71,6 @@ strong
     margin-top: 3%;
     margin-bottom: -10%;
     margin-left: 10%;
-    padding-right: -40%;
     justify-content: center;
     text-align: center;
     height: auto;
@@ -181,6 +190,7 @@ strong
 }
 @media screen and (max-width: 1702px)
 {
+    
     #para
     {
         margin-top: 8%;
@@ -219,6 +229,14 @@ strong
 }
 @media screen and (max-width: 1030px)/*complete*/
 {
+    .sun
+    {
+        /*background-color:tomato;*/
+        height: 190px;
+        margin-left: 10%;
+        margin-bottom: -24%;
+        z-index: 5;
+    }
     body
     {
         width: 100vw;
@@ -241,7 +259,6 @@ strong
     {
         position: relative;
         margin-top: 6%;
-        margin-right: 10%;
         right: 40%;
         text-align: end;
         height: auto;
@@ -317,11 +334,19 @@ strong
 }
 @media screen and (max-width: 780px)
 {
+    .sun
+    {
+        /*background-color:tomato;*/
+        height: 190px;
+        margin-left: 10%;
+        margin-bottom: -40%;
+        z-index: 5;
+    }
     .nav
     {
         overflow-x: scroll;
         padding-top: 2%;
-        padding-bottom: 3%;
+        padding-bottom: 2.5%;
         flex-direction: row;
         height: 5vh;
         width: 100%;
@@ -329,6 +354,8 @@ strong
         font-size: 23px;
         width: 100%;
         padding-right: 1%;
+        background-color: cornflowerblue;
+        overflow-y: hidden;
     }
     .tablink, .active
     {
@@ -336,16 +363,16 @@ strong
         text-decoration: none;
         color: black;
         background-color: cornflowerblue;
+        overflow-y: hidden;
     }
     .intro
     {
-        /*background-color:tomato;*/
         display: flex;
         margin-top: 14%;
         margin-bottom: -12%;
-        margin-left: -5.5%;
+        margin-left: -2.5%;
         justify-content: flex-end;
-        max-width: 90vw;
+        max-width: 110vw;
         height: fit-content;
         left: 12%;
         z-index: 1;
@@ -373,12 +400,18 @@ strong
         margin-top: 8%;
         display: flex;
         width: 80vw;
-        line-height: 35px;
+        line-height: 30px;
+    }
+    .label
+    {
+        margin-top: 2.5%;
+        line-height: 25px;
+        max-width: 50%;
     }
     #textbox
     {
         left: 0;
-        padding-left: 15%;
+        padding-left: 12%;
     }
     #save_water
     {
@@ -386,8 +419,50 @@ strong
         height: 38%;
         border: 2px solid black;
     }
-    .label
+    .heading
     {
-        vertical-align: middle;
+        font-size: 20px;
+        font-weight: bold;
     }
+    #about_heading
+    {
+        font-size: 14px;
+    }
+    #what_do_i_do
+    {
+        font-size: 17px;
+        width: 76vw;
+        text-align: end;
+    }
+    @media screen and (max-width:688px)
+    {
+        .intro
+        {
+            margin-top: 18%;
+            margin-left: 3%;
+        }
+        #faceimage
+        {
+            height: 350px;
+        }
+        #para
+        {
+            margin-top: 30%;
+            width: 50vw;
+            font-size: 24px;
+            z-index: 3;
+            margin-right: -15%;
+            margin-left: -19%;
+        }
+        #name
+        {
+            font-size: 35px;
+        }
+        .main
+        {
+            padding-right: 0;
+            left: 0;
+        }
+    }
+    @media screen and (max-width:600px){}
 }
