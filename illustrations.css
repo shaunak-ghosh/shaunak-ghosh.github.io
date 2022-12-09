@@ -1,0 +1,49 @@
+body
+{
+    scroll-margin: 10%;
+}
+.static_heading
+{
+    text-align: center;
+    background-image: url("assets/Face_poly.jpg");
+    background-size: 100vw;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    padding-top: 49vh;
+    padding-bottom: 49vh;
+    font-weight: bold;
+    font-size: 40px;
+    width: 100vw;
+    position: fixed;
+    z-index: -5;
+}
+.main
+{
+    overflow-y: hidden;
+    height: 160vh;
+    /*margin-top: 100vh;*/
+    background-color: rgb(200, 191, 175);
+}
+.active
+{
+    border-bottom: 5px solid rgb(103, 72, 0); 
+}
+#wrapper
+{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(255, 99, 71, 0.165);
+    display:grid;
+    grid-template-rows: 300px 122px 122px;
+    grid-template-columns: 122px 122px 122px;
+    row-gap: 12px;
+    column-gap: 12px;
+}
+.link
+{
+    text-align: center;
+    background-image: url("assets/Venom.jpg");
+    background-color: violet;
+    height: 122px;
+    width: 122px;
+}
