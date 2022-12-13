@@ -20,9 +20,21 @@ body
 .main
 {
     overflow-y: hidden;
-    height: 160vh;
-    /*margin-top: 100vh;*/
+    height: auto;
+    margin-top: 100vh;
     background-color: rgb(200, 191, 175);
+}
+.year_wrapper
+{
+    width: 24vw;
+    border-bottom: 3px solid rgb(103, 72, 0);
+    margin-left: -3%;
+}
+#i_year
+{
+    color:  rgb(103, 72, 0);
+    font-size: 35px;
+    width: 50vw;
 }
 .active
 {
@@ -30,20 +42,38 @@ body
 }
 #wrapper
 {
-    width: 50vw;
-    height: 50vh;
-    background-color: rgba(255, 99, 71, 0.165);
-    display:grid;
-    grid-template-rows: 300px 122px 122px;
-    grid-template-columns: 122px 122px 122px;
-    row-gap: 12px;
-    column-gap: 12px;
+    margin-top: 7%;
+    width: 55vw;
+    height: auto;
+    /*background-color: rgb(255, 247, 0);*/
+    display: flex;
+}
+.subwrapper
+{
+    color: rgba(0, 0, 0, 0);
+    /*background-color: coral;*/
+    margin-right: 3%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .link
 {
-    text-align: center;
-    background-image: url("assets/Venom.jpg");
-    background-color: violet;
-    height: 122px;
-    width: 122px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 9%;
+    border-radius: 7px;
 }
+.link:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.038) 0px 0px 15px 15px;
+}
+/*#wrapper
+{
+    width: 50vw;
+    height: auto;
+    background-color: rgba(255, 99, 71, 0.165);
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}*/
