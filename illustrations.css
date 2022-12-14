@@ -2,7 +2,7 @@ body
 {
     scroll-margin: 10%;
 }
-.static_heading
+.heading
 {
     text-align: center;
     background-image: url("assets/Face_poly.jpg");
@@ -16,6 +16,7 @@ body
     width: 100vw;
     position: fixed;
     z-index: -5;
+    animation: drop 1.5. ease;
 }
 .main
 {
@@ -69,11 +70,3 @@ body
 {
     box-shadow: rgba(0, 0, 0, 0.038) 0px 0px 15px 15px;
 }
-/*#wrapper
-{
-    width: 50vw;
-    height: auto;
-    background-color: rgba(255, 99, 71, 0.165);
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-}*/
