@@ -1,0 +1,50 @@
+body
+{
+    background-color: rgb(107, 159, 236);
+}
+.sun
+{
+    z-index: -1;
+}
+.sites
+{
+    margin: 5% -15% 0% 25%;
+    /*background-color: tomato;*/
+}
+#button_container
+{
+    flex-direction: row;
+    background-color: rgb(204, 187, 161);
+    margin: 7% 0% 7% 0%;
+    padding: 3%;
+    border-radius: 25px;
+    border: 3px solid black;
+    text-align: center;
+}
+.right
+{
+    /*background-color: tomato;*/
+}
+.left
+{
+    width: fit-content;
+    align-items: flex-start;
+    background-color: rgb(47, 127, 248);
+}
+.left img
+{
+    width: 10%;
+    height: auto;
+}
+.sites a
+{
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+    text-decoration: none;
+    color: black;
+}
+.main
+{
+    background-color:rgba(0, 0, 0, 0);
+}
