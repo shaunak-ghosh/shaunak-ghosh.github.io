@@ -6,9 +6,16 @@ body
 {
     z-index: -1;
 }
+.head
+{
+    width: 50vw;
+    /*background-color:violet;*/
+    text-align: end;
+    font-size: 40px;
+}
 .sites
 {
-    margin: 5% -15% 0% 25%;
+    margin: 12% -15% 0% 25%;
     /*background-color: tomato;*/
 }
 #button_container
@@ -23,7 +30,7 @@ body
 }
 .right
 {
-    /*background-color: tomato;*/
+    
 }
 .left
 {
@@ -47,4 +54,85 @@ body
 .main
 {
     background-color:rgba(0, 0, 0, 0);
+}
+@media screen and (max-width: 1173px)
+{
+    .head
+    {
+        width: 60vw;
+        font-size: 30px;
+    }
+    #button_container
+    {
+        padding: 4%;
+        border-radius: 23px;
+    }
+}
+@media screen and (max-width: 780px)
+{
+    .head
+    {
+        width: 70vw;
+        font-size: 25px;
+    }
+    
+}
+@media screen and (max-width: 700px)
+{
+    .head
+    {
+        margin-top: 10%;
+        width: 80vw;
+        font-size: 25px;
+    }
+    #button_container
+    {
+        padding: 4%;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 688px)
+{
+    #button_container
+    {
+        padding: 4%;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+}
+@media screen and (max-width: 560px)
+{
+    .sites
+    {
+        margin: 12% -15% 0% 15%;
+    }
+}
+@media screen and (max-width: 490px)
+{
+    .head
+    {
+        font-size: 22px;
+    }
+    .sites
+    {
+        margin: 12% -20% 0% 9%;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .head
+    {
+        font-size: 18px;
+    }
+    #textbox
+    {
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width:322px)
+{
+    .head
+    {
+        font-size: 16px;
+    }
 }

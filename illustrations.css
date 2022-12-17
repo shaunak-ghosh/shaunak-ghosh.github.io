@@ -16,7 +16,10 @@ body
     width: 100vw;
     position: fixed;
     z-index: -5;
-    animation: drop 1.5. ease;
+}
+.heading span
+{
+    font-weight: bolder;
 }
 .main
 {
@@ -50,13 +53,11 @@ body
     margin-top: 7%;
     width: 55vw;
     height: auto;
-    /*background-color: rgb(255, 247, 0);*/
     display: flex;
 }
 .subwrapper
 {
     color: rgba(0, 0, 0, 0);
-    /*background-color: coral;*/
     margin-right: 3%;
     width: 30%;
     align-items: center;
@@ -73,4 +74,88 @@ body
 .link:hover
 {
     box-shadow: rgba(0, 0, 0, 0.038) 0px 0px 15px 15px;
+}
+@media screen and (max-width:1030px)
+{
+    .heading
+    {
+        background-position-x: right;
+        background-size: cover;
+    }
+    #wrapper
+    {
+        margin-left: 8%;
+        width: 66vw;
+        height: auto;
+        display: flex;
+    }
+}
+@media screen and (max-width:780px)
+{
+    .nav
+    {
+        background-color: rgb(184, 157, 110);
+    }
+    .tablink, .active
+    {
+        background-color: rgb(184, 157, 110);
+    }
+    #wrapper
+    {
+        
+        margin-left: -4%;
+        margin-top: 7%;
+        width: 85vw;
+        height: auto;
+        display: flex;
+    }
+    #i_year
+    {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 560px)
+{
+    .heading span
+    {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 490px)
+{
+    .heading
+    {
+        background-position-x: 80%;
+    }
+    #i_year
+    {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    #wrapper
+    {
+        width: 80vw;
+        flex-direction: column;
+    }
+    .subwrapper
+    {
+        width: 80vw;
+    }
+    .heading span
+    {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 332px)
+{
+    #i_year
+    {
+        font-size: 20px;
+    }
+    .heading span
+    {
+        font-size: 25px;
+    }
 }
