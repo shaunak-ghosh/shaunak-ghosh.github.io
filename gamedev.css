@@ -1,0 +1,89 @@
+*
+{
+    margin: 0;
+}
+.back
+{
+    text-align: center;
+    background-image: url("assets/gamedev/background.jpg");
+    background-size: 100vw;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    padding-top: 49vh;
+    padding-bottom: 49vh;
+    font-weight: bold;
+    width: 100vw;
+    position: fixed;
+    z-index: -5;
+}
+.back span
+{
+    color: aliceblue;
+    font-size: 40px;
+}
+.main
+{
+    overflow-y: hidden;
+    height: auto;
+    margin-top: 100vh;
+    background-color: rgb(152, 179, 153);
+}
+.active
+{
+    border-bottom: 5px solid rgb(4, 98, 24); 
+}
+.field
+{
+    margin-left: -8%;
+    width: 60vw;
+    margin-bottom: 4%;
+}
+#thumbnail
+{
+    width: 45%;
+    height: 45%;
+    border: 2px solid black;
+}
+.label
+{
+    padding-top: 1%;
+    margin-left: 4%;
+}
+.head1
+{
+    margin-top: 5%;
+}
+.head1, .head2, span, strong
+{
+    font-size: 27px;
+}
+.head2
+{
+    margin-top: 20%;
+}
+.github
+{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-left: -8%;
+    background-color: rgba(0, 108, 39, 0.213);
+    padding: 2%;
+    border-radius: 10px;
+    align-items: center;
+}
+.github:hover
+{
+    text-decoration: underline;
+}
+.github img
+{
+    width: 3.5%;
+}
+@media screen and (max-width: 1030px)
+{
+    .field
+    {
+        flex-direction: column;
+    }
+}
