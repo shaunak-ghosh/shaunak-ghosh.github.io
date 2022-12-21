@@ -12,6 +12,10 @@ body
     text-decoration: none;
     color: #000;
 }
+.link:hover
+{
+    text-decoration: underline;
+}
 html, body 
 {
     max-width: 100%;
@@ -31,8 +35,6 @@ strong
 .nav
 {
     top: 0;
-    margin-top: 0;
-    padding-top: 17%;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -41,6 +43,8 @@ strong
     width: 15%;
     font-weight: bolder;
     font-size: 20px;
+    vertical-align: middle;
+    justify-content: center;
     z-index: 1;
 }
 .main
@@ -63,7 +67,7 @@ strong
 .active
 {
     text-decoration: none;
-    border-bottom: 5px solid rgb(20, 0, 135); 
+    border-bottom: 5px solid rgb(20, 0, 135);
 }
 .tablink:hover
 {
@@ -199,6 +203,10 @@ strong
 }
 @media screen and (max-width: 1702px)
 {
+    .nav
+    {
+        font-size: 17px;
+    }
     #para
     {
         margin-top: 1%;
@@ -225,10 +233,6 @@ strong
 }
 @media screen and (max-width: 1173px)
 {
-    .nav
-    {
-        margin-top: 5%;
-    }
     #para
     {
         margin-top: 8%;
@@ -263,12 +267,9 @@ strong
     }
     .nav
     {
-        margin-top: 10%;
         text-align: right;
         height: 100vh;
         width: 20%;
-        font-weight: bolder;
-        font-size: 18px;
     }
     #save_water
     {
@@ -362,20 +363,29 @@ strong
         margin-bottom: -40%;
         z-index: 5;
     }
+    .tablink
+    {
+        background-color: cornflowerblue;
+    }
+    .active
+    {
+        border-bottom: none;
+        background-color: rgb(134, 167, 229);
+    }
     .nav
     {
+        justify-content: left;
         margin-top: 0%;
         overflow-x: scroll;
         padding-top: 2%;
         padding-bottom: 2.5%;
         flex-direction: row;
-        height: 5vh;
-        width: 100%;
+        height: 60px;
+        width: 100vw;
         font-weight: bolder;
         font-size: 23px;
         width: 100%;
         padding-right: 1%;
-        background-color: cornflowerblue;
         overflow-y: hidden;
     }
     .tablink, .active
@@ -383,7 +393,6 @@ strong
         padding: 15px 35px;
         text-decoration: none;
         color: black;
-        background-color: cornflowerblue;
         overflow-y: hidden;
     }
     .intro
@@ -455,7 +464,6 @@ strong
         width: 76vw;
         text-align: end;
     }
-    
 }
 @media screen and (max-width:688px)
 {

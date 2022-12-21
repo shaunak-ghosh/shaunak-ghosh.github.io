@@ -12,6 +12,29 @@ body
 {
     background-color: rgba(140, 163, 243, 0.433);
 }
+.go_back
+{
+    display: flex;
+    z-index: 3;
+    margin: 2vh 0vh 0vh 2vh;
+    padding: 3px;
+    position: absolute;
+}
+.go_back img
+{
+    width: 5%;
+}
+.go_back button
+{
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+    background-color:rgba(128, 255, 0, 0);
+    border: none;
+}
+.go_back:hover
+{
+    text-decoration: underline;
+}
 .wrapper
 {
     position: absolute;

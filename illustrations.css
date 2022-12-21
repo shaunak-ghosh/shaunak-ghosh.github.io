@@ -5,7 +5,7 @@ body
 .heading
 {
     text-align: center;
-    background-image: url("assets/Face_poly.jpg");
+    background-image: url("assets/illustrations/Face_poly.jpg");
     background-size: 100vw;
     background-position: 0%;
     background-repeat: no-repeat;
@@ -20,6 +20,10 @@ body
 .heading span
 {
     font-weight: bolder;
+}
+.active
+{
+    border-bottom: 5px solid rgb(103, 72, 0);
 }
 .main
 {
@@ -43,10 +47,6 @@ body
     color:  rgb(103, 72, 0);
     font-size: 35px;
     width: 50vw;
-}
-.active
-{
-    border-bottom: 5px solid rgb(103, 72, 0); 
 }
 #wrapper
 {
@@ -92,13 +92,14 @@ body
 }
 @media screen and (max-width:780px)
 {
-    .nav
+    .tablink
     {
         background-color: rgb(184, 157, 110);
     }
-    .tablink, .active
+    .active
     {
-        background-color: rgb(184, 157, 110);
+        background-color: rgb(203, 180, 139);
+        border-bottom: none;
     }
     #wrapper
     {
