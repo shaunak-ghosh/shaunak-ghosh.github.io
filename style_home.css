@@ -164,7 +164,8 @@ strong
 }
 .label
 {
-    margin-top: 8%;
+    vertical-align: middle;
+    justify-content: center;
     margin-left: 7%;
 }
 .heading
