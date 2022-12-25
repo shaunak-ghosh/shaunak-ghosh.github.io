@@ -6,7 +6,7 @@
 {
     text-align: center;
     background-image: url("assets/gamedev/background.jpg");
-    background-size: 100vw;
+    background-size: cover;
     background-position:top;
     background-repeat: no-repeat;
     padding-top: 49vh;
@@ -26,7 +26,7 @@
     overflow-y: hidden;
     height: auto;
     margin-top: 100vh;
-    background-color: rgb(133, 182, 134);
+    background-color: rgb(168, 203, 168);
 }
 .active
 {
@@ -55,11 +55,11 @@
 }
 .head1, .head2, span, strong
 {
-    font-size: 27px;
+    font-size: 24px;
 }
 .head2
 {
-    margin-top: 20%;
+    margin-top: 15%;
 }
 .github
 {
@@ -95,5 +95,49 @@
     .field
     {
         flex-direction: column;
+    }
+}
+@media screen and (max-width:780px)
+{
+    .field
+    {
+        width: 80vw;
+        flex-direction: column;
+    }
+    .back
+    {
+        background-position-x: center;
+    }
+    .tablink
+    {
+        background-color:  rgb(146, 186, 146);
+    }
+    .active
+    {
+        background-color: rgb(166, 221, 166);
+        border-bottom: none;
+    }
+}
+@media screen and (max-width: 560px)
+{
+    .github
+    {
+        width:50vw;
+        padding-top: 2%;
+        border-radius: 10px;
+        align-items: center;
+    }
+    .subwrapper
+    {
+        width: 80vw;
+    }
+    .heading span
+    {
+        font-size: 30px;
+    }
+    .field img
+    {
+        height: 200px;
+        width: auto;
     }
 }
