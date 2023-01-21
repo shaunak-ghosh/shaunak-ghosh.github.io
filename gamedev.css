@@ -1,65 +1,43 @@
-*
+.active
 {
-    margin: 0;
+    color: rgb(5, 99, 57);
+    font-weight: bolder;
+    text-decoration: none;
+    border-bottom: 5px solid rgb(5, 99, 57);
 }
-.back
+.top
 {
     text-align: center;
     background-image: url("assets/gamedev/background.jpg");
-    background-size: cover;
-    background-position:top;
+    background-size: 100vw;
+    background-position: 0%;
     background-repeat: no-repeat;
     padding-top: 49vh;
     padding-bottom: 49vh;
     font-weight: bold;
+    font-size: 40px;
     width: 100vw;
     position: fixed;
     z-index: -5;
 }
-.back span
+#thumbnail
 {
-    color: rgb(0, 0, 0);
-    font-size: 40px;
+    border: 2px solid black;
+    width: 400px;
+    height: auto;
 }
 .main
 {
     overflow-y: hidden;
     height: auto;
     margin-top: 100vh;
-    background-color: rgb(168, 203, 168);
+    background-color: rgb(164, 207, 176);
+    padding-top: 5vh;
+    overflow-y: hidden;
 }
-.active
+#textarea
 {
-    border-bottom: 5px solid rgb(0, 35, 8); 
-}
-.field
-{
-    margin-left: -8%;
-    width: 60vw;
-}
-#thumbnail
-{
-    width: 45%;
-    height: 45%;
-    border: 2px solid black;
-}
-.label
-{
-    justify-content: center;
-    vertical-align: middle;
-    margin-left: 4%;
-}
-.head1
-{
-    margin-top: 5%;
-}
-.head1, .head2, span, strong
-{
-    font-size: 24px;
-}
-.head2
-{
-    margin-top: 15%;
+    padding-left: 25%;
 }
 .github
 {
@@ -67,10 +45,8 @@
     font-weight: bold;
     color: black;
     text-decoration: none;
-    margin-left: -8%;
     width:19vw;
     padding-top: 2%;
-    border-radius: 10px;
     align-items: center;
 }
 .github:hover
@@ -82,62 +58,11 @@
     padding-left: 3%;
     width: 20px;
 }
-@media screen and (max-width: 1702px)
+#top_desc
 {
-    .back
-    {
-        background-position-x: right;
-        background-size: cover;
-    }
-}
-@media screen and (max-width: 1030px)
-{
-    .field
-    {
-        flex-direction: column;
-    }
-}
-@media screen and (max-width:780px)
-{
-    .field
-    {
-        width: 80vw;
-        flex-direction: column;
-    }
-    .back
-    {
-        background-position-x: center;
-    }
-    .tablink
-    {
-        background-color:  rgb(146, 186, 146);
-    }
-    .active
-    {
-        background-color: rgb(166, 221, 166);
-        border-bottom: none;
-    }
-}
-@media screen and (max-width: 560px)
-{
-    .github
-    {
-        width:50vw;
-        padding-top: 2%;
-        border-radius: 10px;
-        align-items: center;
-    }
-    .subwrapper
-    {
-        width: 80vw;
-    }
-    .heading span
-    {
-        font-size: 30px;
-    }
-    .field img
-    {
-        height: 200px;
-        width: auto;
-    }
+    width: 50vw;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 2vw;
+    margin-top: 5vw;
 }

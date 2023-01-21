@@ -23,6 +23,8 @@ body
 }
 .active
 {
+    color:rgb(103, 72, 0); 
+    font-weight: bolder;
     border-bottom: 5px solid rgb(103, 72, 0);
 }
 .main
