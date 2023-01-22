@@ -52,6 +52,7 @@ body
 }
 .oops
 {
+    color:rgb(65, 65, 65);
     font-size: 150px;
 }
 #text

@@ -4,19 +4,18 @@ body
 }
 .sun
 {
+    position: fixed;
     z-index: -1;
 }
 .head
 {
     width: 50vw;
-    /*background-color:violet;*/
     text-align: end;
     font-size: 40px;
 }
 .sites
 {
     margin: 12% -15% 0% 25%;
-    /*background-color: tomato;*/
 }
 #button_container
 {
@@ -28,9 +27,10 @@ body
     border: 3px solid black;
     text-align: center;
 }
-.right
+.active
 {
-    
+    color: rgb(20, 0, 135); 
+    font-weight: bolder;
 }
 .left
 {

@@ -1,15 +1,15 @@
 .active
 {
-    color: rgb(5, 99, 57);
+    color: rgb(4, 91, 52);
     font-weight: bolder;
     text-decoration: none;
-    border-bottom: 5px solid rgb(5, 99, 57);
+    border-bottom: 5px solid rgb(4, 91, 52);
 }
 .top
 {
     text-align: center;
     background-image: url("assets/gamedev/background.jpg");
-    background-size: 100vw;
+    background-size: cover;
     background-position: 0%;
     background-repeat: no-repeat;
     padding-top: 49vh;
@@ -20,11 +20,18 @@
     position: fixed;
     z-index: -5;
 }
+#text
+{
+    padding-left: 26%;
+}
 #thumbnail
 {
     border: 2px solid black;
     width: 400px;
-    height: auto;
+}
+.label_box
+{
+    padding-left: 5%;
 }
 .main
 {
@@ -34,10 +41,6 @@
     background-color: rgb(164, 207, 176);
     padding-top: 5vh;
     overflow-y: hidden;
-}
-#textarea
-{
-    padding-left: 25%;
 }
 .github
 {
@@ -65,4 +68,66 @@
     font-weight: bolder;
     margin-bottom: 2vw;
     margin-top: 5vw;
+}
+@media screen and (max-width: 1702px)
+{
+    .top
+    {
+        background-position-x: right;
+    }
+    #top_desc
+    {
+        font-size: 23px;
+    }
+    .label_box
+    {
+        width: 450w;
+    }
+    .heading
+    {
+        font-size: 19px;
+    }
+    #about_heading
+    {
+        font-size: 16px;
+    }
+    #thumbnail
+    {
+        width: 25vw;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1173px)
+{
+    #top_desc
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1030px)
+{
+    .heading
+    {
+        font-size: 17px;
+    }
+    #about_heading
+    {
+        font-size: 14px;
+    }
+    .github
+    {
+        width: 25vw;
+    }
+}
+@media screen and (max-width: 780px)
+{
+    .tablink
+    {
+        background-color: rgb(87, 155, 115);
+    }
+    .active
+    {
+        background-color: rgb(118, 193, 150);
+        border-bottom: none;
+    }
 }
