@@ -31,6 +31,9 @@
 }
 .label_box
 {
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: column;
     padding-left: 5%;
 }
 .main
@@ -125,9 +128,83 @@
     {
         background-color: rgb(87, 155, 115);
     }
+    #thumbnail
+    {
+        width: 36vw;
+    }
     .active
     {
         background-color: rgb(118, 193, 150);
         border-bottom: none;
+    }
+    .label_box
+    {
+        width: 81vw;
+    }
+    #text
+    {
+        padding-left: 10%;
+    }
+    #top_desc
+    {
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 688px)
+{
+    .github
+    {
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 560px)
+{
+    #thumbnail
+    {
+        width: 82vw;
+    }
+    .label_box
+    {
+        padding-left: 1%;
+        padding-top: 5%;
+        width: 82vw;
+    }
+    .heading
+    {
+        font-size: 20px;
+    }
+    #about_heading
+    {
+        font-size: 17px;
+    }
+    .github
+    {
+        width: 60vw;
+    }
+    #extra
+    {
+        padding-top: 10%;
+    }
+}
+@media screen and (max-width: 410px)
+{
+    #top_desc
+    {
+        font-size: 19px;
+    }
+    .heading
+    {
+        font-size: 16px;
+    }
+    #about_heading
+    {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .github
+    {
+        margin-bottom: 6vh;
     }
 }
