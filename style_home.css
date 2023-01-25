@@ -208,6 +208,18 @@ strong
 {
     height: 38px;
 }
+/*
+::-webkit-scrollbar 
+{
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+  }
+::-webkit-scrollbar-thumb 
+{
+  background: rgb(85, 85, 85);
+}*/
 @media screen and (max-width: 1702px)
 {
     .nav
@@ -362,6 +374,10 @@ strong
 }
 @media screen and (max-width: 780px)
 {
+    /*::-webkit-scrollbar 
+    {
+        display: none;
+    }*/
     .sun
     {
         height: 190px;
@@ -381,12 +397,12 @@ strong
     .nav
     {
         justify-content: left;
-        margin-top: 0%;
+        margin-top: 0;
         overflow-x: scroll;
-        padding-top: 2%;
-        padding-bottom: 2.5%;
+        padding-top: 1.5vh;
+        padding-bottom: -4.5%;
         flex-direction: row;
-        height: 60px;
+        height: 55px;
         width: 100vw;
         font-weight: bolder;
         font-size: 23px;
@@ -546,8 +562,6 @@ strong
         flex-direction: column;
         width: 130%;
         line-height: 35px;
-        vertical-align: middle;
-        justify-content: center;
     }
     #save_water
     {

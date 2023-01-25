@@ -8,6 +8,7 @@ body
     background-image: url("assets/illustrations/Face_poly.jpg");
     background-size: 100vw;
     background-position: 0%;
+    background-position-x: left;
     background-repeat: no-repeat;
     padding-top: 49vh;
     padding-bottom: 49vh;

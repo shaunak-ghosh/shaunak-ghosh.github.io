@@ -1,0 +1,73 @@
+.main
+{
+    margin-top: 100vh;
+}
+.active
+{
+    color: rgb(112, 19, 4);
+    border-bottom: 5px solid rgb(112, 19, 4);
+}
+.heading
+{
+    text-align: center;
+    background-color: rgb(247, 205, 195);
+    background-image: url("assets/design/background.jpg");
+    background-size: cover;
+    background-position-x:left;
+    background-repeat: no-repeat;
+    padding-top: 49vh;
+    padding-bottom: 49vh;
+    font-weight: bold;
+    font-size: 40px;
+    width: 100vw;
+    position: fixed;
+    z-index: -5;
+}
+.heading span
+{
+    font-weight: bolder;
+}
+.main
+{
+    padding-top: 10vh;
+    background-color: rgb(255, 196, 184);
+}
+.box
+{
+    background-color: violet;
+    margin-left: 26%;
+    margin-right: 10%;
+}
+.box img
+{
+    width: 18vw;
+}
+#label
+{
+    vertical-align: middle;
+    justify-content: center;
+    margin-left: 2vw;
+}
+@media screen and (max-width:1173px)
+{
+    .heading
+    {
+        background-position-x: 2%;
+    }
+}
+@media screen and (max-width:780px)
+{
+    .heading
+    {
+        background-position-x:70%;
+    }
+    .tablink
+    {
+        background-color: rgb(215, 114, 99);
+    }
+    .active
+    {
+        background-color: rgb(236, 147, 133);
+        border-bottom: none;
+    }
+}
