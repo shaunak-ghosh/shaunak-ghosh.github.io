@@ -1,3 +1,7 @@
+*::selection
+{
+    background:rgb(34, 216, 76);
+}
 .active
 {
     color: rgb(4, 91, 52);

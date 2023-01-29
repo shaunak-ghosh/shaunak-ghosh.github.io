@@ -9,12 +9,7 @@ body
 }
 .link
 {
-    text-decoration: none;
     color: #000;
-}
-.link:hover
-{
-    text-decoration: underline;
 }
 html, body 
 {
@@ -61,24 +56,27 @@ strong
 }
 .tablink
 {
-    text-decoration: none;
     color: black;
 }
 .active
 {
     color: rgb(20, 0, 135);
     font-weight: bolder;
-    text-decoration: none;
     border-bottom: 5px solid rgb(20, 0, 135);
 }
-.tablink:hover
+.active:hover
 {
-    text-decoration: underline;
+    text-decoration: none;
 }
 .cover
 {
     display: flex;
     flex-direction: row;
+}
+.tablink:hover
+{
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
 }
 .intro
 {
@@ -374,10 +372,10 @@ strong
 }
 @media screen and (max-width: 780px)
 {
-    /*::-webkit-scrollbar 
+    .nav::-webkit-scrollbar 
     {
         display: none;
-    }*/
+    }
     .sun
     {
         height: 190px;
@@ -413,7 +411,6 @@ strong
     .tablink, .active
     {
         padding: 15px 35px;
-        text-decoration: none;
         color: black;
         overflow-y: hidden;
     }

@@ -2,6 +2,10 @@ body
 {
     scroll-margin: 10%;
 }
+*::selection
+{
+    background:rgb(242, 214, 56);
+}
 .heading
 {
     text-align: center;
@@ -120,6 +124,15 @@ body
 }
 @media screen and (max-width: 560px)
 {
+    #wrapper
+    {
+        width: 80vw;
+        flex-direction: column;
+    }
+    .subwrapper
+    {
+        width: 80vw;
+    }
     .heading span
     {
         font-size: 35px;

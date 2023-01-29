@@ -2,6 +2,10 @@ body
 {
     background-color: rgb(107, 159, 236);
 }
+button:hover
+{
+    text-decoration: underline;
+}
 .sun
 {
     position: fixed;
