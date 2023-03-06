@@ -1,0 +1,160 @@
+*
+{
+    margin: 0;
+}
+*::selection
+{
+    background: rgb(255, 130, 13);
+}
+body
+{
+    background-color: rgb(255, 229, 190);
+}
+html, body 
+{
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.main
+{
+    margin-left: 15%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.main-contain
+{
+    width: 50vw;
+    height: 20vw;
+    margin-left: -10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.main img
+{
+    z-index: 4;
+    position: fixed;
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 18%;
+    margin-left: 15%;
+    animation-name: appear;
+    animation-duration: 1.5s;
+    rotate: 2deg;
+}
+.main-contain span
+{
+    z-index: 5;
+    margin-left: -50%;
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    animation-name: move;
+    animation-timing-function: cubic-bezier(0.17, 0.07, 0, 0.05);
+    animation-duration: 2.5s;
+}
+.nav
+{
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100vh;
+    padding-top: 70vh;
+    padding-left: 2.5%;
+    position: fixed;
+    line-height: 280%;
+}
+.nav li
+{
+    list-style: none;
+}
+.nav-link, .active
+{
+    list-style: none;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 6px;
+    text-rendering: optimizeSpeed;
+    text-decoration: none;
+}
+.nav-link
+{
+    color: black;
+    animation-name: move;
+}
+.active
+{
+    color: sienna;
+}
+.nav-link:hover
+{
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+.email
+{
+    position: fixed;
+    display: flex;
+    width: 30vw;
+    rotate: 90deg;
+    float: bottom;
+    margin-top: 40%;
+    margin-right: -75%;
+    font-family: 'Prompt', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    align-items: center;
+}
+.email a
+{
+    color: black;
+    text-decoration: none;
+    margin-right: 8%;
+}
+.email a:hover
+{
+    margin-left: -2%;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+.email hr
+{
+    margin-top:0.5%;    
+    width: 50vw;
+    border-left: 0px;
+    background-color: sienna;
+    height: 4px;
+}
+@keyframes move
+{
+    from
+    {
+        color: rgba(0, 0, 0, 0);
+        margin-left: -90%;
+    }
+    to 
+    {
+        color: black;
+        margin-left: -50%;
+    }
+}
+@keyframes appear
+{
+    from
+    {
+        opacity: 0%;
+        margin-left: -10%;
+    }
+    to 
+    {
+        opacity: 100%;
+        margin-left: 15%;
+    }
+}
