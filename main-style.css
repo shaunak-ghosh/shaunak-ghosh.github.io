@@ -168,8 +168,8 @@ html, body
 }
 .email a
 {
-    font-family: 'Prompt', sans-serif;
-    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     font-size: 17px;
     text-decoration: none;
     margin-right: 5%;
