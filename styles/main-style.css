@@ -2,15 +2,15 @@
 {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 *::selection
 {
-    background: rgb(255, 130, 13);
-    background: #ff7c51cb;
+    background: rgb(197, 173, 255);
 }
 body
 {
-    background-color: #F6E1C3;
+    background-color: #f1efe9;
 }
 html, body 
 {
@@ -31,8 +31,16 @@ html, body
     animation-name: appear;
     animation-duration: 1.7s;
 }
+.main-contain p
+{
+    color: #31337b;
+}
 @media screen and (min-width:900px)
 {
+    .links
+    {
+        display: none;
+    }
     .main
     {
         margin-left: 15%;
@@ -44,7 +52,8 @@ html, body
         align-items: center;
     }
     .main-contain
-    {        
+    {   
+        cursor: default;
         width: 55vw;
         height: 10vw;
         margin-left: -5vw;
@@ -67,14 +76,12 @@ html, body
     }
     .main-contain p
     {
-        word-spacing: 5px;
         margin-bottom: -35px;
         font-weight: normal;
         font-size: 18px;
     }
     .main-contain strong
-    {        
-        font-weight:bold;
+    {
         z-index: 5;
         font-family: 'Outfit', sans-serif;
         font-size: 70px;
@@ -84,9 +91,14 @@ html, body
         animation-duration: 1.8s;
     }
     .main-contain span
-    {
+    {        
         font-size: 23px;
         width: 50%;
+    }
+    .toggle-btn
+    {
+        display: none;
+        
     }
 }
 .email
@@ -98,20 +110,20 @@ html, body
 }
 .nav
 {
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
+    z-index: 0;    
     width: 25%;
-    height: 96vh;
-    justify-content: end;
     padding-left: 1vw;
     position: fixed;
     line-height: 280%;
     animation-name: appear;
     animation-duration: 1.8s;
 }
-.nav ul
+.nav ol
 {
+    display: flex;
+    height: 96vh;
+    flex-direction: column;
+    justify-content: end;
     list-style: none;
 }
 .nav-link
@@ -131,10 +143,10 @@ html, body
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2.5px;
+    height: 3.5px;
     bottom: 0;
     left: 0;
-    background-color: #000000;
+    background-color: #5153bd;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -144,7 +156,7 @@ html, body
   }
 .active
 {
-    color: #A84448;
+    color: #5153bd;
     cursor: default;
 }
 .active:hover:after
@@ -158,11 +170,11 @@ html, body
     height: 10%;
     position: fixed;
     display: flex;
-    width: 35vw;    
+    width: 100vh;    
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     float: bottom;
-    margin-top: 40%;
+    margin-top: 120vh;
     margin-right: -75%;    
     align-items: center;
 }
@@ -178,7 +190,7 @@ html, body
 }
 .email a:hover
 {    
-    color: #7f3131;
+    color: #5153bd;
     transform: translateX(-5%);
     animation-name: change-colour;
     animation-duration: .3s;
@@ -186,11 +198,10 @@ html, body
 .email hr
 {
     margin-top:0.5%;    
-    width: 200vh;
-    border-left: 0px;
-    background-color: #7f3131;
-    height: 3px;
-    shape-rendering: crispEdges;
+    width: 2000vw;
+    background-color: #5153bd;
+    height: 5px;
+    shape-rendering: geometricPrecision;
     border-radius: 5px;
 }
 @keyframes change-colour
@@ -201,7 +212,7 @@ html, body
     }
     to
     {
-        color: #7f3131;
+        color: #5153bd;
     }
 }
 @keyframes move
@@ -303,8 +314,8 @@ html, body
 }
 @media screen and (max-width:900px)
 {
-    .nav, .email{
-        visibility: collapse;
+    .email{
+        visibility: hidden;
     }
     .main
     {
@@ -357,6 +368,111 @@ html, body
     {
         font-size: 23px;
         width: 100%;
+    }
+    .toggle-btn img
+    {
+        position: fixed;
+        right: 0;
+        width: 40px;
+        margin: 5%;
+    }
+    .nav
+    {
+        background-color: #00000000;
+        z-index: 6;
+        width: 100vw;
+        position: fixed;
+        line-height: 280%;
+        animation-name: appear;
+        animation-duration: 1.8s;
+        height: 100vh;
+    }
+    .nav.active
+    {
+        background-color: #f1efe9;
+    }
+    .links
+    {
+        text-decoration: none;
+        color: #31337b;
+    }
+    .nav ol
+    {
+        width: 70vw;
+        display: flex;
+        text-align: left;
+        justify-content: end;
+        align-items: safe;
+        line-height: 11vh;
+        margin-top: 10vh;/*will vary with fixed wisth limits, do it later*/
+        height: 70vh;
+        display: none;
+    }
+    .nav ol.active
+    {
+        display: flex;
+        transform: translateY(10);
+        line-height: 55px;
+        animation-name: slide;
+        animation-duration: 1.3s;
+    }
+    #list
+    {
+        /*default animation here*/
+    }
+    #list.active
+    {
+        background-color: #dcdad3;
+        padding-top: 12%;
+        height: 200vh;
+        margin-top: -60px;
+        margin-left: -10px;
+    }
+    @keyframes slide
+    {
+        from
+        {
+            opacity: 0%;
+            margin-left: 20vw;
+        }
+        to
+        {
+            opacity: 100%;
+            margin-left: 0;
+        }
+    }
+
+    .nav-link
+    {
+        font-size: 25px;
+    }
+    .links
+    {
+        font-size: 17px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 280px;
+        height: 5%;
+        margin-top: 25px;
+    }
+    .links a
+    {
+        color: black;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+    .links a:hover
+    {
+        text-decoration: underline;
+        text-decoration-color: #31337b;
+    }
+    .links a img
+    {
+        width: 15px;
+        height: 15px;
+        margin-right: 3px;
     }
 }
 @media screen and (max-width:479px) {
