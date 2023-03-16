@@ -18,15 +18,16 @@ html, body
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.main img
+#face-image
 {
     border: 3px solid black;
     width: 18%;
 }
 .main-contain p, 
 .main-contain span,
-.main-contain img,
-.email
+#face-image,
+.extra,
+.social-links
 {
     animation-name: appear;
     animation-duration: 1.7s;
@@ -34,6 +35,45 @@ html, body
 .main-contain p
 {
     color: #31337b;
+}
+.extra
+{
+    display: flex;
+    width: 55%;
+}
+.extra a
+{
+    width: fit-content;
+    margin-right: 20px;
+    display: flex; 
+    justify-content: center;
+    text-decoration: none;
+    color: #5153bd;
+    font-weight: bold;
+    transform: translateX(10%) .5s;
+    transition: margin-left .5s;
+}
+.extra a:hover
+{    
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    margin-left: 2%;
+    z-index: 5;    
+}
+.extra a img
+{
+    width:22px;
+    height:22px;
+}
+#line
+{
+    margin-left: -45px;
+    height: 500px;
+    width: 6px;
+}
+.social-links
+{
+    position: fixed;
 }
 @media screen and (min-width:900px)
 {
@@ -63,7 +103,7 @@ html, body
         justify-content: center;
         align-items: left;
     }
-    .main img
+    #face-image
     {
         z-index: 4;
         position: absolute;
@@ -97,11 +137,10 @@ html, body
     }
     .toggle-btn
     {
-        display: none;
-        
+        display: none;        
     }
 }
-.email
+.social-links
 {
     position: fixed;
     font-weight: bold;
@@ -165,45 +204,37 @@ html, body
     transform-origin: bottom left;
     text-decoration: none;
 }
-.email
+.social-links
 {
     height: 10%;
     position: fixed;
     display: flex;
+    flex-direction: column;
     width: 100vh;    
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    /*-webkit-transform: rotate(90deg);
+    transform: rotate(90deg);*/
     float: bottom;
-    margin-top: 120vh;
     margin-right: -75%;    
     align-items: center;
+    line-height: 60px;
 }
-.email a
+.social-links a
 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 17px;
-    text-decoration: none;
     margin-right: 5%;
-    color: black;
     transition: transform .3s;
 }
-.email a:hover
+.social-links a:hover
 {    
     color: #5153bd;
-    transform: translateX(-5%);
-    animation-name: change-colour;
-    animation-duration: .3s;
+    transform: translateY(-10%);
 }
-.email hr
+
+.social-links img
 {
-    margin-top:0.5%;    
-    width: 2000vw;
-    background-color: #5153bd;
-    height: 5px;
-    shape-rendering: geometricPrecision;
-    border-radius: 5px;
+    width: 30px; 
+    height: 30px;
 }
+
 @keyframes change-colour
 {
     from
@@ -310,11 +341,12 @@ html, body
     .main-contain span
     {
         font-size:  17px;
-    }    
+    }
 }
+
 @media screen and (max-width:900px)
 {
-    .email{
+    .social-links{
         visibility: hidden;
     }
     .main
@@ -338,10 +370,11 @@ html, body
         justify-content: center;
         align-items: left;
     }
-    .main img
+    #face-image
     {
         position: relative;
         border-radius: 50%;
+        margin-bottom: 2vh;
         border: 3px solid black;
         width: 180px;  
         rotate: 2deg;
@@ -357,8 +390,7 @@ html, body
     {
         font-weight:bold;
         z-index: 5;
-        font-family: 'Outfit', sans-serif;
-        font-size: 50px;
+        font-family: 'Outfit', sans-serif;        
         margin-bottom: -3.5%;
         animation-name: move;
         animation-timing-function: cubic-bezier(0.03, 0, 0.01);
@@ -366,7 +398,7 @@ html, body
     }
     .main-contain span
     {
-        font-size: 23px;
+        
         width: 100%;
     }
     .toggle-btn img
@@ -378,11 +410,8 @@ html, body
     }
     .nav
     {
-        background-color: #00000000;
         z-index: 6;
         width: 100vw;
-        position: fixed;
-        line-height: 280%;
         animation-name: appear;
         animation-duration: 1.8s;
         height: 100vh;
@@ -403,8 +432,6 @@ html, body
         text-align: left;
         justify-content: end;
         align-items: safe;
-        line-height: 11vh;
-        margin-top: 10vh;/*will vary with fixed wisth limits, do it later*/
         height: 70vh;
         display: none;
     }
@@ -418,7 +445,8 @@ html, body
     }
     #list
     {
-        /*default animation here*/
+        justify-content: center;
+        vertical-align: middle;
     }
     #list.active
     {
@@ -441,7 +469,6 @@ html, body
             margin-left: 0;
         }
     }
-
     .nav-link
     {
         font-size: 25px;
@@ -475,6 +502,66 @@ html, body
         margin-right: 3px;
     }
 }
+@media only screen and (max-width: 900px) and (min-width: 522px)
+{
+    .main-contain strong
+    {
+        font-size: 58px;
+    }
+    .main-contain span
+    {
+        font-size: 30px;
+    }
+    .main-contain p
+    {
+        font-size: 22px;
+    }
+    .nav-link
+    {
+        margin-left: 10%;
+        font-size: 40px;
+    }
+    .links
+    {
+        width: 75%;
+        margin-left: 10%;
+    }
+    .nav ol
+    {
+        line-height: 100px;
+    }
+    .links a
+    {
+        font-size: 25px;
+        margin-right: 5%;
+    }
+    .links a img
+    {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media only screen and (max-width: 645px) and (min-width: 522px)
+{
+    .main-contain strong
+    {
+        font-size: 52px;
+    }
+    .main-contain span
+    {
+        font-size: 28px;
+    }
+    .links a
+    {
+        font-size: 20px;
+        margin-right: 5%;
+    }
+    .links a img
+    {
+        width: 20px;
+        height: 20px;
+    }
+}
 @media screen and (max-width:479px) {
     .main-contain p
     {
@@ -494,6 +581,15 @@ html, body
     .main-contain span
     {
         font-size: 20px;
+    }
+    .links a
+    {
+        font-size: 18px;
+    }
+    .links a img
+    {
+        width: 18px;
+        height: 18px;
     }
 }
 @media screen and (max-width:479px)
