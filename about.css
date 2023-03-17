@@ -1,0 +1,47 @@
+*
+{
+    
+}
+body
+{
+    max-width: 100%;
+    overflow-x: hidden;
+    scrollbar-base-color: #e8e8e6;
+}
+.main
+{
+    /*background-color: yellowgreen;*/
+    
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#top-image
+{
+    border-radius: 10px;
+    margin-top: 0%;
+    width: 100%;
+}
+.main-text
+{
+    width: 65%;
+    margin-top: 8%;
+    text-align: left;
+}
+.para-1
+{
+    margin-top: 5%;
+    width: 90%;
+}
+.para-1 p
+{
+    font-size: 25px;
+}
+.social-links
+{
+    position: fixed;
+    margin-top: -22%;
+}
