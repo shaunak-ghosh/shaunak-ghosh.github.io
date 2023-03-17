@@ -346,7 +346,7 @@ html, body
     {
         height: 100vh;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
