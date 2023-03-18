@@ -1,7 +1,3 @@
-*
-{
-    
-}
 body
 {
     max-width: 100%;
@@ -10,8 +6,7 @@ body
 }
 .main
 {
-    /*background-color: yellowgreen;*/
-    
+    /*background-color: yellowgreen;*/    
     margin-left: 15vw;
     display: flex;
     flex-direction: column;
@@ -21,27 +16,62 @@ body
 }
 #top-image
 {
+    animation-name: appear-down;
+    animation-duration: 1.5s;
     border-radius: 10px;
     margin-top: 0%;
-    width: 100%;
+    width: 88%;
+}
+@keyframes appear-down
+{
+    from
+    {
+        opacity: 0%;
+        margin-top: -10%;
+    }
+    to 
+    {
+        opacity: 100%;
+        margin-top: 0%;
+    }
 }
 .main-text
 {
-    width: 65%;
+    width: 65vw;
     margin-top: 8%;
     text-align: left;
 }
-.para-1
+.para
 {
     margin-top: 5%;
     width: 90%;
 }
-.para-1 p
+.para-1 a
+{
+    color: #576CC4;
+    font-weight: bold;
+    text-decoration: none;
+}
+.para-1 a:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.para p
 {
     font-size: 25px;
 }
 .social-links
 {
-    margin-bottom: 22%;
-    float: bottom;
+    top: 45%;
+}
+.para
+{
+    margin-bottom: 5%;
+}
+.num
+{   
+    font-size: 70px;
+    color:dimgray;
+    margin-left: -5%;
 }

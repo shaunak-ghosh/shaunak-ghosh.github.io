@@ -6,81 +6,77 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style_home.css">
-        <link rel="stylesheet" href="design.css">
-        <link rel="icon" href="assets\design\icon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main-style.css">
+        <link rel="stylesheet" href="styles/about.css">
+        <link rel="icon" href="assets\home\logo.png">
         <title>Design | Shaunak Ghosh</title>
-        <style>
-            a
-            {
-                text-decoration: none;
-            }
-            a:hover
-            {
-                text-decoration: underline;
-                text-decoration-color: rgb(255, 85, 59);
-                text-decoration-thickness: 4px;
-            }
-        </style>
     </head>
     <body>
-        <div class="heading">
-            <span>Design</span>
+        <div class="nav" id="nav-bar">
+            <a href="#" class="toggle-btn">
+                <img src="assets/home/menu_icon.png" alt="">
+            </a>
+            <div id="list">
+                <ol class="navbar-links">
+                    <li>
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link">ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link active">DESIGN</a>
+                    </li>
+                    <li>
+                        <a href="illustrations.html" class="nav-link">ILLUSTRATION</a>
+                    </li>
+                    <li>
+                        <a href="gamedev.html" class="nav-link">GAMEDEV</a>
+                    </li>
+                    <div class="links">
+                        <a href=""><img src="assets\external-link.png" alt="">Email</a>
+                        <a href=""><img src="assets\external-link.png" alt="">Behance</a>
+                        <a href=""><img src="assets\external-link.png" alt="">Github</a>                            
+                    </div>                   
+                </ol>                    
+            </div>                   
         </div>
-        <section class="main">
-            <div class="nav">
-                <li class="tab">
-                    <a href="index.html" id="home" class="tablink">Home</a>
-                </li>
-                <li class="tab" >
-                    <a href="about.html" class="tablink" id="about">About</a>
-                </li>
-                <li class="tab">
-                    <a href="" class="active">Design</a>
-                </li>
-                <li class="tab">
-                    <a href="illustrations.html" class="tablink">Illustration</a>
-                </li>
-                <li class="tab">
-                    <a href="gamedev.html" class="tablink">Gamedev</a>
-                </li>             
-            </div>
-            <div class="box">
-                <img src="assets\home\character-design.jpg" alt="picture">
-                <div id="label">
-                    <div class="title"> <a href="">Character design</a> </div>
-                    <div class="desc">Posters, banners and other stuff!</div>
+        <section class="main">            
+            <div class="main-text">
+                <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" id="top-image">                
+                <div class="para para-1">                    
+                    <p>
+                        <strong class="num">01.</strong>
+                        <br>                   
+                        I am a junior graphic designer located in <a href="">Kolkata, India</a> and front-end developer with a passion for creating beautiful, functional designs, with a strong foundation in design principles and a willingness to learn and grow.
+                    </p>
                 </div>
-            </div>
-            <div class="box">
-                <img src="assets\design\Furniture ad.jpg" alt="picture">
-                <div id="label">
-                    <div class="title"> <a href="">Banner design</a> </div>
-                    <div class="desc">Banners!</div>
+                <div class="para para-2">                    
+                    <p>
+                        <strong class="num">02.</strong>
+                        <br>
+                        From a young age, I've always loved drawing and scribbling things on paper and exploring my imaginary worlds and stories. Growing up, I started learing the fundamentals of drawing and painting, as well as digital illustration techniques.
+                    </p>
                 </div>
+                <div class="para para-3">
+                    <p>
+                        <strong class="num">03.</strong>
+                        <br>
+                        
+                    </p>
+                </div>      
             </div>
-            <div class="box">
-                <img src="assets\design\good_coffee.jpg" alt="picture">
-                <div id="label">
-                    <div class="title"> <a href="">Logo design</a> </div>
-                    <div class="desc">Logos for all!</div>
-                </div>
-            </div>
-            <div id="extra">
-                Find me on <strong>...</strong>
-                <div id="links">
-                    <a href="https://twitter.com/Rooveloft"><img src="assets/twitter.png" alt="Twitter" class="icon"></a>
-                    <a href="https://www.linkedin.com/in/shaunak-ghosh-724b27209/"><img src="assets/linkedin.png" alt="LinkedIn" class="icon"></a>
-                    <a href="https://www.artstation.com/rooveloft"><img src="assets/artstation.png" alt="ArtStation" class="icon"></a>
-                    <a href="https://www.behance.net/shaunakghosh"><img src="assets/behance.png" alt="Behance" class="icon"></a>
-                    <a href="https://github.com/Rooveloftcodes"><img src="assets/github.png" alt="Github" class="icon"></a>
-                    <a href="https://www.instagram.com/rooveloftsarts/"><img src="assets/instagram.png" alt="Instagram" class="icon"></a>
-                </div>
-            </div>
+            <div class="social-links">
+                <a href="https://twitter.com/Rooveloft"><img src="assets/twitter.png" alt="Twitter" class="icon"></a>
+                <a href="https://www.linkedin.com/in/shaunak-ghosh-724b27209/"><img src="assets/linkedin.png" alt="LinkedIn" class="icon"></a>
+                <a href="https://www.artstation.com/rooveloft"><img src="assets/artstation.png" alt="ArtStation" class="icon"></a>
+                <a href="https://www.behance.net/shaunakghosh"><img src="assets/behance.png" alt="Behance" class="icon"></a>
+                <a href="https://github.com/Rooveloftcodes"><img src="assets/github.png" alt="Github" class="icon"></a>
+                <a href="https://www.instagram.com/rooveloftsarts/"><img src="assets/instagram.png" alt="Instagram" class="icon"></a>
+                <img src="assets/line.jpeg" id="line" alt="">
         </section>
+        <script src="scripts/navbar.js"></script>    
     </body>
 </html>

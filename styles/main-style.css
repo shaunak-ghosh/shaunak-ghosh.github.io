@@ -3,10 +3,11 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    cursor: default;
 }
 *::selection
 {
-    background: rgb(197, 173, 255);
+    background: rgba(198, 173, 255, 0.658);
 }
 body
 {
@@ -63,7 +64,6 @@ html, body
 {
     transform: scale(110%);
 }
-
 #line
 {
     margin-left: -45px;
@@ -336,10 +336,6 @@ html, body
     .nav-link
     {
         font-size: 17px;
-    }
-    .extra img
-    {
-
     }
 }
 @media screen and (max-width:1065px)
