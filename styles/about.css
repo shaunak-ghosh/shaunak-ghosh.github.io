@@ -42,6 +42,6 @@ body
 }
 .social-links
 {
-    position: fixed;
-    margin-top: -22%;
+    margin-bottom: 22%;
+    float: bottom;
 }

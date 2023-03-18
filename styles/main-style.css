@@ -10,7 +10,7 @@
 }
 body
 {
-    background-color: #e8e8e6;
+    background-color: #f4f1ea;
 }
 html, body
 {
@@ -19,11 +19,12 @@ html, body
 }
 ::-webkit-scrollbar 
 {
-    width: 10px;
+    width: 8px;
 }
-::-webkit-scrollbar-thumb 
+::-webkit-scrollbar-thumb
 {
-    background: rgba(43, 0, 255, 0.716);
+    background: rgba(80, 67, 60, 0.716);
+    border-radius: 10px;
 }
 #face-image
 {
@@ -46,7 +47,7 @@ html, body
 .extra
 {
     display: flex;
-    width: 55%;
+    width: 60%;    
 }
 .extra a
 {
@@ -54,16 +55,15 @@ html, body
     display: flex; 
     justify-content: center;
     text-decoration: none;
-    color: #5153bd;
+    color: #576CC4;
     font-weight: bold;
-    transform: translateX(10%) .5s;
-    transition: margin-left .5s;
+    transition: transform .3s;
 }
-.extra a img
+.extra :hover
 {
-    width:22px;
-    height:22px;
+    transform: scale(110%);
 }
+
 #line
 {
     margin-left: -45px;
@@ -73,6 +73,14 @@ html, body
 .social-links
 {
     position: fixed;
+}
+@media screen and (min-width:1065px)
+{
+    .extra img
+    {
+        width:20px;
+        height:20px;
+    }
 }
 @media screen and (min-width:900px)
 {
@@ -132,6 +140,11 @@ html, body
     {
         display: none;        
     }
+    .extra img
+    {
+        width:18px;
+        height:18px;
+    }
 }
 .social-links
 {
@@ -152,6 +165,7 @@ html, body
 }
 .nav ol
 {
+    
     display: flex;
     height: 96vh;
     flex-direction: column;
@@ -180,12 +194,11 @@ html, body
     height: 40px;
     bottom: -3%;
     left: 0;
-    background-color: #acaef6;
+    background-color: #C4B9FF;
     transform-origin: bottom left;
     transition: transform 0.26s cubic-bezier(1, 0.71, 0, 0.9);
     margin-left: -10px;
 }
-.extra a:hover:after,
 .nav-link:hover:after 
 {
     transform: scaleX(1);
@@ -193,7 +206,7 @@ html, body
 }
 .active
 {
-    color: #5153bd;
+    color: #576CC4;
     cursor: default;
 }
 .active:hover:after
@@ -324,6 +337,10 @@ html, body
     {
         font-size: 17px;
     }
+    .extra img
+    {
+
+    }
 }
 @media screen and (max-width:1065px)
 {
@@ -335,8 +352,16 @@ html, body
     {
         font-size:  17px;
     }
+    .extra a
+    {
+        font-size: 12px;
+    }
+    .extra img
+    {
+        width: 17px;
+        height: 17px;
+    }
 }
-
 @media screen and (max-width:900px)
 {
     .social-links{
@@ -437,6 +462,7 @@ html, body
     }
     #list
     {
+        z-index: -2;
         justify-content: center;
         vertical-align: middle;
     }
@@ -463,6 +489,7 @@ html, body
     }
     .nav-link
     {
+        z-index: 0;
         font-size: 25px;
     }
     .links
@@ -492,6 +519,19 @@ html, body
         width: 15px;
         height: 15px;
         margin-right: 3px;
+    }
+    .extra
+    {
+        width: 65vw;
+    }
+    .extra a
+    {
+        font-size: 20px;
+    }
+    .extra img
+    {
+        width: 27px;
+        height: 27px
     }
 }
 @media only screen and (max-width: 900px) and (min-width: 522px)
@@ -548,10 +588,32 @@ html, body
         font-size: 20px;
         margin-right: 5%;
     }
-    .links a img
+    .links img
     {
         width: 20px;
         height: 20px;
+    }
+}
+@media screen and (max-width:639px)
+{
+    .about
+    {
+        font-size: 15px;
+    }
+    .extra
+    {
+        background-color: rgb(192, 205, 50);
+        width: 80vw;
+    }
+    .extra a
+    {
+        background-color:yellowgreen;
+        font-size: 16px;
+    }
+    .extra img
+    {
+        width: 18px;
+        height: 18px;
     }
 }
 @media screen and (max-width:479px) {
@@ -582,6 +644,20 @@ html, body
     {
         width: 18px;
         height: 18px;
+    }
+    .extra
+    {
+        width: 80vw;
+    }
+    .extra a
+    {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .extra img
+    {
+        width: 15px;
+        height: 15px;
     }
 }
 @media screen and (max-width:479px)
