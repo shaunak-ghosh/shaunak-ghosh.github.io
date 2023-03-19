@@ -7,7 +7,7 @@
 }
 *::selection
 {
-    background: rgba(198, 173, 255, 0.658);
+    background: rgba(156, 147, 255, 0.658);
 }
 body
 {
@@ -24,63 +24,37 @@ html, body
 }
 ::-webkit-scrollbar-thumb
 {
-    background: rgba(80, 67, 60, 0.716);
-    border-radius: 10px;
-}
-#face-image
-{
-    border: 3px solid black;
-    width: 18%;
-}
-.main-contain p, 
-.main-contain span,
-#face-image,
-.extra,
-.social-links
-{    
-    animation-name: appear;
-    animation-duration: 1.7s;
-}
-.main-contain p
-{
-    color: #31337b;
-}
-.extra
-{
-    display: flex;
-    width: 60%;    
-}
-.extra a
-{
-    margin-right: 20px;
-    display: flex; 
-    justify-content: center;
-    text-decoration: none;
-    color: #576CC4;
-    font-weight: bold;
-    transition: transform .3s;
-}
-.extra :hover
-{
-    transform: scale(110%);
+    background: rgba(30, 27, 36, 0.605);
 }
 #line
 {
+    margin-top: 2%;
     margin-left: -45px;
     height: 500px;
     width: 6px;
 }
 .social-links
+{    
+    animation-name: appear;
+    animation-duration: 1.7s;
+}
+.social-links
 {
     position: fixed;
 }
-@media screen and (min-width:1065px)
+.icon
 {
-    .extra img
-    {
-        width:20px;
-        height:20px;
-    }
+    width: 27px;
+    margin-right: 5%;
+    transition: transform .3s;
+    filter: brightness(0);
+    transition: all 0.3s;
+}
+.icon:hover
+{
+    transform: translateY(-10%);
+    filter: brightness(100%);
+    cursor: pointer;
 }
 @media screen and (min-width:900px)
 {
@@ -92,50 +66,7 @@ html, body
     {
         margin-left: 15%;
     }
-    .main-contain
-    {   
-        cursor: default;
-        width: 55vw;
-        height: 10vw;
-        margin-left: -5vw;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        justify-content: center;
-        align-items: left;
-    }
-    #face-image
-    {
-        z-index: 4;
-        position: absolute;
-        border-radius: 50%;
-        border: 3px solid black;
-        width: 18%;
-        margin-left: 10%;
-        
-        rotate: 2deg;
-    }
-    .main-contain p
-    {
-        margin-bottom: -35px;
-        font-weight: normal;
-        font-size: 18px;
-    }
-    .main-contain strong
-    {
-        z-index: 5;
-        font-family: 'Outfit', sans-serif;
-        font-size: 70px;
-        margin-bottom: -3.5%;
-        animation-name: move;
-        animation-timing-function: cubic-bezier(0.03, 0, 0.01);
-        animation-duration: 1.8s;
-    }
-    .main-contain span
-    {        
-        font-size: 23px;
-        width: 50%;
-    }
+    
     .toggle-btn
     {
         display: none;        
@@ -203,6 +134,10 @@ html, body
 {
     transform: scaleX(1);
     transform-origin: center left;
+}
+.nav-link:active:after 
+{
+    width:110%;
 }
 .active
 {
