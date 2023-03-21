@@ -228,69 +228,11 @@ html, body
         margin-left: 15%;
     }
 }
-/*@media only screen and (max-width: 600px) and (min-width: 400px)*/
-@media screen and (max-width:1680px) 
-{
-    .main-contain p
-    {
-        word-spacing: 5px;
-        margin-bottom: -5%;
-        font-weight: normal;
-        font-size: 16px;
-    }
-    .main-contain strong
-    {
-        font-size: 65px;
-    }
-    .main-contain span
-    {
-        font-size: 20px;
-    }
-}
-@media screen and (max-width:1473px)
-{
-    .main-contain strong
-    {
-        font-size: 57px;
-    } 
-}
 @media screen and (max-width:1318px)
 {
-    .main-contain
-    {
-        margin-left: -15vw;
-    }
-    .main-contain strong
-    {
-        font-size: 53px;
-    } 
-    .main-contain span
-    {
-        width: 30vw;
-    }   
     .nav-link
     {
         font-size: 17px;
-    }
-}
-@media screen and (max-width:1065px)
-{
-    .main-contain strong
-    {
-        font-size: 48px;
-    }   
-    .main-contain span
-    {
-        font-size:  17px;
-    }
-    .extra a
-    {
-        font-size: 12px;
-    }
-    .extra img
-    {
-        width: 17px;
-        height: 17px;
     }
 }
 @media screen and (max-width:900px)
@@ -306,49 +248,7 @@ html, body
         text-align: center;
         justify-content: center;
         align-items: center;
-    }
-    .main-contain
-    {
-        width: 75vw;
-        height: auto;
-        display: flex;
-        padding-top: 3%;
-        flex-direction: column;
-        margin: 0;
-        text-align: left;
-        justify-content: center;
-        align-items: left;
-    }
-    #face-image
-    {
-        position: relative;
-        border-radius: 50%;
-        margin-bottom: 2vh;
-        border: 3px solid black;
-        width: 180px;  
-        rotate: 2deg;
-    }
-    .main-contain p
-    {
-        word-spacing: 5px;
-        margin-bottom: -25px;
-        font-weight: normal;
-        font-size: 18px;
-    }
-    .main-contain strong
-    {
-        font-weight:bold;
-        z-index: 5;
-        font-family: 'Outfit', sans-serif;        
-        margin-bottom: -3.5%;
-        animation-name: move;
-        animation-timing-function: cubic-bezier(0.03, 0, 0.01);
-        animation-duration: 1.8s;
-    }
-    .main-contain span
-    {
-        width: 100%;
-    }
+    }    
     .toggle-btn img
     {
         position: fixed;
@@ -467,18 +367,6 @@ html, body
 }
 @media only screen and (max-width: 900px) and (min-width: 522px)
 {
-    .main-contain strong
-    {
-        font-size: 58px;
-    }
-    .main-contain span
-    {
-        font-size: 30px;
-    }
-    .main-contain p
-    {
-        font-size: 22px;
-    }
     .nav-link
     {
         margin-left: 10%;
@@ -506,14 +394,6 @@ html, body
 }
 @media only screen and (max-width: 645px) and (min-width: 522px)
 {
-    .main-contain strong
-    {
-        font-size: 52px;
-    }
-    .main-contain span
-    {
-        font-size: 28px;
-    }
     .links a
     {
         font-size: 20px;
@@ -527,18 +407,12 @@ html, body
 }
 @media screen and (max-width:639px)
 {
-    .about
-    {
-        font-size: 15px;
-    }
     .extra
     {
-        background-color: rgb(192, 205, 50);
         width: 80vw;
     }
     .extra a
-    {
-        background-color:yellowgreen;
+    {        
         font-size: 16px;
     }
     .extra img
@@ -548,25 +422,6 @@ html, body
     }
 }
 @media screen and (max-width:479px) {
-    .main-contain p
-    {
-        word-spacing: 5px;
-        margin-bottom: -25px;
-        font-weight: normal;
-        font-size: 15px;
-    }
-    .main-contain strong
-    {
-        font-weight:bold;
-        z-index: 5;
-        font-family: 'Outfit', sans-serif;
-        font-size: 40px;
-        margin-bottom: -3.5%;
-    }
-    .main-contain span
-    {
-        font-size: 20px;
-    }
     .links a
     {
         font-size: 18px;
@@ -589,16 +444,5 @@ html, body
     {
         width: 15px;
         height: 15px;
-    }
-}
-@media screen and (max-width:479px)
-{
-    .main-contain strong
-    {
-        font-size: 37px;
-    }
-    .main-contain span
-    {
-        font-size: 18px;
     }
 }

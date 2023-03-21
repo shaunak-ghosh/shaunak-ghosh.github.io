@@ -126,3 +126,190 @@ a:hover
         opacity: 100%;
     }
 }
+@media screen and (max-width:1680px) 
+{
+    .main-contain p
+    {
+        word-spacing: 5px;
+        margin-bottom: -5%;
+        font-weight: normal;
+        font-size: 16px;
+    }
+    .main-contain strong
+    {
+        font-size: 65px;
+    }
+    .main-contain span
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1473px)
+{
+    .main-contain strong
+    {
+        font-size: 57px;
+    } 
+}
+@media screen and (max-width:1318px)
+{
+    .main-contain
+    {
+        margin-left: -15vw;
+    }
+    .main-contain strong
+    {
+        font-size: 53px;
+    } 
+    .main-contain span
+    {
+        width: 30vw;
+    } 
+}
+@media screen and (max-width:1065px)
+{
+    .main-contain strong
+    {
+        font-size: 48px;
+    }   
+    .main-contain span
+    {
+        font-size:  17px;
+    }
+    .extra a
+    {
+        font-size: 12px;
+    }
+    .extra img
+    {
+        width: 17px;
+        height: 17px;
+    }
+}
+@media screen and (max-width:900px)
+{
+    .main-contain
+    {
+        width: 75vw;
+        height: auto;
+        display: flex;
+        padding-top: 3%;
+        flex-direction: column;
+        margin: 0;
+        text-align: left;
+        justify-content: center;
+        align-items: left;
+    }
+    #face-image
+    {
+        position: relative;
+        border-radius: 50%;
+        margin-bottom: 2vh;
+        border: 3px solid black;
+        width: 180px;  
+        rotate: 2deg;
+    }
+    .main-contain p
+    {
+        word-spacing: 5px;
+        margin-bottom: -25px;
+        font-weight: normal;
+        font-size: 18px;
+    }
+    .main-contain strong
+    {
+        font-weight:bold;
+        z-index: 5;
+        font-family: 'Outfit', sans-serif;        
+        margin-bottom: -3.5%;
+        animation-name: move;
+        animation-timing-function: cubic-bezier(0.03, 0, 0.01);
+        animation-duration: 1.8s;
+    }
+    .main-contain span
+    {
+        width: 100%;
+    }
+    .extra
+    {
+        width: 65vw;
+    }
+    .extra a
+    {
+        font-size: 20px;
+    }
+    .extra img
+    {
+        width: 27px;
+        height: 27px
+    }
+    .extra
+    {
+        background-color: yellowgreen;
+        width: 110vw;
+    }
+    
+}
+@media only screen and (max-width: 900px) and (min-width: 522px)
+{/*fix the purple links*/
+    .main-contain strong
+    {
+        font-size: 58px;
+    }
+    .main-contain span
+    {
+        font-size: 30px;
+    }
+    .main-contain p
+    {
+        font-size: 22px;
+    }
+    
+}
+@media only screen and (max-width: 645px) and (min-width: 522px)
+{
+    .main-contain strong
+    {
+        font-size: 52px;
+    }
+    .main-contain span
+    {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:639px)/*fix the purple links*/
+{
+    .main-contain span
+    {
+        font-size: 15px;
+    }
+    .extra a
+    {
+        font-size: 16px;
+    }
+    .extra img
+    {
+        width: 18px;
+        height: 18px;
+    }
+}
+@media screen and (max-width:479px)
+{
+    .main-contain strong
+    {
+        font-size: 37px;
+    }
+    .main-contain span
+    {
+        font-size: 18px;
+    }
+    .extra a
+    {
+        font-size: 14px;
+    }
+    .extra img
+    {
+        width: 16px;
+        height: 16px;
+    }
+}
