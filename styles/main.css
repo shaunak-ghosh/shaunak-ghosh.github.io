@@ -26,22 +26,6 @@ html, body
 {
     background: rgba(30, 27, 36, 0.605);
 }
-#line
-{
-    margin-top: 2%;
-    margin-left: -45px;
-    height: 500px;
-    width: 6px;
-}
-.social-links
-{    
-    animation-name: appear;
-    animation-duration: 1.7s;
-}
-.social-links
-{
-    position: fixed;
-}
 .icon
 {
     width: 27px;
@@ -65,8 +49,7 @@ html, body
     .main
     {
         margin-left: 15%;
-    }
-    
+    }    
     .toggle-btn
     {
         display: none;        
@@ -76,13 +59,18 @@ html, body
         width:18px;
         height:18px;
     }
-}
-.social-links
-{
-    position: fixed;
-    font-weight: bold;
-    animation-name: appear;
-    animation-duration: 1.8s;
+    .social-links
+    {
+        height: auto;
+    }
+    .social-links:after
+    {
+        content: '';
+        background-color: #576CC4;
+        height: 50vh;
+        width: 5px;
+        margin-left: -11.7%;
+    }
 }
 .nav
 {
@@ -135,32 +123,16 @@ html, body
     transform: scaleX(1);
     transform-origin: center left;
 }
-.nav-link:active:after 
-{
-    width:110%;
-}
-.active
-{
-    color: #576CC4;
-    cursor: default;
-}
 .active:hover:after
 {
     transform: scaleX(0);
     transform-origin: bottom left;
     text-decoration: none;
 }
-.social-links
+.active
 {
-    height: 10%;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    width: 100vh;
-    float: bottom;
-    margin-right: -75%;    
-    align-items: center;
-    line-height: 60px;
+    color: #576CC4;
+    cursor: default;
 }
 .social-links a
 {
@@ -173,8 +145,9 @@ html, body
 }
 .social-links img
 {
-    width: 30px; 
-    height: 30px;
+    margin-left: -70%;
+    width: 28px; 
+    height: 28px;
 }
 @keyframes change-colour
 {
@@ -234,6 +207,28 @@ html, body
     {
         font-size: 17px;
     }
+    .social-links
+    {
+        line-height: 10px;
+        line-height: 0px;
+    }
+    .social-links img
+    {
+        width: 22px; 
+        height: 22px;
+    }
+}
+@media screen and (max-width:1065px)
+{
+    .social-links
+    {
+        line-height: 50px;
+    }
+    .social-links img
+    {        
+        width: 20px;
+        height: 20px;
+    }
 }
 @media screen and (max-width:900px)
 {
@@ -248,7 +243,7 @@ html, body
         text-align: center;
         justify-content: center;
         align-items: center;
-    }    
+    }
     .toggle-btn img
     {
         position: fixed;
@@ -258,15 +253,17 @@ html, body
     }
     .nav
     {
+        width: 0vw;
+        height: 0vh;
         z-index: 6;
-        width: 100vw;
         animation-name: appear;
         animation-duration: 1.8s;
-        height: 100vh;
     }
     .nav.active
-    {
-        background-color: #f1efe9;
+    {   
+        display: flex;
+        width: 110vw;
+        height: 100vh;;
     }
     .links
     {
@@ -299,9 +296,10 @@ html, body
     }
     #list.active
     {
-        background-color: #dcdad3;
+        background-color: #f4f1ea;
         padding-top: 12%;
         height: 200vh;
+        width: 110vw;
         margin-top: -60px;
         margin-left: -10px;
     }
@@ -444,5 +442,58 @@ html, body
     {
         width: 15px;
         height: 15px;
+    }
+}
+/*heights*/
+@media screen and (max-height:1680px)
+{
+    .social-links
+    {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        margin-right: -75%;
+        align-items: center;
+        line-height: 60px;
+        top: 50%;
+        right: 70%;
+        animation-name: appear;
+        animation-duration: 1.8s;
+    }
+}
+@media screen and (max-height:968px)
+{
+    .social-links
+    {
+        top: 45%;
+    }
+}
+@media screen and (max-height:830px)
+{
+    .social-links
+    {
+        top: 40%;
+    }
+}
+@media screen and (max-height:730px)
+{
+    .social-links
+    {
+        top: 30%;
+    }
+}
+@media screen and (max-height:630px)
+{
+    .social-links
+    {
+        top: 25%;
+    }
+}
+@media screen and (max-height:530px)
+{
+    .social-links
+    {
+        top: 18%;
     }
 }

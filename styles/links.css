@@ -1,0 +1,29 @@
+/*.social-links
+{
+    background-color: yellow;
+    height: 10vh;
+}
+@media screen and (min-width:1065px)
+{
+    .icon
+    {
+        width: 10px;
+        height: 28px;
+    }    
+}
+@media screen and (min-width:1473px)
+{
+    .icon
+    {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media screen and (min-width:1065px)
+{}
+@media screen and (min-width:1065px)
+{}
+@media screen and (min-width:1065px)
+{}
+@media screen and (min-width:1065px)
+{}*/
