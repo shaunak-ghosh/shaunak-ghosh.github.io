@@ -2,10 +2,6 @@ html, body
 {  
     overflow-y: hidden;
 }
-a:hover
-{
-    cursor: pointer;
-}
 .main-contain p, 
 .main-contain span,
 #face-image,
@@ -25,7 +21,7 @@ a:hover
 }
 .main-contain strong
 {
-    color: rgb(39, 39, 39);
+    color: rgb(50, 50, 50);
 }
 .main-contain p
 {
@@ -33,11 +29,13 @@ a:hover
 }
 .extra
 {
+    
     display: flex;
     width: 60%;    
 }
 .extra a
 {
+    cursor: pointer;
     margin-right: 20px;
     display: flex; 
     justify-content: center;

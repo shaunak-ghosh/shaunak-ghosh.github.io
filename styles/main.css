@@ -40,6 +40,10 @@ html, body
     filter: brightness(100%);
     cursor: pointer;
 }
+.social-links
+{
+    line-height: 60px;
+}
 @media screen and (min-width:900px)
 {
     .links
@@ -68,7 +72,7 @@ html, body
         content: '';
         background-color: #576CC4;
         height: 50vh;
-        width: 5px;
+        width: 4px;
         margin-left: -11.7%;
     }
 }
@@ -128,6 +132,10 @@ html, body
     transform: scaleX(0);
     transform-origin: bottom left;
     text-decoration: none;
+}
+.nav-link
+{
+    cursor: pointer;
 }
 .active
 {
@@ -201,6 +209,13 @@ html, body
         margin-left: 15%;
     }
 }
+@media screen and (max-width:1473px)
+{
+    .social-links
+    {
+        line-height: 60px;
+    }
+}
 @media screen and (max-width:1318px)
 {
     .nav-link
@@ -209,8 +224,7 @@ html, body
     }
     .social-links
     {
-        line-height: 10px;
-        line-height: 0px;
+        line-height: 50px;
     }
     .social-links img
     {
@@ -455,7 +469,7 @@ html, body
         width: 20vw;
         margin-right: -75%;
         align-items: center;
-        line-height: 60px;
+        /*line-height: 60px;*/
         top: 50%;
         right: 70%;
         animation-name: appear;
