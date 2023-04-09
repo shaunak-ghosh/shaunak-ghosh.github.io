@@ -28,14 +28,14 @@
     font-size: 35px;
     margin-top: 40%;
 }
-.intro span strong
+.intro span
 {
     font-size: 50px;
 }
 #name
 {
-    font-family: 'Antic Slab', serif;
-    letter-spacing: 5px;
+    font-family: 'Cutive Mono', monospace;
+    letter-spacing: -5px;
     font-size: 60px;
 }
 .face
@@ -117,9 +117,9 @@
 }
 #home-about/*fix margin*/
 {
-    margin-top: 60%;
     bottom: 0;
-    rotate: -5deg;
+    rotate: -4deg;
+    margin-top: 50%;
 }
 #home-about span
 {
