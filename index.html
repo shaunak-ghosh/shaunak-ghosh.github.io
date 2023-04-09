@@ -6,71 +6,104 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/links.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="index.css">
         <link rel="icon" href="assets\home\logo.png">
         <title>Home | Shaunak Ghosh</title>
     </head>
     <body>
-        <div class="nav" id="nav-bar">
-            <a href="#" class="toggle-btn">
-                <img src="assets/home/menu_icon.png" alt="">
-            </a>
-            <div id="list">
-                <ol class="navbar-links">
-                    <li>
-                        <a href="" class="nav-link active">HOME</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="nav-link">ABOUT ME</a>
-                    </li>
-                    <li>
-                        <a href="design.html" class="nav-link">DESIGN</a>
-                    </li>
-                    <li>
-                        <a href="illustrations.html" class="nav-link">ILLUSTRATION</a>
-                    </li>
-                    <li>
-                        <a href="gamedev.html" class="nav-link">GAMEDEV</a>
-                    </li>
-                    <div class="links">
-                        <a href=""><img src="assets\external-link.png" alt="">Email</a>
-                        <a href=""><img src="assets\external-link.png" alt="">Behance</a>
-                        <a href=""><img src="assets\external-link.png" alt="">Github</a>
-                    </div>
-                </ol>
-            </div>
+        <div class="links" id="links-panel">
+            <span>Social</span>
+            <hr>
+            <ul>
+                <li><a href="https://www.behance.net/shaunakghosh">Behance</a></li>
+                <li><a href="https://linkedin.com/in/shaunak-ghosh-724b27209/">LinkedIn</a></li>   
+                <li><a href="https://twitter.com/Rooveloft">Twitter</a></li>    
+                <li><a href="https://www.artstation.com/rooveloft">Artstation</a></li>
+                <li><a href="https://github.com/Rooveloftcodes">Github</a></li>
+                <li><a href="https://www.instagram.com/rooveloftsarts">Instagram</a></li>
+            </ul>       
         </div>
-        <section class="main">
-            <div class="main-contain">
-                <p>Hi, my name is</p>
-                <br>
-                <strong>
-                    Shaunak Ghosh
-                </strong>
-                <br>
-                <span class="about">
-                    I am a visual designer and a front-end web developer
-                </span>
-                <div class="extra">
-                    <a href="error.html"><img src="assets\external-link.png" alt="">See my projects</a>
-                    <a href="about.html"><img src="assets\external-link.png" alt="">More about me</a>
+        <div class="main">
+            <a class="links-btn" id="links-toggle-btn"></a>
+            <nav id="nav">
+                <div class="box tab" id="home">
+                    <a href="">HOME</a>
+                </div>
+                <div class="box tab" id="about">
+                    <a href="#">ABOUT</a>
+                </div>
+                <div class="box tab" id="work">
+                    <a href="work.html">WORK</a>
+                </div>
+                <div class="box tab" id="contact">
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </nav>
+            <div class="main-contain box">
+                <div class="home-contain">
+                    <div class="intro box home-contain-div">
+                        <span>
+                            Hi, <strong>I</strong> am 
+                        </span>
+                        <br>
+                        <strong id="name">Shaunak Ghosh</strong>
+                        <br>
+                        <div class="home-about" id="home-about">
+                            <span >Visual and web designer</span>
+                        </div>
+                        
+                    </div>
+                    <div class="face box home-contain-div"></div>
+                </div>
+                <div class="category about box">
+                    ABOUT
+                </div>
+                <div class="about-contain">
+                    <section class="about-text about-1 box">
+                        <div class="image-1 image box"></div>
+                        <div class="textbox textbox-1">
+                            <div id="num">
+                                .01
+                            </div>
+                            <p class="para-1 para">
+                                <strong>I</strong> am a junior graphic designer and front-end developer located in Kolkata, India with a passion for creating beautiful, functional designs, with a strong foundation in design principles and a willingness to learn and grow.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="about-text about-2 box">
+                        <div class="textbox textbox-2">
+                            <div id="num">
+                                .02
+                            </div>
+                            <p class="para-2 para">
+                                <strong>Besides</strong> design I have a knack towards digital illustrations, comic-based and concept art.
+                            </p>
+                        </div>
+                        <div class="image-2 image box"></div>
+                    </section>
+                    <section class="about-text about-3 box">
+                        <div class="image-3 image box"></div>
+                        <div class="textbox textbox-3">
+                            <div id="num">
+                                .03
+                            </div>
+                            <p class="para-3 para">
+                                <strong>Apart</strong> from that I am a learning <a href="#">game designer</a>  trying to bring cool and fun looking video games to life!
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="skill-contain">
+                    <div class="category box">
+                        SKILLS
+                    </div>
                 </div>
             </div>
-            <img src="assets/home/Face.jpg" alt="face" id="face-image">
-            <div class="social-links">
-                <a href="https://twitter.com/Rooveloft"><img src="assets/link-twitter.svg" alt="Twitter" class="icon"></a>
-                <a href="https://www.linkedin.com/in/shaunak-ghosh-724b27209/"><img src="assets/link-linkedin.svg" alt="LinkedIn" class="icon"></a>
-                <a href="https://www.artstation.com/rooveloft"><img src="assets/link-artstation.svg" alt="ArtStation" class="icon"></a>
-                <a href="https://www.behance.net/shaunakghosh"><img src="assets/link-behance.svg" alt="Behance" class="icon"></a>
-                <a href="https://github.com/Rooveloftcodes"><img src="assets/link-github.svg" alt="Github" class="icon"></a>
-                <a href="https://www.instagram.com/rooveloftsarts/"><img src="assets/link-instagram.svg" alt="Instagram" class="icon"></a>
-            </div>
-        </section>
-        <script src="scripts/navbar.js"></script>
+        </div>
     </body>
 </html>

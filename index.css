@@ -1,0 +1,154 @@
+.main-contain
+{
+    height: 92.5vh;
+    overflow-y: scroll;
+    margin-left: -4px;
+}
+.home-contain, .home-contain-div
+{
+    border-top: none;
+    border-bottom: none;
+}
+.home-contain
+{
+    margin-left: 94px;
+    display: flex;
+    height: 100%;
+}
+.intro
+{
+    width: 50vw;
+    padding-top: 5%;
+    padding-left: 3%;
+    line-height: 75px;
+    border-left: none;
+}
+.intro span
+{
+    font-size: 35px;
+    margin-top: 40%;
+}
+.intro span strong
+{
+    font-size: 50px;
+}
+#name
+{
+    font-family: 'Antic Slab', serif;
+    letter-spacing: 5px;
+    font-size: 60px;
+}
+.face
+{
+    width: 50vw;
+    border-left: none;
+}
+.category
+{
+    font-size: 50px;
+    text-align: center;
+    border-left: none;
+    border-top: none;
+}
+.about
+{
+    border-top: 3px solid black;
+    border-bottom: none;
+}
+.about-contain
+{
+    margin-top: -4px;
+    margin-left: -4px;
+    margin-left: 95px;
+    border-left: none;
+    border-top: none;
+}
+.image-1
+{
+    background-image: url("assets/home/hash-pattern.jpg");
+    background-size: cover;
+    margin-top: -4px;
+    margin-left: -4px;
+    border-bottom: none;
+    width: 120%;
+}
+.image-2
+{
+    background-image: url("assets/illustrations/2022/Master chief.jpg");
+    background-position-x: 35%;
+    margin-top: -4px;
+    margin-left: -4px;
+    border-right: none;
+    border-bottom: none;
+    width: 120%;
+}
+.image-3
+{
+    background-image: url("assets/gamedev/cube_simulator.gif");
+    background-size: 200%;
+    background-position-x: 50%;
+    margin-top: -4px;
+    margin-left: -4px;
+    border-bottom: none;
+    width: 120%;
+}
+.about-text 
+{
+    margin-top: -4px;
+    margin-left: -4px;
+    display: flex;
+}
+.textbox
+{    
+    padding: 10%;
+    padding-top: 6%;
+}
+.textbox-1
+{
+    width: 150%;
+}
+.textbox-2
+{
+    width: 80%;
+}
+.textbox-3
+{
+    width: 130%;
+}
+#home-about/*fix margin*/
+{
+    margin-top: 60%;
+    bottom: 0;
+    rotate: -5deg;
+}
+#home-about span
+{
+    font-family: 'Courier Prime', monospace;
+    font-weight: 600;
+    font-size: 45px;
+}
+#num
+{
+    font-size: 50px;
+    color: #576CC4;
+    margin-left: -65px;
+}
+.para
+{
+    margin-top: 5%;
+    font-size: 26px;
+    font-family: 'Courier Prime', monospace;
+    font-weight: light;
+    line-height: 80px;
+}
+.para strong
+{
+    font-size: 35px;
+}
+.para a
+{
+    color: #576CC4;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}

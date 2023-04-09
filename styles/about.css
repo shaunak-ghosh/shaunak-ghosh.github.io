@@ -74,7 +74,7 @@ body
 .boxes
 {
     width: 50vw;
-    background-color: yellowgreen;
+    /*background-color: yellowgreen;*/
     display: flex;/*try display grid*/
     flex-direction: row;
     justify-content: space-evenly;

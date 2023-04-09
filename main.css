@@ -1,0 +1,125 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+    font-family: 'Source Code Pro', monospace;
+}
+*::selection
+{
+    background: rgba(156, 147, 255, 0.658);
+}
+body
+{
+    background-color: #f4f1ea;    
+}
+html, body
+{
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+::-webkit-scrollbar 
+{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: rgba(18, 0, 53, 0.605);
+}
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+.links-btn
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    float: right;
+    border-radius: 50%;
+    right: 5%;
+    top: 5%;
+}
+.links-btn:hover
+{
+    box-shadow: 10px 30px 45px rgba(0, 0, 0, 0.221);
+}
+.links
+{
+    padding-left: 5%;
+    padding-top: 17vh;
+    position: absolute;
+    background-color: #b2b7f7;
+    float: right;
+    height: 100vh;
+    width: 35vw;
+    margin-left: 100vw;
+}
+.links.active
+{
+    /*put something here*/
+    transform: translateX();
+    box-shadow: -10px 0px 60px rgba(0, 0, 0, 0.36);
+}
+.links hr
+{
+    width: 70%;
+    border: 1px solid #000000;
+    margin: 1em 0;
+}
+.links ul
+{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    float: flex-end;
+}
+.links a
+{
+    color: black;
+    font-size: 28px;
+    line-height: 60px;
+}
+.box
+{
+    border: 4px solid black;
+}
+.main
+{
+    margin: 2%;
+}
+#nav
+{
+    position: fixed;
+    width: 100px;
+    height: 90vh;
+    margin-top: 3.5px;
+}
+.tab
+{
+    background-color: #f4f1ea;  
+    margin: -3.6%;
+    font-size: 30px;
+    width: 100px;
+    height: 26%;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    rotate: 180deg;
+}
+.tab:hover
+{
+    background-color: rgb(206, 202, 255);
+}
+.tab a
+{
+    writing-mode: vertical-rl;
+    height: 100%;
+    align-self: center;
+    color: black;
+}
+/*animation rotatea home-about*/
