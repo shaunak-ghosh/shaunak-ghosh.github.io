@@ -22,11 +22,9 @@
     padding-left: 3%;
     line-height: 75px;
     border-left: none;
-}
-.intro span
-{
-    font-size: 35px;
-    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .intro span
 {
@@ -37,6 +35,52 @@
     font-family: 'Cutive Mono', monospace;
     letter-spacing: -5px;
     font-size: 60px;
+}
+.work-head
+{
+    rotate: 5deg;
+}
+.work
+{
+    background-color: rgb(205, 188, 255);
+    display: flex;
+    height: 45px;
+    width: fit-content;
+    padding: 5px;
+    padding-right: 20px;
+    margin-bottom: 10%;
+    border: 2px solid black;
+    font-size: 28px;
+    
+}
+.work:hover
+{
+    box-shadow: 10px 15px 0px rgba(0, 0, 0, 0.247);
+}
+.work img
+{
+    width: inherit;
+}
+.work-head a
+{
+    margin-top: -22px;
+}
+.work a
+{
+    color: black;    
+    
+    margin-left: .5em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+}
+.work-3
+{
+    margin-top: 1em;
+}
+.work-3 a
+{
+    width: max-content;
+    font-size: 23px;    
 }
 .face
 {
@@ -115,13 +159,11 @@
 {
     width: 130%;
 }
-#home-about/*fix margin*/
+.home-about
 {
-    bottom: 0;
-    rotate: -4deg;
-    margin-top: 50%;
+    rotate: -5deg;
 }
-#home-about span
+.home-about span
 {
     font-family: 'Courier Prime', monospace;
     font-weight: 600;
@@ -129,6 +171,7 @@
 }
 #num
 {
+
     font-size: 50px;
     color: #576CC4;
     margin-left: -65px;
@@ -137,8 +180,8 @@
 {
     margin-top: 5%;
     font-size: 26px;
-    font-family: 'Courier Prime', monospace;
-    font-weight: light;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
     line-height: 80px;
 }
 .para strong

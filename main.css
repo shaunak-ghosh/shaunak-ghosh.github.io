@@ -7,7 +7,7 @@
 }
 *::selection
 {
-    background: rgba(156, 147, 255, 0.658);
+    background:rgba(208, 177, 0, 0.631);
 }
 body
 {
@@ -122,4 +122,4 @@ a
     align-self: center;
     color: black;
 }
-/*animation rotatea home-about*/
+/*animation rotate home-about*/
