@@ -1,3 +1,8 @@
+*
+{
+    font-family: 'Roboto Mono', monospace;
+    font-family;
+}
 .main-contain
 {
     height: 92.5vh;
@@ -34,7 +39,7 @@
 {
     font-family: 'Cutive Mono', monospace;
     letter-spacing: -5px;
-    font-size: 60px;
+    font-size:  70px;
 }
 .work-head
 {
@@ -70,7 +75,6 @@
     color: black;    
     
     margin-left: .5em;
-    font-family: 'Roboto Mono', monospace;
     font-weight: 600;
 }
 .work-3
@@ -142,7 +146,7 @@
     margin-left: -4px;
     display: flex;
 }
-.textbox
+.textbox, .skillsbox
 {    
     padding: 10%;
     padding-top: 6%;
@@ -169,12 +173,18 @@
     font-weight: 600;
     font-size: 45px;
 }
+#num, #head
+{
+    margin-left: -65px;
+}
 #num
 {
-
     font-size: 50px;
-    color: #576CC4;
-    margin-left: -65px;
+    color: #576CC4;    
+}
+#head
+{
+    font-size: 30px;
 }
 .para
 {
@@ -194,4 +204,38 @@
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
+}
+.skillsbox
+{    
+    width: 150%;    
+    padding-left: 15%;
+}
+.head
+{
+    font-weight: 800;
+    font-size: 38px;
+    margin-left: -2%;
+}
+.head-2, .head-3
+{
+    margin-top: 10%;
+}
+.sect
+{
+    margin-top: 4%;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+}
+.sect span
+{
+    font-size: 22px;
+    font-weight: 500;
+}
+progress
+{
+    float: right;
+    width: 50vw;
+    height: 25px;
+    border-radius: 0px;
 }
