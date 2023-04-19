@@ -140,7 +140,7 @@
     border-bottom: none;
     width: 120%;
 }
-.about-text 
+.about-text, .skills-text
 {
     margin-top: -4px;
     margin-left: -4px;
@@ -238,4 +238,46 @@ progress
     width: 50vw;
     height: 25px;
     border-radius: 0px;
+}
+.info
+{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-text
+{
+    border-bottom: none;
+}
+/*.scissors
+{
+    float: right;
+    margin-top: -6em;
+    margin-right: -10em;
+    rotate: -90deg;
+    height: 30px;
+    background-color: #f4f1ea;
+    margin-right: 50%;
+}*/
+.credit
+{
+    font-weight: 500;    
+    border-top: 2px dashed black;
+    border-bottom: none;
+    padding: 5% 0 5% 0;
+    display: flex;
+    justify-content: center;
+}
+.credit a
+{
+    font-size: 18px;
+    color: black;
+}
+.credit a:hover
+{
+    color: #576CC4;
+}
+.credit img
+{
+    height: 22px;
+    margin-right: 1em;
 }
