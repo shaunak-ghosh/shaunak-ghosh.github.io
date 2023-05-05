@@ -1,0 +1,95 @@
+.links-btn
+{
+    animation-name: appear;
+    animation-duration: 1s;
+    transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
+}
+.links-btn:hover
+{
+    transform: scale(130%);
+}
+.line-1
+{
+    animation-name: line-1-appear;
+    animation-duration: 2s;
+}
+.line-2
+{
+    animation-name: line-2-appear;
+    animation-duration: 2s;
+}
+@keyframes line-1-appear
+{
+    0%,50%
+    {
+        width: 0px;
+        height: 6px;  
+    }
+    100%
+    {
+        width:  55px;
+    }
+}
+@keyframes line-2-appear
+{
+    0%,50%
+    {
+        width: 0px;
+        height: 6px;  
+    }
+    100%
+    {
+        width:  38px;
+    }
+}
+@keyframes appear
+{
+    from
+    {
+        width: 10px;
+        height: 10px;
+        
+    }
+    to
+    {
+        width: 100px;
+        height: 100px;
+    }
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        right: 7.4%;
+        top: 9.5%;
+    }
+    55%
+    {
+        width: 95px;
+        height: 95px;
+        right: 5.1%;
+        top: 5.1%;
+    }
+    100%
+    {
+        width: 100px;
+        height: 100px;
+        right: 5%;
+        top: 5%;
+    }
+}
+.tab a
+{
+    transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
+}
+.work
+{
+    transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
+}
+.work:hover
+{
+    transform:scale(125%);
+}
+.tab :hover
+{
+    transform:scaleY(120%)
+}

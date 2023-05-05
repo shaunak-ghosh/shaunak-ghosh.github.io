@@ -11,8 +11,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="animations.css">
         <link rel="stylesheet" href="navbar.js">
         <link rel="icon" href="assets\home\logo.png">
         <style>
@@ -89,7 +91,12 @@
             </ul>       
         </div>
         <div class="main">
-            <a class="links-btn" id="links-toggle-btn"></a>
+            <a class="links-btn" id="links-toggle-btn">
+                <div class="line-contain">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                </div>                
+            </a>
             <nav id="nav">
                 <div class="box tab" id="home">
                     <a href="">HOME</a>
@@ -124,7 +131,9 @@
                             </div> 
                         </div>
                     </div>
-                    <div class="face box home-contain-div"></div>
+                    <div class="face box home-contain-div">                        
+                        <center><img src="assets\home\Face.jpg" alt=""></center>
+                    </div>
                 </div>
                 <div class="category about box">
                     ABOUT
@@ -159,7 +168,7 @@
                                 .03
                             </div>
                             <p class="para-3 para">
-                                <strong>Apart</strong> from that I am a learning game designer  trying to bring cool and fun looking video games to life!
+                                <strong>Apart</strong> from that, I am a learning game designer  trying to bring cool and fun looking video games to life!
                             </p>
                             <div class="work work-3">
                                 <img src="assets\home\icons8-external-link.svg" alt="">
@@ -169,7 +178,7 @@
                     </section>
                 </div>
                 <div class="category box">
-                        SKILLS
+                    SKILLS
                 </div>
                 <div class="skill-contain">
                     <section class="skills-text box">
@@ -262,12 +271,12 @@
                                 </div>
                             </div>
                     </section>
-                    <section>    
-                        <!--<img src="assets/scissors.svg" class="scissors" alt="">-->
-                        <div class="credit box">                            
+                    <section class="credit box">
+                        <div class="credit-contain">                                                       
                             <img src="assets/info.svg" alt="">
-                            <a href="#">Designed & built by Shaunak Ghosh</a>
+                            <a href="#">Designed & built by Shaunak Ghosh</a>                            
                         </div>
+                        <img src="assets/scissors.svg" class="scissors" alt="">
                     </section>
                 </div>
             </div>

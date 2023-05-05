@@ -13,7 +13,8 @@
       "default",
       {
         "ignore": [
-          "rotate"
+          "rotate",
+          "width: fit-content"
         ]
       }
     ]

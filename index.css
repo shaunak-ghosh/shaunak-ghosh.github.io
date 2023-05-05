@@ -1,7 +1,6 @@
 *
 {
     font-family: 'Roboto Mono', monospace;
-    font-family;
 }
 .main-contain
 {
@@ -73,7 +72,7 @@
 .work a
 {
     color: black;    
-    
+    font-family: 'Space Mono', monospace;
     margin-left: .5em;
     font-weight: 600;
 }
@@ -88,8 +87,24 @@
 }
 .face
 {
+    background-image: url("assets/patterns.png");
+    background-size: 100%;
+    background-origin: border-box;
+    margin-left: -3px;
     width: 50vw;
-    border-left: none;
+    border-left: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.face img
+{
+    border: 3px solid black;
+    width: 300px;
+    display: block;
+    top: 50%;
+    /*left: 50%;
+    transform: translateX(-50%);*/
 }
 .category
 {
@@ -190,12 +205,13 @@
 {
     margin-top: 5%;
     font-size: 26px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Space Mono', monospace;
     font-weight: 400;
     line-height: 80px;
 }
 .para strong
 {
+    font-family: 'Space Mono', monospace;
     font-size: 35px;
 }
 .para a
@@ -212,7 +228,7 @@
 }
 .head
 {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 38px;
     margin-left: -2%;
 }
@@ -221,7 +237,7 @@
     margin-top: 10%;
 }
 .sect
-{
+{    
     margin-top: 4%;
     width: 70vw;
     justify-content: center;
@@ -229,7 +245,10 @@
 }
 .sect span
 {
-    font-size: 22px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
     font-weight: 500;
 }
 progress
@@ -248,24 +267,21 @@ progress
 {
     border-bottom: none;
 }
-/*.scissors
+.scissors
 {
     float: right;
-    margin-top: -6em;
-    margin-right: -10em;
+    z-index: 10;
+    margin-top: -13em;
     rotate: -90deg;
     height: 30px;
     background-color: #f4f1ea;
-    margin-right: 50%;
-}*/
+    margin-right: 10%;
+}
 .credit
 {
-    font-weight: 500;    
+    font-weight: 500;
     border-top: 2px dashed black;
     border-bottom: none;
-    padding: 5% 0 5% 0;
-    display: flex;
-    justify-content: center;
 }
 .credit a
 {
@@ -280,4 +296,10 @@ progress
 {
     height: 22px;
     margin-right: 1em;
+}
+.credit-contain
+{    
+    padding: 5% 0 5% 0;
+    display: flex;
+    justify-content: center;
 }
