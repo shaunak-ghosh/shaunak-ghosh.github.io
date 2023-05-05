@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="animations.css">
-        <link rel="stylesheet" href="navbar.js">
+        <link rel="stylesheet" href="scripts/script.js">
         <link rel="icon" href="assets\home\logo.png">
         <style>
             progress::-webkit-progress-bar
@@ -78,7 +78,7 @@
         <title>Home | Shaunak Ghosh</title>
     </head>
     <body>
-        <div class="links" id="links-panel">
+        <!--<div class="links" id="links-panel">
             <span>Social</span>
             <hr>
             <ul>
@@ -89,26 +89,26 @@
                 <li><a href="https://github.com/Rooveloftcodes">Github</a></li>
                 <li><a href="https://www.instagram.com/rooveloftsarts">Instagram</a></li>
             </ul>       
-        </div>
+        </div>-->
         <div class="main">
             <a class="links-btn" id="links-toggle-btn">
                 <div class="line-contain">
                     <div class="line line-1"></div>
                     <div class="line line-2"></div>
-                </div>                
+                </div>
             </a>
             <nav id="nav">
                 <div class="box tab" id="home">
-                    <a href="">HOME</a>
+                    <a href="#home">HOME</a>
                 </div>
                 <div class="box tab" id="about">
-                    <a href="#">ABOUT</a>
+                    <a href="#about">ABOUT</a>
                 </div>
                 <div class="box tab" id="work">
-                    <a href="work.html">WORK</a>
+                    <a href="#">WORK</a>
                 </div>
                 <div class="box tab" id="contact">
-                    <a href="contact.html">CONTACT</a>
+                    <a href="#">CONTACT</a>
                 </div>
             </nav>
             <div class="main-contain box">
@@ -123,11 +123,13 @@
                         </div>
                         <div class="intro-2">
                             <div class="home-about" id="home-about">
-                                <span>Visual and web designer</span>
+                                <div class="rotate-about">
+                                    <span>Visual and web designer</span>
+                                </div>
                                 <div class="work work-head">
                                     <img src="assets\home\icons8-external-link.svg" alt="">
                                     <a href="work.html">Portfolio</a>
-                                </div>                                
+                                </div>
                             </div> 
                         </div>
                     </div>
@@ -142,37 +144,51 @@
                     <section class="about-text about-1 box">
                         <div class="image-1 image box"></div>
                         <div class="textbox textbox-1">
-                            <div id="num">
-                                .01
+                            <div class="num num-1">
+                                <strong>
+                                    .01
+                                </strong>                                
                             </div>
                             <p class="para-1 para">
                                 <strong>I</strong> am a junior graphic designer and front-end developer located in Kolkata, India with a passion for creating beautiful, functional designs, with a strong foundation in design principles and a willingness to learn and grow.
                             </p>
+                            <div class="work work-1">
+                                <img src="assets\home\icons8-external-link.svg" alt="">
+                                <a href="work.html">Design portfolio</a>
+                            </div>
                         </div>
                     </section>
                     <section class="about-text about-2 box">
                         <div class="textbox textbox-2">
-                            <div id="num">
-                                .02
+                            <div class="num num-2">
+                                <strong>
+                                    .02
+                                </strong>
                             </div>
                             <p class="para-2 para">
                                 <strong>Besides</strong> design I have a knack towards digital illustrations, comic-based and concept art.
                             </p>
+                            <div class="work work-2">
+                                <img src="assets\home\icons8-external-link.svg" alt="">
+                                <a href="work.html">Illustrations portfolio</a>
+                            </div>
                         </div>
                         <div class="image-2 image box"></div>
                     </section>
                     <section class="about-text about-3 box">
                         <div class="image-3 image box"></div>
                         <div class="textbox textbox-3">
-                            <div id="num">
-                                .03
+                            <div class="num num-3">
+                                <strong>
+                                    .03
+                                </strong>                                
                             </div>
                             <p class="para-3 para">
                                 <strong>Apart</strong> from that, I am a learning game designer  trying to bring cool and fun looking video games to life!
                             </p>
                             <div class="work work-3">
                                 <img src="assets\home\icons8-external-link.svg" alt="">
-                                <a href="work.html">Work</a>
+                                <a href="work.html">Gamedev portfolio</a>
                             </div>
                         </div>
                     </section>

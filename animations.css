@@ -23,7 +23,7 @@
     0%,50%
     {
         width: 0px;
-        height: 6px;  
+        height: 4px;
     }
     100%
     {
@@ -35,7 +35,7 @@
     0%,50%
     {
         width: 0px;
-        height: 6px;  
+        height: 4px;
     }
     100%
     {
@@ -47,8 +47,7 @@
     from
     {
         width: 10px;
-        height: 10px;
-        
+        height: 10px;        
     }
     to
     {
@@ -92,4 +91,13 @@
 .tab :hover
 {
     transform:scaleY(120%)
+}
+.hidden
+{
+    opacity: 0;
+    transition: all 1s;
+}
+.show
+{
+    opacity: 1;
 }

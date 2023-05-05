@@ -9,6 +9,10 @@
 {
     background:rgba(236, 193, 74, 0.631);
 }
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
     background-color: #f4f1ea;    
@@ -59,7 +63,7 @@ a
 .line
 {
     float: right;
-    height: 6px;
+    height: 4px;
     background-color: #fff;
     cursor: pointer;
 }

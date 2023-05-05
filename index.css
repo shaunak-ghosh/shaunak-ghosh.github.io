@@ -42,7 +42,7 @@
 }
 .work-head
 {
-    rotate: 5deg;
+    margin-top: 15%;
 }
 .work
 {
@@ -55,11 +55,10 @@
     margin-bottom: 10%;
     border: 2px solid black;
     font-size: 28px;
-    
 }
 .work:hover
 {
-    box-shadow: 10px 15px 0px rgba(0, 0, 0, 0.247);
+    box-shadow: 10px 15px 0px rgb(0, 0, 0);
 }
 .work img
 {
@@ -76,14 +75,15 @@
     margin-left: .5em;
     font-weight: 600;
 }
-.work-3
+.work-1, .work-2, .work-3
 {
     margin-top: 1em;
 }
-.work-3 a
+.work-1 a, .work-2 a, .work-3 a
 {
     width: max-content;
-    font-size: 23px;    
+    font-size: 22px;
+    margin-top: -1px;
 }
 .face
 {
@@ -178,9 +178,9 @@
 {
     width: 130%;
 }
-.home-about
+.rotate-about
 {
-    rotate: -5deg;
+    rotate: -5deg;    
 }
 .home-about span
 {
@@ -188,14 +188,32 @@
     font-weight: 600;
     font-size: 45px;
 }
-#num, #head
+.num, #head
 {
     margin-left: -65px;
 }
-#num
+.num
 {
     font-size: 50px;
-    color: #576CC4;    
+    margin-bottom: 1em;
+}
+.num strong
+{
+    box-shadow: 10px 15px 0px rgb(0, 0, 0);
+    border: 3px solid black;
+    padding: .2em;
+}
+.num-1 strong
+{
+    background-color: rgb(255, 133, 34);
+}
+.num-2 strong
+{
+    background-color: rgb(137, 175, 255);
+}
+.num-3 strong
+{
+    background-color: rgb(91, 209, 89);
 }
 #head
 {
