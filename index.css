@@ -295,29 +295,3 @@ progress
     background-color: #f4f1ea;
     margin-right: 10%;
 }
-.credit
-{
-    font-weight: 500;
-    border-top: 2px dashed black;
-    border-bottom: none;
-}
-.credit a
-{
-    font-size: 18px;
-    color: black;
-}
-.credit a:hover
-{
-    color: #576CC4;
-}
-.credit img
-{
-    height: 22px;
-    margin-right: 1em;
-}
-.credit-contain
-{    
-    padding: 5% 0 5% 0;
-    display: flex;
-    justify-content: center;
-}

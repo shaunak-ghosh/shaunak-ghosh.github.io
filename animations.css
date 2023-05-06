@@ -4,10 +4,6 @@
     animation-duration: 1s;
     transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
 }
-.links-btn:hover
-{
-    transform: scale(130%);
-}
 .line-1
 {
     animation-name: line-1-appear;
@@ -80,17 +76,22 @@
 {
     transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
 }
-.work
+.work, .send
 {
     transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
 }
-.work:hover
+.work:hover, .send:hover, .links-btn:hover
 {
     transform:scale(125%);
 }
+.work:active, .send:active, .links-btn:active
+{
+    transform:scale(85%);
+    box-shadow: none;
+}
 .tab :hover
 {
-    transform:scaleY(120%)
+    transform:scaleY(120%);
 }
 .hidden
 {
@@ -100,4 +101,12 @@
 .show
 {
     opacity: 1;
+}
+.info a
+{
+    transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
+}
+.info a:hover
+{
+    transform: scale(110%) translateX(5%);
 }
