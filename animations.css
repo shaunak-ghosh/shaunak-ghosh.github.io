@@ -76,15 +76,15 @@
 {
     transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
 }
-.work, .send
+.work, .send, .question
 {
     transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
 }
-.work:hover, .send:hover, .links-btn:hover
+.work:hover, .send:hover, .links-btn:hover, .question:hover
 {
     transform:scale(125%);
 }
-.work:active, .send:active, .links-btn:active
+.work:active, .send:active, .links-btn:active, .question:active
 {
     transform:scale(85%);
     box-shadow: none;
