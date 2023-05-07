@@ -72,11 +72,7 @@
         top: 5%;
     }
 }
-.tab a
-{
-    transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
-}
-.work, .send, .question
+.work, .send, .question, .tab a, .button-contain button
 {
     transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
 }
@@ -84,23 +80,19 @@
 {
     transform:scale(125%);
 }
-.work:active, .send:active, .links-btn:active, .question:active
+.button-contain button:hover
 {
-    transform:scale(85%);
+    transform:scale(110%);
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+}
+.work:active, .send:active, .links-btn:active, .question:active, .button-contain button:active
+{
+    transform: scale(85%);
     box-shadow: none;
 }
 .tab :hover
 {
-    transform:scaleY(120%);
-}
-.hidden
-{
-    opacity: 0;
-    transition: all 1s;
-}
-.show
-{
-    opacity: 1;
+    letter-spacing: 0.2em;
 }
 .info a
 {
@@ -109,4 +101,21 @@
 .info a:hover
 {
     transform: scale(110%) translateX(5%);
+}
+@keyframes disappear
+{    
+    from
+    {
+        width: 100px;
+        height: 100px;
+    }
+    to
+    {
+        width: 0px;
+        height: 0px;
+    }
+    100%
+    {
+        display: none;
+    }
 }

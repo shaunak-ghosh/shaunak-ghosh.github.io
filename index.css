@@ -1,7 +1,3 @@
-*
-{
-    font-family: 'Roboto Mono', monospace;
-}
 .main-contain
 {
     height: 92.5vh;
@@ -105,13 +101,21 @@
 }
 .work-1, .work-2, .work-3
 {
+    display: flex;
     margin-top: 1em;
+    justify-content: center;
+    align-items: center;
 }
 .work-1 a, .work-2 a, .work-3 a
 {
     width: max-content;
     font-size: 22px;
     margin-top: -1px;
+}
+.work-1 img, .work-2 img, .work-3 img
+{
+    height: 35px;
+    padding: 1%;
 }
 .face
 {

@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     cursor: default;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Space Mono', monospace;
     -webkit-user-select: none;
     user-select: none;
 }
@@ -117,6 +117,11 @@ a
 {
     margin: 2%;
 }
+.main-contain
+{
+    border-left: none;
+    /*shrink this*/
+}
 #nav
 {
     position: fixed;
@@ -143,19 +148,22 @@ a
 }
 .tab a
 {
+    font-family: 'Roboto Mono', monospace;
     writing-mode: vertical-rl;
     height: 100%;
     align-self: center;
     color: black;
 }
 .credit
-{
+{    
     font-weight: 500;
     border-top: 2px dashed black;
     border-bottom: none;
+    border-left: none;
 }
 .credit a
 {
+    font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     color: black;
 }

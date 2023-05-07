@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="work.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="animations.css">
+        <link rel="icon" href="assets\home\logo.png">
+        <title>Work | Shaunak Ghosh</title>
+    </head>
+    <body>
+        <!--<div class="links" id="links-panel">
+            <span>Social</span>
+            <hr>
+            <ul>
+                <li><a href="https://www.behance.net/shaunakghosh">Behance</a></li>
+                <li><a href="https://linkedin.com/in/shaunak-ghosh-724b27209/">LinkedIn</a></li>   
+                <li><a href="https://twitter.com/Rooveloft">Twitter</a></li>    
+                <li><a href="https://www.artstation.com/rooveloft">Artstation</a></li>
+                <li><a href="https://github.com/Rooveloftcodes">Github</a></li>
+                <li><a href="https://www.instagram.com/rooveloftsarts">Instagram</a></li>
+            </ul>
+        </div>-->
+        <div class="main">
+            <a class="links-btn" id="links-toggle-btn">
+                <div class="line-contain">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                </div>
+            </a>
+            <nav id="nav">
+                <div class="box tab" id="home">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="box tab" id="about">
+                    <a href="#about">ABOUT</a>
+                </div>
+                <div class="box tab active" id="work">
+                    <a href="#">WORK</a>
+                </div>
+                <div class="box tab" id="contact">
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </nav>
+            <div class="main-contain box">
+                <div class="skill-contain">
+                    <section class="skills-text box">
+                        <div class="textbox skillsbox">
+                            <div class="tab-contain">
+                                <div class="button-contain">
+                                    <button onclick="showPanel(0,'#a096ff')" class="all">All</button>
+                                    <button onclick="showPanel(1,'#a096ff')" class="design">Design</button>
+                                    <button onclick="showPanel(2,'#a096ff')" class="illustrations">Illustrations</button>
+                                    <button onclick="showPanel(3,'#a096ff')" class="gamedev">Gamedev</button>
+                                </div>
+                                <div class="tab-panel">Tab 1:Content</div>
+                                <div class="tab-panel">Tab 2:Content</div>
+                                <div class="tab-panel">Tab 3:Content</div>
+                                <div class="tab-panel">Tab 4:Content</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="credit box">
+                        <div class="credit-contain">
+                            <img src="assets/info.svg" alt="">
+                            <a href="#">Designed & built by Shaunak Ghosh</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/tabs.js"></script>
+    </body>
+</html>

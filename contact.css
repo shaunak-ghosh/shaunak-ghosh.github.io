@@ -6,7 +6,7 @@
 {
     height: 92.5vh;
     overflow-y: scroll;
-    margin-left: -4px;
+    margin-left: 3px;
 }
 .active
 {
@@ -15,14 +15,6 @@
 .tab a
 {
     font-family: 'Roboto Mono', monospace;
-}
-.category
-{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 50px;
-    text-align: center;
-    border-left: none;
-    border-top: none;
 }
 .textbox, .contact-text
 {    
@@ -33,6 +25,7 @@
 }
 .contact-text
 {
+    height: 100vh;
     padding-top: -20%;
     margin-left: -4px;
     border-bottom: none;
@@ -148,3 +141,22 @@
 {
     font-family: 'Roboto Mono', monospace;
 }
+#contact
+{
+    border-left: none;
+}
+.links-btn
+{
+    width: 0;
+    height: 0;
+    animation-name: disappear;
+    animation-duration: 2s;
+}
+.line-contain, .line
+{
+    display: none;
+}
+/*.links-btn div
+{
+    animation-name: vanish;
+}*/
