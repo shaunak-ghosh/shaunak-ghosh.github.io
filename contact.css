@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
 }
-.input input
+.input input[type="text"]
 {
     background-color: transparent;
     border: none;
@@ -76,9 +76,11 @@
     border-bottom: 3px solid black;
     margin-bottom: 8%;
     cursor:auto;
+    outline: none;
+    caret-shape: underscore;
     /*transition: ease-in-out, width .35s ease-in-out;*/
 }
-.input input:focus
+.input input[type="text"]:focus
 {
     color: black;
     border: none;
