@@ -36,10 +36,6 @@
     letter-spacing: -5px;
     font-size:  70px;
 }
-.work-head, .question
-{
-    margin-top: 15%;
-}
 .buttons
 {
     display: flex;
@@ -55,6 +51,11 @@
     margin-bottom: 10%;
     border: 2px solid black;
     font-size: 28px;
+    cursor: pointer;
+}
+.work-head, .question
+{
+    margin-top: 15%;
 }
 .question
 {
@@ -81,8 +82,7 @@
 }
 .work a
 {
-    color: black;    
-    font-family: 'Space Mono', monospace;
+    color: black;
     margin-left: .5em;
     font-weight: 600;
 }
@@ -95,8 +95,7 @@
 }
 .question a
 {
-    color: black;    
-    font-family: 'Space Mono', monospace;
+    color: black;
     font-weight: 600;
 }
 .work-1, .work-2, .work-3
@@ -143,12 +142,10 @@
     font-size: 50px;
     text-align: center;
     border-left: none;
-    border-top: none;
 }
 .about
 {
     border-top: 3px solid black;
-    border-bottom: none;
 }
 .about-contain
 {
@@ -160,32 +157,36 @@
 }
 .image-1
 {
-    background-image: url("assets/home/hash-pattern.jpg");
-    background-size: cover;
+    /*background-image: url("assets/home/hash-pattern.jpg");*/
     margin-top: -4px;
     margin-left: -4px;
-    border-bottom: none;
-    width: 120%;
+    width: 200%;
 }
 .image-2
 {
-    background-image: url("assets/illustrations/2022/Master chief.jpg");
+    /*background-image: url("assets/illustrations/2022/Master chief.jpg");*/
     background-position-x: 35%;
     margin-top: -4px;
     margin-left: -4px;
     border-right: none;
-    border-bottom: none;
     width: 120%;
 }
 .image-3
 {
-    background-image: url("assets/gamedev/cube_simulator.gif");
+    /*background-image: url("assets/gamedev/cube_simulator.gif");*/
     background-size: 200%;
     background-position-x: 50%;
     margin-top: -4px;
     margin-left: -4px;
-    border-bottom: none;
     width: 120%;
+}
+.about-1, .about-2
+{
+    border-bottom: 3px dashed black;
+}
+.about-1, .about-2, .about-3
+{
+    border-right: 4px solid black;
 }
 .about-text, .skills-text
 {
@@ -194,17 +195,14 @@
     display: flex;
 }
 .textbox, .skillsbox
-{    
-    padding: 10%;
-    padding-top: 6%;
-}
-.textbox-1
 {
-    width: 150%;
+    padding: 9%;
+    padding-top: 6%;
+    padding-bottom: 3%;
 }
 .textbox-2
 {
-    width: 80%;
+    width: 130%;
 }
 .textbox-3
 {
@@ -226,7 +224,7 @@
 }
 .num
 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 1em;
 }
 .num strong
@@ -237,7 +235,7 @@
 }
 .num-1 strong
 {
-    background-color: rgb(255, 133, 34);
+    background-color: #fdb480;
 }
 .num-2 strong
 {
@@ -245,7 +243,7 @@
 }
 .num-3 strong
 {
-    background-color: rgb(91, 209, 89);
+    background-color: #91d572;
 }
 #head
 {
@@ -253,28 +251,27 @@
 }
 .para
 {
-    margin-top: 5%;
+    margin-top: 10%;
     font-size: 26px;
     font-family: 'Space Mono', monospace;
     font-weight: 400;
-    line-height: 80px;
+    line-height: 247.4%;
 }
-.para strong
+.para-1, .para-3
 {
-    font-family: 'Space Mono', monospace;
-    font-size: 35px;
+    text-align: end;
 }
-.para a
+.skills-box
 {
-    color: #576CC4;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-.skillsbox
-{    
-    width: 150%;    
+    padding-top: 10%;
     padding-left: 15%;
+    padding-bottom: 10%;
+    font-size: 55px;
+    font-weight: 800;
+}
+.skills-text
+{
+    border-bottom: none;
 }
 .head
 {
@@ -312,10 +309,6 @@ progress
 {
     display: flex;
     justify-content: space-between;
-}
-.skills-text
-{
-    border-bottom: none;
 }
 .scissors
 {
