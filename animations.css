@@ -90,9 +90,13 @@
     transform: scale(85%);
     box-shadow: none;
 }
-.tab :hover
+.tab:hover
 {
     letter-spacing: 0.2em;
+}
+.active:hover
+{
+    letter-spacing: normal;
 }
 .info a
 {

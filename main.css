@@ -34,6 +34,12 @@ a
     text-decoration: none;
     cursor: pointer;
 }
+.main-contain
+{
+    height: 92.5vh;
+    overflow-y: scroll;
+    margin-left: 3px;
+}
 .links-btn
 {
     position: absolute;
@@ -154,6 +160,11 @@ a
     align-self: center;
     color: black;
     line-height: 95px;
+}
+.active
+{
+    width: 110px;
+    margin-left: -14px;
 }
 .credit
 {    

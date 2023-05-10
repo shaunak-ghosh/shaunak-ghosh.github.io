@@ -2,12 +2,6 @@
 {
     font-family: 'Space Mono', monospace;
 }
-.main-contain
-{
-    height: 92.5vh;
-    overflow-y: scroll;
-    margin-left: 3px;
-}
 .active
 {
     background-color: rgb(199, 182, 255);

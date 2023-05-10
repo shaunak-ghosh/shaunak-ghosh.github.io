@@ -1,9 +1,3 @@
-.main-contain
-{
-    height: 92.5vh;
-    overflow-y: scroll;
-    margin-left: -4px;
-}
 .home-contain, .home-contain-div
 {
     border-top: none;
@@ -116,6 +110,10 @@
     height: 35px;
     padding: 1%;
 }
+.work-1, .work-3
+{
+    float: right;
+}
 .face
 {
     background-image: url("assets/patterns.png");
@@ -161,6 +159,7 @@
     margin-top: -4px;
     margin-left: -4px;
     width: 200%;
+    background-color: #ff6a0043;
 }
 .image-2
 {
@@ -170,6 +169,7 @@
     margin-left: -4px;
     border-right: none;
     width: 120%;
+    background-color: #003cff43;
 }
 .image-3
 {
@@ -179,6 +179,7 @@
     margin-top: -4px;
     margin-left: -4px;
     width: 120%;
+    background-color: #00930f43;
 }
 .about-1, .about-2
 {
@@ -200,11 +201,7 @@
     padding-top: 6%;
     padding-bottom: 3%;
 }
-.textbox-2
-{
-    width: 130%;
-}
-.textbox-3
+.textbox-2, .textbox-3
 {
     width: 130%;
 }
