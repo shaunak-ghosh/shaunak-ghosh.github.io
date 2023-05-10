@@ -7,13 +7,9 @@
     -webkit-user-select: none;
     user-select: none;
 }
-html
-{
-    scroll-behavior: smooth;
-}
 body
 {
-    background-color: #f4f1ea;    
+    background-color: #f4f1ea;
 }
 html, body
 {
