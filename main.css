@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 *
 {
     margin: 0;
@@ -86,7 +88,7 @@ a
     width: 35vw;
     margin-left: 100vw;
 }
-.links.active
+.links.active/*why is this here?*/
 {
     /*put something here*/
     transform: translateX();
