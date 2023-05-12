@@ -1,15 +1,6 @@
-*
-{
-    font-family: 'Space Mono', monospace;
-}
-.active
-{
-    background-color: #c7b6ff;
-}
 .button-contain button
 {
     border: 2px solid black;
-    font-family: 'Space Mono', monospace;
     border-radius: 55px;
     font-size: 25px;
     padding: 0.5em;
@@ -18,7 +9,22 @@
     margin-bottom: 5%;
     cursor: pointer;
 }
-#work
+.work-text
 {
-    border-left: none;
+    border-right: 4px solid black;
+    margin-top: 0;
+    padding-top: 5em;
+    padding-left: 10%;
+}
+.work-text strong
+{
+    font-size: 55px;
+}
+.workbox
+{
+    padding: 0%;
+}
+.button-contain
+{
+    margin-top: 2%;
 }

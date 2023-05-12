@@ -2,14 +2,6 @@
 {
     font-family: 'Space Mono', monospace;
 }
-.active
-{
-    background-color: rgb(199, 182, 255);
-}
-.tab a
-{
-    font-family: 'Roboto Mono', monospace;
-}
 .textbox, .contact-text
 {    
     padding: 10%;
@@ -31,18 +23,15 @@
     padding-top: 6%;
     padding-left: 0;
     display: flex;
-    /*background-color: yellow;*/
     width: 70vw;
 }
 .form
 {
-    /*background-color: yellowgreen;*/
     width: 70vw;
     margin-left: 5%;
 }
 .info
 {
-    /*background-color: violet;*/
     margin-left: 10%;
 }
 .contact-text strong
@@ -58,6 +47,10 @@
 {
     display: flex;
     flex-direction: column;
+}
+.input input::selection
+{
+    background-color: var(--highlight);
 }
 .input input[type="text"], .input input[type="email"]
 {
@@ -101,28 +94,7 @@
 }
 .info a:hover
 {
-    color: #576CC4;
-}
-.send
-{
-    background-color: rgb(205, 188, 255);
-    display: flex;
-    height: 45px;
-    width: fit-content;
-    padding: 5px;
-    padding-right: 20px;
-    margin-bottom: 10%;
-    border: 2px solid black;
-    font-size: 28px;
-    margin-top: 1em;
-}
-.send:hover
-{
-    box-shadow: 10px 15px 0px rgb(0, 0, 0);
-}
-.send img
-{
-    width: inherit;
+    color: var(--palette-color-1);
 }
 .send a
 {
@@ -152,7 +124,3 @@
 {
     display: none;
 }
-/*.links-btn div
-{
-    animation-name: vanish;
-}*/

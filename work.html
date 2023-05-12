@@ -12,7 +12,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="work.css">
-        <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="animations.css">
         <link rel="icon" href="assets\home\logo.png">
         <title>Work | Shaunak Ghosh</title>
@@ -39,12 +38,12 @@
             </a>
             <nav id="nav">
                 <div class="box tab" id="home">
-                    <a href="/index.html">HOME</a>
+                    <a href="index.html">HOME</a>
                 </div>
                 <div class="box tab" id="about">
-                    <a href="/index.html#about">ABOUT</a>
+                    <a href="index.html#about">ABOUT</a>
                 </div>
-                <div class="box tab active" id="work">
+                <div class="box active" id="work">
                     <a href="#">WORK</a>
                 </div>
                 <div class="box tab" id="contact">
@@ -52,20 +51,24 @@
                 </div>
             </nav>
             <div class="main-contain box">
-                <div class="skill-contain">
-                    <section class="skills-text box">
-                        <div class="textbox skillsbox">
+                <div class="skill-contain">                    
+                    <section class="work-text">
+                        
+                        <strong>What I have been doing</strong>
+                        <div class="textbox workbox">                            
                             <div class="tab-contain">
                                 <div class="button-contain">
-                                    <button onclick="showPanel(0,'#a096ff')" class="all">All</button>
-                                    <button onclick="showPanel(1,'#a096ff')" class="design">Design</button>
-                                    <button onclick="showPanel(2,'#a096ff')" class="illustrations">Illustrations</button>
-                                    <button onclick="showPanel(3,'#a096ff')" class="gamedev">Gamedev</button>
+                                    <button onclick="showPanel(0,'var(--all-tab)')" class="all">All</button>
+                                    <button onclick="showPanel(1,'var(--design-tab)')" class="design">Design</button>
+                                    <button onclick="showPanel(2,'var(--illustrations-tab)')" class="illustrations">Illustrations</button>
+                                    <button onclick="showPanel(3,'var(--gamedev-tab)')" class="gamedev">Gamedev</button>
+                                    <button onclick="showPanel(4,'var(--experiments-tab)')" class="gamedev">Experiments</button>
                                 </div>
                                 <div class="tab-panel">Tab 1:Content</div>
                                 <div class="tab-panel">Tab 2:Content</div>
                                 <div class="tab-panel">Tab 3:Content</div>
                                 <div class="tab-panel">Tab 4:Content</div>
+                                <div class="tab-panel">Tab 5:Content</div>
                             </div>
                         </div>
                     </section>

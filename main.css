@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+:root
+{    
+    --scrollbar: #1200359a;
+    --background: #f4f1ea;    
+    --palette-color-1: #8b79d4;
+    --palette-color-2: #cabbff;
+    --palette-color-3: #e3ddff;
+    --active-tab: #d3c9f5;
+    --all-tab: #c1b2ff;
+    --design-tab:#f09f9f;
+    --illustrations-tab: #9ac9ff;
+    --gamedev-tab: #a7d792;
+    --highlight: #f8d040;
+    --experiments-tab: #ffd187;
+}
 *
 {
     margin: 0;
@@ -9,12 +24,9 @@
     -webkit-user-select: none;
     user-select: none;
 }
-body
-{
-    background-color: #f4f1ea;
-}
 html, body
 {
+    background-color: #f4f1ea;
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -25,7 +37,7 @@ html, body
 }
 ::-webkit-scrollbar-thumb
 {
-    background: rgba(18, 0, 53, 0.605);
+    background: var(--scrollbar);
 }
 a
 {
@@ -66,7 +78,7 @@ a
 {
     float: right;
     height: 4px;
-    background-color: #fff;
+    background-color: white;
     cursor: pointer;
 }
 .line-1
@@ -82,7 +94,7 @@ a
     padding-left: 5%;
     padding-top: 17vh;
     position: absolute;
-    background-color: #b2b7f7;
+    background-color: var(--palette-color-1);
     float: right;
     height: 100vh;
     width: 35vw;
@@ -97,7 +109,7 @@ a
 .links hr
 {
     width: 70%;
-    border: 1px solid #000000;
+    border: 1px solid black;
     margin: 1em 0;
 }
 .links ul
@@ -124,7 +136,6 @@ a
 .main-contain
 {
     border-left: none;
-    /*shrink this*/
 }
 #nav
 {
@@ -133,9 +144,9 @@ a
     height: 90vh;
     margin-top: 3.5px;
 }
-.tab
+.tab, .active
 {
-    background-color: #f4f1ea;  
+    background-color: var(--background);
     margin: -3.6%;
     font-size: 30px;
     width: 100px;
@@ -148,9 +159,36 @@ a
 }
 .tab:hover
 {
-    background-color: rgb(206, 202, 255);
+    background-color:var(--palette-color-3);
 }
-.tab a
+.button
+{
+    background-color: var(--palette-color-2);
+    display: flex;
+    height: 45px;
+    width: fit-content;
+    padding: 5px;
+    padding-right: 20px;
+    margin-bottom: 10%;
+    border: 2px solid black;
+    font-size: 28px;
+    cursor: pointer;
+}
+.button img
+{
+    width: inherit;
+}
+.button a
+{
+    color: black;
+    margin-left: .5em;
+    font-weight: 600;
+}
+.button:hover
+{
+    box-shadow: 10px 15px 0px rgb(0, 0, 0);
+}
+.tab a, .active a
 {
     font-family: 'Roboto Mono', monospace;
     writing-mode: vertical-rl;
@@ -161,8 +199,14 @@ a
 }
 .active
 {
+    background-color: var(--active-tab);
     width: 110px;
     margin-left: -14px;
+    border-left: none;
+}
+.active a
+{
+    cursor:default;
 }
 .credit
 {    
@@ -179,7 +223,7 @@ a
 }
 .credit a:hover
 {
-    color: #576CC4;
+    color: var(--palette-color-1);
 }
 .credit img
 {
@@ -187,7 +231,7 @@ a
     margin-right: 1em;
 }
 .credit-contain
-{    
+{
     padding: 5% 0 5% 0;
     display: flex;
     justify-content: center;
