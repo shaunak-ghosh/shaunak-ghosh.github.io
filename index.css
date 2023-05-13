@@ -40,34 +40,29 @@
 }
 .question
 {
+    background-color: var(--palette-color-2);
     text-align: center;
-    display: flex;
-    height: 45px;
     width: 45px;
-    padding: 5px;
+    height: 45px;
     border: 2px solid black;
-    font-size: 30px;
-    margin-left: 1.5em;
-}
-.work:hover, .question:hover
-{
-    box-shadow: 10px 15px 0px rgb(0, 0, 0);
-}
-.work-head a, .question a
-{
-    margin-top: -22px;
-}
-.question
-{
-    border-radius: 55%;
-    padding: 5px;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
+    font-size: 2px;
+    margin-left: 30px;
+    border-radius: 55px;
 }
 .question a
 {
+    cursor: default;
+    font-size: 30px;
     color: black;
     font-weight: 600;
+}
+.button:hover
+{
+    box-shadow: 10px 15px 0px rgb(0, 0, 0);
+}
+.work-head a
+{
+    margin-top: -22px;
 }
 .work-1, .work-2, .work-3
 {
@@ -293,4 +288,34 @@ progress
     height: 30px;
     background-color: #f4f1ea;
     margin-right: 10%;
+}
+@media screen and (max-width:1440px) 
+{
+    .num
+    {
+        font-size: 37px;
+        margin-bottom: 1em;
+    }
+    .work-1 a, .work-2 a, .work-3 a
+    {
+        width: max-content;
+        font-size: 20px;
+        margin-top: -1px;
+    }
+    .para
+    {
+        margin-top: 10%;
+        font-size: 22px;
+        line-height: 200%;
+    }
+}
+@media screen and (max-width:1200px) 
+{
+    progress
+    {
+        float: right;
+        width: 40vw;
+        height: 25px;
+        border-radius: 0px;
+    }
 }
