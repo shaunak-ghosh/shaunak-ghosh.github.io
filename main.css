@@ -137,7 +137,7 @@ a
 {
     border-left: none;
 }
-#nav
+nav
 {
     position: fixed;
     width: 100px;
@@ -236,6 +236,56 @@ a
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width:1440px) 
-{    
+@media screen and (max-width:1092px)
+{
+    .main
+    {
+        margin-top: 8%;
+    }
+    nav
+    {
+        z-index: 5;
+        display: flex;
+        position: fixed;
+        width: 96%;
+        height: 100px;
+        padding: 0;
+        padding-left: -10%;
+        margin-top: -2%;
+        align-items: end;
+    }
+    .tab, .active
+    {        
+        background-color: var(--background);        
+        margin: 0;
+        width: 25%;
+        rotate: 0deg;
+        padding: 5%;
+        height: 20%;
+    }
+    .tab a, .active a
+    {
+        margin-top: -80%;
+        height: 20vw;
+        width: 70%;
+        margin-left: -5px;
+        font-size: 30px;
+        line-height: 95px;
+        rotate: -90deg;
+        align-self: center;
+    }
+    .main-contain
+    {
+        border-left: 3px solid black;
+        border-top: none;
+        margin-left: 0;
+    }
+    .active
+    {
+        background-color: var(--palette-color-2);
+        margin-left: 0;
+        padding-top: 10%;
+        height: 50%;
+        border-bottom: none;
+    }    
 }

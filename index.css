@@ -104,8 +104,6 @@
     width: 300px;
     display: block;
     top: 50%;
-    /*left: 50%;
-    transform: translateX(-50%);*/
 }
 .category
 {
@@ -127,7 +125,7 @@
 }
 .image-1
 {
-    /*background-image: url("assets/home/hash-pattern.jpg");*/
+    /* background-image: url("assets/home/hash-pattern.jpg"); */
     margin-top: -4px;
     margin-left: -4px;
     width: 200%;
@@ -135,7 +133,7 @@
 }
 .image-2
 {
-    /*background-image: url("assets/illustrations/2022/Master chief.jpg");*/
+    /* background-image: url("assets/illustrations/2022/Master chief.jpg"); */
     background-position-x: 35%;
     margin-top: -4px;
     margin-left: -4px;
@@ -151,7 +149,12 @@
     margin-top: -4px;
     margin-left: -4px;
     width: 120%;
-    background-color: #00930f43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    mix-blend-mode:multiply;
 }
 .about-1, .about-2
 {
@@ -291,10 +294,21 @@ progress
 }
 @media screen and (max-width:1440px) 
 {
+    .category
+    {
+        font-size: 45px;
+    }
     .num
     {
         font-size: 37px;
         margin-bottom: 1em;
+    }
+    .image-1
+    {
+        width: 300%;
+    }
+    .work-head a{
+        font-size: 20px;
     }
     .work-1 a, .work-2 a, .work-3 a
     {
@@ -317,5 +331,36 @@ progress
         width: 40vw;
         height: 25px;
         border-radius: 0px;
+    }
+}
+@media screen and (max-width:1092px)
+{
+    .home-tab
+    {
+        border-left: 3px solid black;
+    }
+    .intro
+    {
+        width: 100%;
+        margin-left: -3px;
+    }
+    .face
+    {
+        width: 100%;
+        border-left: none;
+    }
+    .tab
+    {
+        border-left: none;
+    }
+    .active
+    {
+        border-left: 3px solid black;
+    }
+    .home-contain
+    {
+        margin-top: 10vh;
+        margin-left: 0;
+        height: 90%;
     }
 }

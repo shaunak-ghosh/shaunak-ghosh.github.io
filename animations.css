@@ -124,3 +124,14 @@
         display: none;
     }
 }
+@media screen and (max-width:1092px)
+{
+    a:hover, button:hover, div:hover
+    {
+        transform: none;
+    }
+    a:active, button:active, div:active
+    {
+        transform: none;
+    }
+}
