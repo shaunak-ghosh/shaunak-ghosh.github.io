@@ -14,6 +14,49 @@
     animation-name: line-2-appear;
     animation-duration: 2s;
 }
+.button-contain button:hover
+{
+    transform:scale(110%);
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+}
+.work, .send, .question, .button-contain button
+{
+    transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.92);
+}
+.work:hover, .send:hover, .links-btn:hover, .question:hover
+{
+    transform:scale(125%);
+}
+.work:active, .send:active, .links-btn:active, .question:active, .button-contain button:active
+{
+    transform: scale(85%);
+    box-shadow: none;
+}
+@media screen and (min-width:1092px)
+{    
+    .tab a
+    {
+        transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.92);
+    }
+    
+    .tab
+    {
+        transition: all .1s cubic-bezier(0.14, 0.01, 0.72, 0.99);
+    }
+    .tab:hover
+    {
+        width: 105px;
+        margin-left: -8.5px;
+    }
+    .info a
+    {
+        transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
+    }
+    .info a:hover
+    {
+        transform: scale(110%) translateX(5%);
+    }
+}
 @keyframes line-1-appear
 {
     0%,50%
@@ -72,41 +115,6 @@
         top: 5%;
     }
 }
-.work, .send, .question, .tab a, .button-contain button
-{
-    transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.92);
-}
-.work:hover, .send:hover, .links-btn:hover, .question:hover
-{
-    transform:scale(125%);
-}
-.button-contain button:hover
-{
-    transform:scale(110%);
-    box-shadow: 5px 5px 0px rgb(0, 0, 0);
-}
-.work:active, .send:active, .links-btn:active, .question:active, .button-contain button:active
-{
-    transform: scale(85%);
-    box-shadow: none;
-}
-.tab
-{
-    transition: all .1s cubic-bezier(0.14, 0.01, 0.72, 0.99);
-}
-.tab:hover
-{
-    width: 105px;
-    margin-left: -8.5px;
-}
-.info a
-{
-    transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
-}
-.info a:hover
-{
-    transform: scale(110%) translateX(5%);
-}
 @keyframes disappear
 {    
     from
@@ -122,16 +130,5 @@
     100%
     {
         display: none;
-    }
-}
-@media screen and (max-width:1092px)
-{
-    a:hover, button:hover, div:hover
-    {
-        transform: none;
-    }
-    a:active, button:active, div:active
-    {
-        transform: none;
     }
 }

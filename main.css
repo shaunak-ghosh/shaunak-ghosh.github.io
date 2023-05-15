@@ -12,8 +12,8 @@
     --design-tab:#f09f9f;
     --illustrations-tab: #9ac9ff;
     --gamedev-tab: #a7d792;
-    --highlight: #f8d040;
     --experiments-tab: #ffd187;
+    --highlight: #f8d040;    
 }
 *
 {
@@ -31,6 +31,11 @@ html, body
     overflow-x: hidden;
     overflow-y: hidden;
 }
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+}
 ::-webkit-scrollbar 
 {
     width: 8px;
@@ -38,11 +43,6 @@ html, body
 ::-webkit-scrollbar-thumb
 {
     background: var(--scrollbar);
-}
-a
-{
-    text-decoration: none;
-    cursor: pointer;
 }
 .main-contain
 {
@@ -100,9 +100,8 @@ a
     width: 35vw;
     margin-left: 100vw;
 }
-.links.active/*why is this here?*/
+.links.active
 {
-    /*put something here*/
     transform: translateX();
     box-shadow: -10px 0px 60px rgba(0, 0, 0, 0.36);
 }
@@ -236,26 +235,35 @@ nav
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width:1092px)
+@media screen and (max-width:1200px)
 {
+    .box
+    {
+        border: 3px solid black;
+    }
+}
+@media screen and (max-width:768px)
+{    
     .main
     {
         margin-top: 8%;
     }
     nav
     {
+        background-color: var(--background);
         z-index: 5;
         display: flex;
         position: fixed;
         width: 96%;
-        height: 100px;
+        height: 15vw;
         padding: 0;
         padding-left: -10%;
-        margin-top: -2%;
+        margin-top: -7.5%;
         align-items: end;
+        align-self: flex-start;
     }
     .tab, .active
-    {        
+    {
         background-color: var(--background);        
         margin: 0;
         width: 25%;
@@ -265,14 +273,22 @@ nav
     }
     .tab a, .active a
     {
-        margin-top: -80%;
-        height: 20vw;
-        width: 70%;
+        margin-top: -70px;
+        height: 145px;
+        line-height: 150%;
+        width: 40%;
         margin-left: -5px;
-        font-size: 30px;
-        line-height: 95px;
+        font-size: 25px;        
         rotate: -90deg;
         align-self: center;
+    }
+    .active
+    {
+        background-color: var(--palette-color-2);
+        margin-left: 0;
+        padding-top: 8%;
+        height: 50%;
+        border-bottom: none;
     }
     .main-contain
     {
@@ -280,12 +296,4 @@ nav
         border-top: none;
         margin-left: 0;
     }
-    .active
-    {
-        background-color: var(--palette-color-2);
-        margin-left: 0;
-        padding-top: 10%;
-        height: 50%;
-        border-bottom: none;
-    }    
 }

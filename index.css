@@ -126,17 +126,12 @@
 .image-1
 {
     /* background-image: url("assets/home/hash-pattern.jpg"); */
-    margin-top: -4px;
-    margin-left: -4px;
     width: 200%;
     background-color: #ff6a0043;
 }
 .image-2
 {
     /* background-image: url("assets/illustrations/2022/Master chief.jpg"); */
-    background-position-x: 35%;
-    margin-top: -4px;
-    margin-left: -4px;
     border-right: none;
     width: 120%;
     background-color: #003cff43;
@@ -144,10 +139,6 @@
 .image-3
 {
     /*background-image: url("assets/gamedev/cube_simulator.gif");*/
-    background-size: 200%;
-    background-position-x: 50%;
-    margin-top: -4px;
-    margin-left: -4px;
     width: 120%;
     display: flex;
     justify-content: center;
@@ -292,6 +283,13 @@ progress
     background-color: #f4f1ea;
     margin-right: 10%;
 }
+@media screen and (max-width:1560px)
+{
+    .intro strong
+    {
+        font-size: 50px;
+    }
+} 
 @media screen and (max-width:1440px) 
 {
     .category
@@ -322,6 +320,11 @@ progress
         font-size: 22px;
         line-height: 200%;
     }
+    .intro-1 span
+    {
+        font-size: 45px;
+    }
+    
 }
 @media screen and (max-width:1200px) 
 {
@@ -333,8 +336,13 @@ progress
         border-radius: 0px;
     }
 }
-@media screen and (max-width:1092px)
+@media screen and (max-width:768px)
 {
+    .main-contain
+    {
+        height: 90vh;
+    }
+    
     .home-tab
     {
         border-left: 3px solid black;
@@ -343,6 +351,7 @@ progress
     {
         width: 100%;
         margin-left: -3px;
+        border-right: none;
     }
     .face
     {
@@ -361,6 +370,18 @@ progress
     {
         margin-top: 10vh;
         margin-left: 0;
-        height: 90%;
+        height: 80vh;        
+    }
+    .about-contain
+    {
+        margin-left: 0;
+    }
+    .about-text
+    {
+        flex-direction: column;        
+    }
+    .image
+    {
+        height: 250px;
     }
 }
