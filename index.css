@@ -90,6 +90,7 @@
 {
     background-image: url("assets/patterns.png");
     background-size: 100%;
+    image-rendering: auto;
     background-origin: border-box;
     margin-left: -3px;
     width: 50vw;
@@ -341,8 +342,7 @@ progress
     .main-contain
     {
         height: 90vh;
-    }
-    
+    }    
     .home-tab
     {
         border-left: 3px solid black;
@@ -378,10 +378,66 @@ progress
     }
     .about-text
     {
-        flex-direction: column;        
+        flex-direction: column;
+    }
+    .about-2
+    {
+        flex-direction: column-reverse;
     }
     .image
     {
-        height: 250px;
+        height: 50vh;        
+        margin-top: 3px;
+        width: 100%;
+    }
+    .image-1
+    {
+        border-bottom: 3px solid black;
+    }
+    .textbox-num
+    {
+        display: none;
+    }
+    .para
+    {
+        margin-top: 0;
+        font-size: 22px;
+        text-align: left;
+    }
+    .textbox
+    {
+        width: 100%;
+    }
+    .skills-text
+    {
+        border-top: none;
+    }
+    .skills-box
+    {
+        padding: 10%;
+    }
+    .info
+    {
+        width: 107%;
+        height: auto;
+        vertical-align: middle;
+    }
+    .info span
+    {
+        font-size: 22px;
+    }
+    progress
+    {
+        float: right;
+        width: 50%;
+        height: 100%px;
+        border-radius: 0px;
+    }
+}
+@media screen and (max-width:639px)
+{
+    .para
+    {
+        font-size: 18px;
     }
 }
