@@ -23,6 +23,7 @@
     font-family: 'Space Mono', monospace;
     -webkit-user-select: none;
     user-select: none;
+    
 }
 html, body
 {
@@ -201,7 +202,7 @@ nav
     background-color: var(--active-tab);
     width: 110px;
     margin-left: -14px;
-    border-left: 1px dashed black;
+    border-left: 2px dashed black;
 }
 .active a
 {
@@ -243,11 +244,16 @@ nav
         border: 3px solid black;
     }
 }
-@media screen and (max-width:768px)
+/*@media screen and (max-width:768px)
 {    
     .main
     {
         margin-top: 8%;
+    }
+    .links-btn
+    {
+        z-index: 6;
+        display: none;
     }
     nav
     {
@@ -305,5 +311,79 @@ nav
     .credit a
     {
         font-size: 15px;
+    }
+}*/
+@media screen and (max-width:768px)
+{
+    ::-webkit-scrollbar 
+    {
+        background-color: var(--palette-color-3);
+        border-left: 3px solid black;
+    }
+    .main, .main-contain
+    {
+        overflow-x: hidden;
+        width: 99.9vw;
+        border: none;
+    }
+    #nav
+    {
+        /*background-color: var(--highlight);*/
+        z-index: 10;
+        background-color: var(--background);
+        width: 100vw;
+        height: 65px;
+        margin: 0;        
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }    
+    .tab, .active
+    {
+        background: transparent;
+        border: none;    
+        margin: 0;
+        margin-top: 0;
+        width: 25%;
+        rotate: 0deg;
+        height: 65px;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+    }    
+    .tab a
+    {        
+        /*background-color:rgba(0, 0, 0, 0.326);*/
+        margin-top: -40px;
+        height: 145px;
+        line-height: 150%;
+        margin-left: -5px;
+        font-size: 25px;        
+        rotate: -90deg;
+        align-self: center;
+        
+    }
+    .active
+    {
+        background-color: #c1b2ff;
+        border-bottom: 2px dashed black;
+    }
+    .active a
+    {        
+        line-height: 65px;
+    }
+    .main, .main-contain
+    {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .credit
+    {
+        padding: 5%;
+    }
+    .credit, .skill-contain, .contact-text, .work-text /*work text needs to be modified in work.css*/
+    {
+        border-right: none;
     }
 }

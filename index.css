@@ -60,26 +60,21 @@
 {
     box-shadow: 10px 15px 0px rgb(0, 0, 0);
 }
-.work-head a
-{
-    margin-top: -22px;
-}
-.work-1, .work-2, .work-3
+.work-1, .work-2, .work-3/*fix this*/
 {
     display: flex;
     margin-top: 1em;
     justify-content: center;
     align-items: center;
 }
-.work-1 a, .work-2 a, .work-3 a
+.work a
 {
-    width: max-content;
     font-size: 22px;
     margin-top: -1px;
 }
-.work-1 img, .work-2 img, .work-3 img
+.work img
 {
-    height: 35px;
+    height: 100%;
     padding: 1%;
 }
 .work-1, .work-3
@@ -286,13 +281,21 @@ progress
 }
 @media screen and (max-width:1560px)
 {
-    .intro strong
+    #name
     {
         font-size: 50px;
     }
 } 
 @media screen and (max-width:1440px) 
 {
+    #name
+    {
+        font-size: 55px;
+    }
+    .rotate-about span
+    {
+        font-size: 35px;
+    }
     .category
     {
         font-size: 45px;
@@ -305,9 +308,6 @@ progress
     .image-1
     {
         width: 300%;
-    }
-    .work-head a{
-        font-size: 20px;
     }
     .work-1 a, .work-2 a, .work-3 a
     {
@@ -341,7 +341,7 @@ progress
 {
     .main-contain
     {
-        height: 90vh;
+        height: 100vh;
     }    
     .home-tab
     {
@@ -386,7 +386,7 @@ progress
     }
     .image
     {
-        height: 50vh;        
+        height: 40vh;        
         margin-top: 3px;
         width: 100%;
     }
@@ -430,14 +430,87 @@ progress
     {
         float: right;
         width: 50%;
-        height: 100%px;
+        height: .4em;
         border-radius: 0px;
     }
+    .work-1, .work-3
+    {
+        float: left;
+    }
+    .head
+    {
+        font-size: 30px;
+    }
 }
-@media screen and (max-width:639px)
+@media screen and (max-width:768px)
 {
+    .home-contain
+    {
+        margin: 65px 0 0 0;
+        padding: 0;
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100vw;
+    }
+    .links-btn
+    {
+        display: none;
+    }
+    .home-tab
+    {
+        border-left: none;
+    }
+    .contact-tab
+    {
+        border-right: none;
+    }
     .para
     {
         font-size: 18px;
     }
+    .face
+    {
+        height: 35vh;
+        align-self: flex-start;
+    }
+    .intro
+    {
+        height: 60vh;
+    }
+    .face img
+    {
+        max-width: 30vw;
+        margin-bottom: -20em;
+        border-radius: 55%;
+    }    
+    .intro
+    {
+        padding-left: 8%;
+        padding-top: 25%;
+        padding-bottom: 2%;
+        line-height: 50px;
+    }
+    .intro-1 span
+    {
+        font-size: 28px;
+    }
+    .rotate-about
+    {
+        rotate: 0deg;
+        z-index: 0;
+    }
+    #name
+    {
+        font-size: 3em;
+    }
+    .category, .about-text, .skills-text
+    {
+        border-right: none;
+    }
+    section
+    {
+        border-right: none;
+    }
+    
+    /*rotate 0deg*/
 }
