@@ -16,10 +16,6 @@
     padding-top: 5em;
     padding-left: 10%;
 }
-.work-text strong
-{
-    font-size: 55px;
-}
 .workbox
 {
     padding: 0%;
@@ -27,4 +23,46 @@
 .button-contain
 {
     margin-top: 2%;
+}
+@media screen and (max-width:768px)
+{
+    .head-text, .work-text
+    {
+        margin-left: -5%;
+        padding-top: 18%;
+        border-right: none;
+    }
+    .links-btn
+    {
+        display:none;
+    }    
+    .button-contain
+    {
+        position: relative;
+        margin-left: -12%;
+        padding: 5% 0 0 0;
+        display: flex;
+        width: auto;
+        flex-wrap: nowrap ;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scrollbar-face-color: none;
+    }
+    .button-contain button
+    {
+        font-size: 25px;
+    }
+    .all
+    {
+        margin-left: 11%;
+    }
+}
+@media screen and (max-width:450px)
+{    
+    .button-contain button
+    {
+        font-size: 18px;
+        border: 1px solid black;
+    }
+    
 }

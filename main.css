@@ -237,6 +237,10 @@ nav
     display: flex;
     justify-content: center;
 }
+.head-text strong
+{
+    font-size: 55px;
+}
 @media screen and (max-width:1200px)
 {
     .box
@@ -370,6 +374,7 @@ nav
     .active a
     {        
         line-height: 65px;
+        rotate: -90deg;
     }
     .main, .main-contain
     {
@@ -377,6 +382,16 @@ nav
         margin: 0;
         width: 100vw;
         height: 100vh;
+    }
+    .head-text, .work-text
+    {
+        padding-left: 0;
+        padding-top: 18%;
+        border-right: none;
+    }
+    .head-text strong
+    {
+        font-size: 45px;
     }
     .credit
     {
