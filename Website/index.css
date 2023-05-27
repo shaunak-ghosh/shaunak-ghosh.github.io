@@ -1,0 +1,516 @@
+.home-contain, .home-contain-div
+{
+    border-top: none;
+    border-bottom: none;
+}
+.home-contain
+{
+    margin-left: 94px;
+    display: flex;
+    height: 100%;
+}
+.intro
+{
+    width: 50vw;
+    padding-top: 5%;
+    padding-left: 3%;
+    line-height: 75px;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.intro span
+{
+    font-size: 50px;
+}
+#name
+{
+    font-family: 'Cutive Mono', monospace;
+    letter-spacing: -5px;
+    font-size:  70px;
+}
+.buttons
+{
+    display: flex;
+}
+.work-head, .question
+{
+    margin-top: 15%;
+}
+.question
+{
+    background-color: var(--palette-color-2);
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
+    font-size: 2px;
+    margin-left: 30px;
+    border-radius: 55px;
+}
+.question a
+{
+    cursor: default;
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+.button:hover
+{
+    box-shadow: 10px 15px 0px rgb(0, 0, 0);
+}
+.work-1, .work-2, .work-3/*fix this*/
+{
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.work a
+{
+    font-size: 22px;
+    margin-top: -1px;
+}
+.work img
+{
+    height: 100%;
+    padding: 1%;
+}
+.work-1, .work-3
+{
+    float: right;
+}
+.face
+{
+    background-image: url("assets/patterns.png");
+    background-size: 100%;
+    image-rendering: auto;
+    background-origin: border-box;
+    margin-left: -3px;
+    width: 50vw;
+    border-left: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.face img
+{
+    border: 3px solid black;
+    width: 300px;
+    display: block;
+    top: 50%;
+}
+.category
+{
+    font-size: 50px;
+    text-align: center;
+    border-left: none;
+}
+.about
+{
+    border-top: 3px solid black;
+}
+.about-contain
+{
+    margin-top: -4px;
+    margin-left: -4px;
+    margin-left: 95px;
+    border-left: none;
+    border-top: none;
+}
+.image-1
+{
+    /* background-image: url("assets/home/hash-pattern.jpg"); */
+    width: 200%;
+    background-color: #ff6a0043;
+}
+.image-2
+{
+    /* background-image: url("assets/illustrations/2022/Master chief.jpg"); */
+    border-right: none;
+    width: 120%;
+    background-color: #003cff43;
+}
+.image-3
+{
+    /*background-image: url("assets/gamedev/cube_simulator.gif");*/
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    mix-blend-mode:multiply;
+}
+.about-1, .about-2
+{
+    border-bottom: 3px dashed black;
+}
+.about-1, .about-2, .about-3
+{
+    border-right: 4px solid black;
+}
+.about-text, .skills-text
+{
+    margin-top: -4px;
+    margin-left: -4px;
+    display: flex;
+}
+.textbox, .skillsbox
+{
+    padding: 9%;
+    padding-top: 6%;
+    padding-bottom: 3%;
+}
+.textbox-2, .textbox-3
+{
+    width: 130%;
+}
+.rotate-about
+{
+    rotate: -5deg;    
+}
+.home-about span
+{
+    font-family: 'Courier Prime', monospace;
+    font-weight: 600;
+    font-size: 45px;
+}
+.num, #head
+{
+    margin-left: -65px;
+}
+.num
+{
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+.num strong
+{
+    box-shadow: 10px 15px 0px rgb(0, 0, 0);
+    border: 3px solid black;
+    padding: .2em;
+}
+.num-1 strong
+{
+    background-color: #fdb480;
+}
+.num-2 strong
+{
+    background-color: rgb(137, 175, 255);
+}
+.num-3 strong
+{
+    background-color: #91d572;
+}
+#head
+{
+    font-size: 30px;
+}
+.para
+{
+    margin-top: 10%;
+    font-size: 26px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    line-height: 247.4%;
+}
+.para-1, .para-3
+{
+    text-align: end;
+}
+.skills-box
+{
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-bottom: 10%;
+    font-size: 55px;
+    font-weight: 800;
+}
+.skills-text
+{
+    border-bottom: none;
+}
+.head
+{
+    font-weight: 600;
+    font-size: 38px;
+    margin-left: -2%;
+}
+.head-2, .head-3
+{
+    margin-top: 10%;
+}
+.sect
+{    
+    margin-top: 4%;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+}
+.sect span
+{
+    font-family: 'Space Mono', monospace;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 500;
+}
+progress
+{
+    float: right;
+    width: 50vw;
+    height: 25px;
+    border-radius: 0px;
+}
+.info
+{
+    display: flex;
+    justify-content: space-between;
+}
+.scissors
+{
+    float: right;
+    z-index: 10;
+    margin-top: -13em;
+    rotate: -90deg;
+    height: 30px;
+    background-color: #f4f1ea;
+    margin-right: 10%;
+}
+@media screen and (max-width:1560px)
+{
+    #name
+    {
+        font-size: 50px;
+    }
+} 
+@media screen and (max-width:1440px) 
+{
+    #name
+    {
+        font-size: 55px;
+    }
+    .rotate-about span
+    {
+        font-size: 35px;
+    }
+    .category
+    {
+        font-size: 45px;
+    }
+    .num
+    {
+        font-size: 37px;
+        margin-bottom: 1em;
+    }
+    .image-1
+    {
+        width: 300%;
+    }
+    .work-1 a, .work-2 a, .work-3 a
+    {
+        width: max-content;
+        font-size: 20px;
+        margin-top: -1px;
+    }
+    .para
+    {
+        margin-top: 10%;
+        font-size: 22px;
+        line-height: 200%;
+    }
+    .intro-1 span
+    {
+        font-size: 45px;
+    }
+    
+}
+@media screen and (max-width:1200px) 
+{
+    progress
+    {
+        float: right;
+        width: 40vw;
+        height: 25px;
+        border-radius: 0px;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .main-contain
+    {
+        height: 100vh;
+    }    
+    .home-tab
+    {
+        border-left: 3px solid black;
+    }
+    .intro
+    {
+        width: 100%;
+        margin-left: -3px;
+        border-right: none;
+    }
+    .face
+    {
+        width: 100%;
+        border-left: none;
+    }
+    .tab
+    {
+        border-left: none;
+    }
+    .active
+    {
+        border-left: 3px solid black;
+    }
+    .home-contain
+    {
+        margin-top: 10vh;
+        margin-left: 0;
+        height: 80vh;        
+    }
+    .about-contain
+    {
+        margin-left: 0;
+    }
+    .about-text
+    {
+        flex-direction: column;
+    }
+    .about-2
+    {
+        flex-direction: column-reverse;
+    }
+    .image
+    {
+        height: 40vh;        
+        margin-top: 3px;
+        width: 100%;
+    }
+    .image-1
+    {
+        border-bottom: 3px solid black;
+    }
+    .textbox-num
+    {
+        display: none;
+    }
+    .para
+    {
+        margin-top: 0;
+        font-size: 22px;
+        text-align: left;
+    }
+    .textbox
+    {
+        width: 100%;
+    }
+    .skills-text
+    {
+        border-top: none;
+    }
+    .skills-box
+    {
+        padding: 10%;
+    }
+    .info
+    {
+        width: 107%;
+        height: auto;
+        vertical-align: middle;
+    }
+    .info span
+    {
+        font-size: 22px;
+    }
+    progress
+    {
+        float: right;
+        width: 50%;
+        height: .4em;
+        border-radius: 0px;
+    }
+    .work-1, .work-3
+    {
+        float: left;
+    }
+    .head
+    {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .home-contain
+    {
+        margin: 65px 0 0 0;
+        padding: 0;
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100vw;
+    }
+    .links-btn
+    {
+        display: none;
+    }
+    .home-tab
+    {
+        border-left: none;
+    }
+    .contact-tab
+    {
+        border-right: none;
+    }
+    .para
+    {
+        font-size: 18px;
+    }
+    .face
+    {
+        height: 35vh;
+        align-self: flex-start;
+    }
+    .intro
+    {
+        height: 60vh;
+    }
+    .face img
+    {
+        max-width: 30vw;
+        margin-bottom: -20em;
+        border-radius: 55%;
+    }    
+    .intro
+    {
+        padding-left: 8%;
+        padding-top: 25%;
+        padding-bottom: 2%;
+        line-height: 50px;
+    }
+    .intro-1 span
+    {
+        font-size: 28px;
+    }
+    .rotate-about
+    {
+        rotate: 0deg;
+        z-index: 0;
+    }
+    #name
+    {
+        font-size: 3em;
+    }
+    .category, .about-text, .skills-text
+    {
+        border-right: none;
+    }
+    section
+    {
+        border-right: none;
+    }
+    
+    /*rotate 0deg*/
+}
