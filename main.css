@@ -376,6 +376,10 @@ nav
         line-height: 65px;
         rotate: -90deg;
     }
+    .contact-tab
+    {
+        border-right: none;
+    }
     .main, .main-contain
     {
         padding: 0;

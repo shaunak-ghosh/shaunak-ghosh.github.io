@@ -34,10 +34,6 @@
 {
     margin-left: 10%;
 }
-.contact-text strong
-{
-    font-size: 4em;
-}
 .form label
 {
     font-size: 30px;
@@ -123,4 +119,58 @@
 .line-contain, .line
 {
     display: none;
+}
+@media screen and (max-width:768px)
+{
+    .contact-tab
+    {
+        text-align: center;
+    }
+    .contact-tab a
+    {
+        height: 100px;
+        width: 26%;
+    }
+    .form label, .contact-info a
+    {
+        font-size: 18px;
+    }
+    .textbox, .contact-text
+    {    
+        padding: 7%;
+        border-top: none;
+        padding-top: 5em;
+        height: 90vh;
+    }
+}
+@media screen and (max-width:768px) and (min-width: 680px)
+{
+    .contact-text, .head-text
+    {
+        padding-top: 18%;
+        height: 100vh;
+    }
+    .contact-info span
+    {
+        font-size: 20px;
+    }
+    .contact
+    {
+        width: 100%;
+        margin: 0;
+        padding: 7% 0 5% 0;
+    }
+    .form, .info
+    {
+        margin-left: 0;
+    }
+    input[type="email"], input[type="text"]
+    {
+        margin-top: 6%;
+        width: 100%;
+    }
+    .send
+    {
+        margin-top: 10%;
+    }
 }

@@ -26,6 +26,10 @@
 }
 @media screen and (max-width:768px)
 {
+    .button-contain::-webkit-scrollbar 
+    {
+        display: none;
+    }
     .head-text, .work-text
     {
         margin-left: -5%;
@@ -59,12 +63,26 @@
         margin-left: 11%;
     }
 }
+@media screen and (max-width:585px)
+{
+    .head-text strong 
+    {
+        font-size: 40px;
+    }
+}
 @media screen and (max-width:450px)
 {    
     .button-contain button
     {
         font-size: 18px;
-        border: 1px solid black;
+        border: 2px solid black;
     }
-    
+    .work-text
+    {
+        padding-top: 24%;
+    }
+    .head-text strong 
+    {
+        font-size: 35px;
+    }
 }
