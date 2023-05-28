@@ -441,9 +441,6 @@ progress
     {
         font-size: 30px;
     }
-}
-@media screen and (max-width:768px)
-{
     .home-contain
     {
         margin: 65px 0 0 0;
@@ -511,6 +508,17 @@ progress
     {
         border-right: none;
     }
-    
-    /*rotate 0deg*/
+}
+@media screen and (max-width:768px) and (min-width: 520px)
+{
+    .face
+    {
+        text-align: left;
+        justify-content: left;
+    }
+    .face img
+    {
+        width: 20vw;
+        margin-left: 7%;
+    }    
 }
