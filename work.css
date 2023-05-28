@@ -45,12 +45,14 @@
         width: auto;
         flex-wrap: nowrap ;
         overflow-x: scroll;
+        scrollbar-width: 0px;
         scroll-behavior: smooth;
         scrollbar-face-color: none;
     }
     .button-contain button
     {
         font-size: 25px;
+        margin-right: 10px;
     }
     .all
     {
