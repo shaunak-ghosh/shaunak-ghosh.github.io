@@ -536,9 +536,13 @@ progress
 }
 @media screen and (max-width:768px)
 {
-    .main
+    body
     {
         overflow-y: scroll;
+    }
+    .main
+    {
+        height: 99vh;
     }
     .main-contain
     {
