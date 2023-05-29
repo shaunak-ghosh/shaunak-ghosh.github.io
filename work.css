@@ -24,8 +24,19 @@
 {
     margin-top: 2%;
 }
+@media screen and (max-width:1200px)
+{
+    .active
+    {
+        border-left: 2px dashed black;
+    }
+}
 @media screen and (max-width:768px)
 {
+    .active
+    {
+        border-left: none;
+    }
     .button-contain::-webkit-scrollbar 
     {
         display: none;

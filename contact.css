@@ -105,10 +105,6 @@
 {
     font-family: 'Roboto Mono', monospace;
 }
-#contact
-{
-    border-left: none;
-}
 .links-btn
 {
     width: 0;
@@ -119,6 +115,10 @@
 .line-contain, .line
 {
     display: none;
+}
+.active
+{
+    border-left: 2px dashed black;
 }
 @media screen and (max-width:768px)
 {
@@ -141,6 +141,9 @@
         border-top: none;
         padding-top: 5em;
         height: 90vh;
+    }
+    .active{
+        border-left: none;
     }
 }
 @media screen and (max-width:768px) and (min-width: 680px)
@@ -172,5 +175,18 @@
     .send
     {
         margin-top: 10%;
+    }
+}
+@media screen and (max-width: 680px)
+{
+    .contact
+    {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+    }
+    .info
+    {
+        margin: 5%;
     }
 }

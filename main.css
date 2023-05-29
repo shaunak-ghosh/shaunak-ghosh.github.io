@@ -37,7 +37,7 @@ a
     text-decoration: none;
     cursor: pointer;
 }
-::-webkit-scrollbar 
+::-webkit-scrollbar
 {
     width: 8px;
 }
@@ -157,10 +157,6 @@ nav
     border-left: 3px solid black;
     rotate: 180deg;
 }
-.tab:hover
-{
-    background-color:var(--palette-color-3);
-}
 .button
 {
     background-color: var(--palette-color-2);
@@ -240,6 +236,13 @@ nav
 .head-text strong
 {
     font-size: 55px;
+}
+@media screen and (max-width:1041px) 
+{
+    .credit
+    {
+        border-right: none;
+    }
 }
 @media screen and (max-width:1200px)
 {
@@ -406,10 +409,36 @@ nav
         border-right: none;
     }
 }
+@media screen and (max-width:639px)
+{
+    .credit a
+    {
+        font-size: 16px;
+    }
+}
 @media screen and (max-width:520px)
 {
     .tab a, .active a
     {
         font-size: 20px;
+    }
+    .credit a
+    {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:420px)
+{
+    .tab a, .active a
+    {
+        font-size: 17px;
+    }
+    .credit img
+    {
+        width: 15px;
+    }
+    .credit a 
+    {
+        font-size: 12px;
     }
 }

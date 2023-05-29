@@ -325,24 +325,29 @@ progress
     {
         font-size: 45px;
     }
-    
 }
-@media screen and (max-width:1200px) 
+@media screen and (max-width:1200px)
 {
-    progress
+    .active
     {
-        float: right;
-        width: 40vw;
-        height: 25px;
-        border-radius: 0px;
+        border-left: 2px dashed black;
     }
 }
-@media screen and (max-width:768px)
+@media screen and (max-width:1041px) 
 {
     .main-contain
     {
         height: 100vh;
     }    
+    .home-contain
+    {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100vw;
+        height: 80vh;        
+        height: auto;
+        flex-direction: column-reverse;
+    }
     .home-tab
     {
         border-left: 3px solid black;
@@ -355,7 +360,7 @@ progress
     }
     .face
     {
-        width: 100%;
+        width: 100%;/*set background from bottom*/
         border-left: none;
     }
     .tab
@@ -366,12 +371,7 @@ progress
     {
         border-left: 3px solid black;
     }
-    .home-contain
-    {
-        margin-top: 10vh;
-        margin-left: 0;
-        height: 80vh;        
-    }
+    
     .about-contain
     {
         margin-left: 0;
@@ -386,7 +386,7 @@ progress
     }
     .image
     {
-        height: 40vh;        
+        height: 40vh;
         margin-top: 3px;
         width: 100%;
     }
@@ -440,14 +440,6 @@ progress
     .head
     {
         font-size: 30px;
-    }
-    .home-contain
-    {
-        margin: 65px 0 0 0;
-        padding: 0;
-        flex-direction: column-reverse;
-        height: auto;
-        width: 100vw;
     }
     .links-btn
     {
@@ -509,7 +501,51 @@ progress
         border-right: none;
     }
 }
-@media screen and (max-width:768px) and (min-width: 520px)
+@media screen and (max-width:1041px) and (min-width: 768px)
+{
+    ::-webkit-scrollbar 
+    {
+        border-left: 3px solid black;
+    }
+    .main
+    {
+        height: 92.5vh;        
+    }
+    .main-contain
+    {
+        overflow-x: hidden;
+        height: 92.5vh;
+        margin-left: 9%;  
+        border-bottom: 3px solid black;      
+        border-left: none;
+    }
+    .tab
+    {
+        border: 3px solid rgb(0, 0, 0);
+    }
+}
+@media screen and (max-width:1200px) 
+{
+    progress
+    {
+        float: right;
+        width: 40vw;
+        height: 25px;
+        border-radius: 0px;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .main
+    {
+        overflow-y: scroll;
+    }
+    .main-contain
+    {
+        margin-top: 65px;
+    }
+}
+@media screen and (max-width:1041px) and (min-width: 520px)
 {
     .face
     {
@@ -520,5 +556,38 @@ progress
     {
         width: 20vw;
         margin-left: 7%;
-    }    
+    }
 }
+@media screen and (max-width:639px)
+{
+    .head
+    {
+        font-size: 23px;
+    }
+    .info, progress
+    {
+        height: 21px;
+    }
+    .info span
+    {
+        height: 21px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:520px)
+{
+    .head
+    {
+        font-size: 19px;
+    }
+    .info, progress
+    {
+        height: 21px;
+    }
+    .info span
+    {
+        font-size: 15px;
+    }
+}
+
+/*height mqs*/
