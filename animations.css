@@ -32,14 +32,6 @@
     transform: scale(85%);
     box-shadow: none;
 }
-.tab a
-{
-    transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.92);
-}
-.tab
-{
-    transition: all .1s cubic-bezier(0.14, 0.01, 0.72, 0.99);
-}
 .info a
 {
     transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.93);
@@ -47,21 +39,6 @@
 .info a:hover
 {
     transform: scale(110%) translateX(5%);
-}
-@media screen and (min-width:1092px)
-{
-    .tab:hover
-    {
-        width: 105px;
-        margin-left: -8.5px;
-    }
-}
-@media screen and (max-width:1092px)
-{    
-    .tab, .tab a
-    {
-        transition: none;
-    }
 }
 @media screen and (max-width:768px)
 {

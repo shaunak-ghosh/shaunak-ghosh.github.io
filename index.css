@@ -30,6 +30,25 @@
     letter-spacing: -5px;
     font-size:  70px;
 }
+.active
+{
+    border-bottom: var(--thick-border);
+    background-color: var(--palette-color-2);
+}
+.about-tab.active
+{
+    border-bottom: var(--thick-border);
+    background-color: var(--palette-color-2);
+    border-top: var(--thick-border);
+}
+.about-tab
+{
+    border-bottom: none;
+}
+/*.work-tab if about.active
+{
+    border-bottom: none;
+}*/
 .buttons
 {
     display: flex;
@@ -335,10 +354,6 @@ progress
 }
 @media screen and (max-width:1041px) 
 {
-    .main-contain
-    {
-        height: 100vh;
-    }    
     .home-contain
     {
         margin-top: 0;

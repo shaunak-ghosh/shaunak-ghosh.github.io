@@ -13,7 +13,10 @@
     --illustrations-tab: #9ac9ff;
     --gamedev-tab: #a7d792;
     --experiments-tab: #ffd187;
-    --highlight: #f8d040;    
+    --highlight: #f8d040;
+    --thick-border: 3px solid black;
+    --thin-border: 2px solid black;
+    --dashed-border: 2px dashed;
 }
 *
 {
@@ -22,8 +25,7 @@
     cursor: default;
     font-family: 'Space Mono', monospace;
     -webkit-user-select: none;
-    user-select: none;
-    
+    user-select: none;    
 }
 html, body
 {
@@ -44,7 +46,6 @@ a
 {
     background: var(--scrollbar);
 }
-
 .links-btn
 {
     position: absolute;
@@ -69,6 +70,10 @@ a
     justify-content: space-between;
     cursor: pointer;
 }
+.contact-tab
+{
+    border-top: var(--thick-border);
+}
 .line
 {
     float: right;
@@ -84,72 +89,53 @@ a
 {
     width: 38px;
 }
-.links
-{
-    padding-left: 5%;
-    padding-top: 17vh;
-    position: absolute;
-    background-color: var(--palette-color-1);
-    float: right;
-    height: 100vh;
-    width: 35vw;
-    margin-left: 100vw;
-}
-.links.active
-{
-    transform: translateX();
-    box-shadow: -10px 0px 60px rgba(0, 0, 0, 0.36);
-}
-.links hr
-{
-    width: 70%;
-    border: 1px solid black;
-    margin: 1em 0;
-}
-.links ul
-{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    float: flex-end;
-}
-.links a
-{
-    color: black;
-    font-size: 28px;
-    line-height: 60px;
-}
 .box
 {
     border: 4px solid black;
-}
-.main
-{
-    margin: 2%;
-}
-.main-contain
-{
-    border-left: none;
 }
 nav
 {
     position: fixed;
     width: 100px;
-    height: 90vh;
-    margin-top: 3.5px;
-}
-.tab, .active
-{
-    background-color: var(--background);
-    margin: -3.6%;
-    font-size: 30px;
-    width: 100px;
-    height: 26%;
-    text-align: center;
-    justify-content: center;
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
+    height: 92vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
     rotate: 180deg;
+    margin-left: -2px;
+    margin-top: -2px;
+    background-color: var(--background);
+}
+.tab
+{    
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: -5%;
+    height: auto;
+    height: 28%;
+    width: 100%;
+    border-bottom: var(--thick-border);
+    border-left: var(--thick-border);
+    border-right: var(--thick-border);
+}
+.tab a
+{
+    font-size: 30px;
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    color: #000;
+    writing-mode: vertical-lr;
+    position: relative;
+}
+.active 
+{
+    margin-bottom: -1px;
+    border-left: var(--dashed-border);
+    width: 110px;
 }
 .button
 {
@@ -177,26 +163,6 @@ nav
 .button:hover
 {
     box-shadow: 10px 15px 0px rgb(0, 0, 0);
-}
-.tab a, .active a
-{
-    font-family: 'Roboto Mono', monospace;
-    writing-mode: vertical-rl;
-    height: 100%;
-    align-self: center;
-    color: black;
-    line-height: 95px;
-}
-.active
-{
-    background-color: var(--active-tab);
-    width: 110px;
-    margin-left: -14px;
-    border-left: 2px dashed black;
-}
-.active a
-{
-    cursor:default;
 }
 .credit
 {    
@@ -237,7 +203,7 @@ nav
     {
         float: bottom;
         border: 3px solid black;
-        height: 90vh;
+        height: 93vh;
         margin: 2%;
         margin-top: 2%;
     }
@@ -333,12 +299,6 @@ nav
         background-color: var(--palette-color-3);
         border-left: 3px solid black;
     }
-    .main, .main-contain
-    {
-        overflow-x: hidden;
-        width: 99.9vw;
-        border: none;
-    }
     #nav
     {
         /*background-color: var(--highlight);*/
@@ -350,51 +310,6 @@ nav
         padding: 0;
         display: flex;
         flex-direction: row;
-    }    
-    .tab, .active
-    {
-        background: transparent;
-        border: none;    
-        margin: 0;
-        margin-top: 0;
-        width: 25%;
-        rotate: 0deg;
-        height: 65px;
-        border-right: 2px solid black;
-        border-bottom: 2px solid black;
-    }    
-    .tab a
-    {        
-        /*background-color:rgba(0, 0, 0, 0.326);*/
-        margin-top: -40px;
-        height: 145px;
-        line-height: 150%;
-        margin-left: -5px;
-        font-size: 25px;        
-        rotate: -90deg;
-        align-self: center;
-        
-    }
-    .active
-    {
-        background-color: #c1b2ff;
-        border-bottom: 2px dashed black;
-    }
-    .active a
-    {        
-        line-height: 65px;
-        rotate: -90deg;
-    }
-    .contact-tab
-    {
-        border-right: none;
-    }
-    .main, .main-contain
-    {
-        padding: 0;
-        margin: 0;
-        width: 100vw;
-        height: 100vh;
     }
     .head-text, .work-text
     {
@@ -424,10 +339,6 @@ nav
 }
 @media screen and (max-width:520px)
 {
-    .tab a, .active a
-    {
-        font-size: 20px;
-    }
     .credit a
     {
         font-size: 14px;
@@ -435,10 +346,6 @@ nav
 }
 @media screen and (max-width:420px)
 {
-    .tab a, .active a
-    {
-        font-size: 17px;
-    }
     .credit img
     {
         width: 15px;

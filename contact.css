@@ -16,6 +16,14 @@
     margin-left: -4px;
     border-bottom: none;
 }
+.work-tab
+{
+     border-top: none;
+}
+.home-tab, .contact-tab
+{
+    border-bottom: var(--thick-border);
+}
 .contact
 {   
     margin-left: 5%;
