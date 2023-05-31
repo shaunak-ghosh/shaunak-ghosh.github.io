@@ -30,7 +30,6 @@ html, body
     background-color: #f4f1ea;
     max-width: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 a
 {
@@ -45,12 +44,7 @@ a
 {
     background: var(--scrollbar);
 }
-.main-contain
-{
-    height: 92.5vh;
-    overflow-y: scroll;
-    margin-left: 3px;
-}
+
 .links-btn
 {
     position: absolute;
@@ -237,6 +231,18 @@ nav
 {
     font-size: 55px;
 }
+@media screen and (min-width:768px)
+{
+    body
+    {
+        float: bottom;
+        border: 3px solid black;
+        height: 90vh;
+        margin: 2%;
+        margin-top: 2%;
+    }
+}
+/*@media screen and (min-width:768px) and height*/
 @media screen and (max-width:1041px) 
 {
     .credit
