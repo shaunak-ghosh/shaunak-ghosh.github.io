@@ -30,10 +30,12 @@
     letter-spacing: -5px;
     font-size:  70px;
 }
-.active
+
+.home-tab.active
 {
     border-bottom: var(--thick-border);
-    background-color: var(--palette-color-2);
+    background-color: var(--palette-color-2);    
+    border-top: var(--thick-border);
 }
 .about-tab.active
 {
@@ -108,7 +110,8 @@
     background-origin: border-box;
     margin-left: -3px;
     width: 50vw;
-    border-left: 3px solid black;
+    border-left: var(--thick-border);
+    border-right: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,14 +124,15 @@
     top: 50%;
 }
 .category
-{
+{    
     font-size: 50px;
     text-align: center;
     border-left: none;
+    border-right: none;
 }
 .about
 {
-    border-top: 3px solid black;
+    border-top: var(--thick-border);
 }
 .about-contain
 {
@@ -147,7 +151,6 @@
 .image-2
 {
     /* background-image: url("assets/illustrations/2022/Master chief.jpg"); */
-    border-right: none;
     width: 120%;
     background-color: #003cff43;
 }
@@ -164,11 +167,7 @@
 }
 .about-1, .about-2
 {
-    border-bottom: 3px dashed black;
-}
-.about-1, .about-2, .about-3
-{
-    border-right: 4px solid black;
+    border-bottom: var(--thick-dashed-border) black;
 }
 .about-text, .skills-text
 {
@@ -249,7 +248,9 @@
 }
 .skills-text
 {
+    border-top: none;
     border-bottom: none;
+    border-right: none;
 }
 .head
 {
@@ -507,37 +508,6 @@ progress
     {
         font-size: 3em;
     }
-    .category, .about-text, .skills-text
-    {
-        border-right: none;
-    }
-    section
-    {
-        border-right: none;
-    }
-}
-@media screen and (max-width:1041px) and (min-width: 768px)
-{
-    ::-webkit-scrollbar 
-    {
-        border-left: 3px solid black;
-    }
-    .main
-    {
-        height: 92.5vh;        
-    }
-    .main-contain
-    {
-        overflow-x: hidden;
-        height: 92.5vh;
-        margin-left: 9%;  
-        border-bottom: 3px solid black;      
-        border-left: none;
-    }
-    .tab
-    {
-        border: 3px solid rgb(0, 0, 0);
-    }
 }
 @media screen and (max-width:1200px) 
 {
@@ -547,17 +517,6 @@ progress
         width: 40vw;
         height: 25px;
         border-radius: 0px;
-    }
-}
-@media screen and (max-width:768px)
-{
-    .main
-    {
-        height: 99vh;
-    }
-    .main-contain
-    {
-        margin-top: 65px;
     }
 }
 @media screen and (max-width:1041px) and (min-width: 520px)
@@ -571,6 +530,27 @@ progress
     {
         width: 20vw;
         margin-left: 7%;
+    }
+}
+@media screen and (max-width:768px)
+{
+    
+    .face
+    {
+        margin-top: 67px;
+    }
+    .about-tab
+    {
+        border-bottom: var(--thin-border);
+    }
+    .about-tab.active
+    {
+        border-left: none;
+    }
+    .home-tab.active, .about-tab.active
+    {
+        border-top: none;
+        border-bottom: var(--dashed-border) black;
     }
 }
 @media screen and (max-width:639px)
@@ -604,5 +584,4 @@ progress
         font-size: 15px;
     }
 }
-
 /*height mqs*/

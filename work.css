@@ -1,6 +1,6 @@
 .button-contain button
 {
-    border: 2px solid black;
+    border: var(--thin-border);
     border-radius: 55px;
     font-size: 25px;
     padding: 0.5em;
@@ -9,9 +9,16 @@
     margin-bottom: 5%;
     cursor: pointer;
 }
+.active
+{
+    border-top: var(--thick-border);
+}
+.contact-tab
+{
+    border-bottom: none;
+}
 .work-text
 {
-    border-right: 4px solid black;
     margin-top: 0;
     padding-top: 5em;
     padding-left: 10%;
@@ -24,18 +31,12 @@
 {
     margin-top: 2%;
 }
-@media screen and (max-width:1200px)
-{
-    .active
-    {
-        border-left: 2px dashed black;
-    }
-}
 @media screen and (max-width:768px)
 {
-    .active
+    .contact-tab
     {
-        border-left: none;
+        border-bottom: var(--thin-border);
+        border-right: none;
     }
     .button-contain::-webkit-scrollbar 
     {
