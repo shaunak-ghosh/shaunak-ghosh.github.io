@@ -11,7 +11,7 @@
 }
 .contact-text
 {
-    height: 100vh;
+    height: auto;
     padding-top: -20%;
     margin-left: -4px;
     border-bottom: none;
@@ -69,7 +69,6 @@
     cursor:auto;
     outline: none;
     caret-shape: underscore;
-    /*transition: ease-in-out, width .35s ease-in-out;*/
 }
 .input input[type="text"]:focus, .input input[type="email"]:focus
 {
@@ -130,14 +129,14 @@
 }
 @media screen and (max-width:768px)
 {
-    .contact-tab
+    .contact-text
     {
-        text-align: center;
+        height: auto;
     }
-    .contact-tab a
+    .tab
     {
-        height: 100px;
-        width: 26%;
+        border-right: none;
+        border-bottom: var(--thin-border);
     }
     .form label, .contact-info a
     {
@@ -151,16 +150,14 @@
         height: 90vh;
     }
     .active{
-        border-left: none;
+        border-left: var(--thin-border);
+        text-align: center;
+        border-bottom: var(--dashed-border);
     }
 }
 @media screen and (max-width:768px) and (min-width: 680px)
 {
-    .contact-text, .head-text
-    {
-        padding-top: 18%;
-        height: 100vh;
-    }
+    
     .contact-info span
     {
         font-size: 20px;

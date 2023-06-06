@@ -48,6 +48,10 @@
         padding-top: 18%;
         border-right: none;
     }
+    .tab
+    {
+        border-left: none;
+    }
     .links-btn
     {
         display:none;

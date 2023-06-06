@@ -142,8 +142,6 @@ nav
     line-height: 110px;
     border-left: var(--dashed-border);
     width: 115px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
 }
 .active:hover, .active a:hover
 {
@@ -221,6 +219,11 @@ nav
         margin: 2%;
         margin-top: 2%;
         border-right: none;
+    }
+    .active
+    {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
     }
 }
 /*@media screen and (min-width:768px) and height*/
