@@ -14,14 +14,13 @@
     animation-name: line-2-appear;
     animation-duration: 2s;
 }
-.button-contain button:hover
-{
-    transform:scale(110%);
-    box-shadow: 5px 5px 0px rgb(0, 0, 0);
-}
-.work, .send, .question, .button-contain button
+.work, .send, .question, .button-contain button, .grid-item
 {
     transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.92);
+}
+.grid-item:hover
+{
+    transform:scale(101%);
 }
 .work:hover, .send:hover, .links-btn:hover, .question:hover
 {
@@ -39,6 +38,15 @@
 .info a:hover
 {
     transform: scale(110%) translateX(5%);
+}
+@media screen and (min-width:768px)
+{
+    
+    .button-contain button:hover, .grid-item:hover
+    {
+        transform:scale(110%);
+        box-shadow: 5px 5px 0px rgb(0, 0, 0);
+    }
 }
 @media screen and (max-width:768px)
 {

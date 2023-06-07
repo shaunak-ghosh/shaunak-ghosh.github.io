@@ -1,3 +1,7 @@
+button
+{
+    background-color: var(--background);
+}
 .button-contain button
 {
     border: var(--thin-border);
@@ -30,6 +34,50 @@
 .button-contain
 {
     margin-top: 2%;
+}
+.grid-contain
+{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    justify-items: stretch;
+    align-items: stretch;
+    padding-right: 5%;
+}
+.grid-item
+{
+    font-size: 25px;
+    padding-top: 60%;
+    padding-right: 5%;
+    text-align: end;
+    border: var(--thick-border);
+    width: 25vw;
+    height: 20vw;
+    margin: 5%;
+    text-align: end;
+    align-content: end;
+    align-items: end;
+}
+.tags
+{
+    display: flex;
+}
+.tags span
+{
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 55px;
+    font-size: 15px;
+}
+.grid-item strong
+{
+    font-size: 25px;
+}
+.grid-item
+{
+    padding-top: 58%;
+    display: flex;
+    flex-direction: column;
 }
 @media screen and (max-width:768px)
 {
@@ -66,7 +114,6 @@
         flex-wrap: nowrap ;
         overflow-x: scroll;
         scrollbar-width: 0px;
-        scroll-behavior: smooth;
         scrollbar-face-color: none;
     }
     .button-contain button
