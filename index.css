@@ -11,6 +11,11 @@
 }
 .intro
 {
+    background-image: url("assets/home/red-star-shape.png");
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-x: -40%;
+    background-position-y: -30%;
     width: 50vw;
     padding-top: 5%;
     padding-left: 3%;
@@ -19,6 +24,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.intro-2
+{
+    background-image: url("assets/home/blue-star-shape.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right;   
+    background-position-x: 180%; 
+    background-position-y: -20%; 
+    background-origin: bottom;
 }
 .intro span
 {

@@ -26,6 +26,7 @@ button
     margin-top: 0;
     padding-top: 5em;
     padding-left: 10%;
+    min-height: inherit;
 }
 .workbox
 {
@@ -34,6 +35,13 @@ button
 .button-contain
 {
     margin-top: 2%;
+}
+.category, .year
+{
+    font-size: 25px;
+    font-weight: bold;
+    border-left: 10px solid var(--palette-color-1);
+    padding-left: 10px;
 }
 .grid-contain
 {
@@ -113,7 +121,6 @@ button
         width: auto;
         flex-wrap: nowrap ;
         overflow-x: scroll;
-        scrollbar-width: 0px;
         scrollbar-face-color: none;
     }
     .button-contain button

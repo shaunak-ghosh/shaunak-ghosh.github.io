@@ -44,8 +44,12 @@
     
     .button-contain button:hover, .grid-item:hover
     {
-        transform:scale(110%);
-        box-shadow: 5px 5px 0px rgb(0, 0, 0);
+        transform:scale(105%);
+        box-shadow: 7px 7px rgb(0, 0, 0);        
+    }
+    .grid-item:hover
+    {
+        border-color: var(--work-item-hover);
     }
 }
 @media screen and (max-width:768px)
