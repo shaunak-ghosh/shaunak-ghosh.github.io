@@ -28,11 +28,14 @@
             }
             strong
             {
+                margin-top: 2%;
                 font-size: 100px;
             }
             span
             {
                 font-size: 25px;
+                margin-top: -2%;
+                margin-bottom: 2%;
             }
             .button
             {
@@ -42,6 +45,15 @@
             {
                 width: 30px;
             }
+            .button a
+            {
+                font-size: 20px;
+            }
+            svg
+            {
+                width: inherit;
+                height: 100%
+            }
         </style>
         <title>Work | Shaunak Ghosh</title>
     </head>
@@ -50,10 +62,15 @@
         <br>
         <span>
             Either there's nothing here at all, or this page is still being constructed!
-        </span>
-        <button onclick="window.history.back()" class="back button">
-            <img src="assets\home\icons8-external-link.svg" alt="">
-            <a href="#">Go back</a>
+        </span>        
+        <button class="work work-1 back button " onclick="window.history.back()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up-double" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M13 14l-4 -4l4 -4"></path>
+                <path d="M8 14l-4 -4l4 -4"></path>
+                <path d="M9 10h7a4 4 0 1 1 0 8h-1"></path>
+             </svg>
+            <a href="work.html#design"">Go back</a>
         </button>
     </body>
 </html>

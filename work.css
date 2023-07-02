@@ -40,7 +40,7 @@ button
 {
     font-size: 25px;
     font-weight: bold;
-    border-left: 10px solid var(--palette-color-1);
+    /*border-left: 10px solid var(--palette-color-1);*/
     padding-left: 10px;
 }
 .grid-contain
@@ -87,8 +87,31 @@ button
     display: flex;
     flex-direction: column;
 }
+svg
+{
+    color: var(--work-item-hover);
+}
 @media screen and (max-width:768px)
 {
+    .grid-contain
+    {
+        width: auto;
+        left: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        margin: none;
+    }
+    .grid-item
+    {
+        width: auto;
+        margin: none;
+    }
+    .tags
+    {
+        display: none;
+    }
     .contact-tab
     {
         border-bottom: var(--thin-border);

@@ -2,7 +2,7 @@
 {
     font-family: 'Space Mono', monospace;
 }
-.textbox, .contact-text
+.textbox
 {    
     padding: 10%;
     border-top: none;
@@ -11,10 +11,10 @@
 }
 .contact-text
 {
-    height: auto;
-    padding-top: -20%;
-    margin-left: -4px;
-    border-bottom: none;
+    margin-top: 0;
+    padding-top: 5em;
+    padding-left: 10%;
+    min-height: inherit;
 }
 .work-tab
 {
@@ -25,8 +25,7 @@
     border-bottom: var(--thick-border);
 }
 .contact
-{   
-    margin-left: 5%;
+{
     padding: 10%;
     padding-top: 6%;
     padding-left: 0;
@@ -107,6 +106,12 @@
     width: max-content;
     font-size: 22px;
     margin-top: -1px;
+}
+.send svg
+{
+    width: inherit 85%;
+    margin-left: 5px;
+    height: auto;
 }
 .credit-contain a
 {
