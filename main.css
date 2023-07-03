@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 :root
 {
     --scrollbar: #1200359a;
@@ -28,7 +30,7 @@
     cursor: default;
     font-family: 'Space Mono', monospace;
     -webkit-user-select: none;
-    user-select: none;    
+    user-select: none;
 }
 html, body
 {
@@ -53,8 +55,57 @@ a
 {   
     background: var(--scrollbar);
 }
+.links
+{
+    position: fixed;
+    top: 0;
+    right: -530px; /* Initially hidden */
+    width: 530px;
+    height: 60%;
+    background: var(--palette-color-2);
+    border-left: var(--thick-border);
+    border-bottom: var(--thick-border);
+    transition: right 0.3s ease-in-out;
+    z-index: 20;
+
+    padding: 100px;
+    padding-top: 200px;
+    box-shadow: 10px 15px 0px rgb(0, 0, 0);
+}
+.links.open 
+{
+    right: 0; /* Displayed when the menu is open */
+}
+.links-panel-contain ul
+{
+    display: flex;
+    flex-direction: column;
+}
+.links-panel-contain strong, .links-panel-contain a
+{
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+}
+.links-panel-contain a:hover
+{
+    text-decoration: underline;
+}
+.mail-div 
+{
+    display: flex;
+}
+.mail-div a
+{
+    margin-right: 20px;
+}
+.links-panel-contain svg
+{
+    height: 30px;
+}
 .links-btn
 {
+    z-index: 21;
     position: absolute;
     height: 100px;
     width: 100px;
@@ -66,6 +117,7 @@ a
     display: flex;
     justify-content: center;
     align-items: center;
+    /*bottom: 20px; <-- apply this in media query*/
 }
 .line-contain
 {

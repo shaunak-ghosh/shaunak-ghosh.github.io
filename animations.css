@@ -14,7 +14,7 @@
     animation-name: line-2-appear;
     animation-duration: 2s;
 }
-.work, .send, .question, .button-contain button, .grid-item
+.work, .send, .question, .button-contain button, .grid-item, .links-panel
 {
     transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.92);
 }
