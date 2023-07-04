@@ -165,9 +165,10 @@
 }
 .image-2
 {
-    /* background-image: url("assets/illustrations/2022/Master chief.jpg"); */
+    background-image: url("assets/home/illustrations-collection.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
     width: 120%;
-    background-color: #003cff43;
 }
 .image-3
 {
@@ -471,10 +472,6 @@ progress
     .head
     {
         font-size: 30px;
-    }
-    .links-btn
-    {
-        display: none;
     }
     .home-tab
     {

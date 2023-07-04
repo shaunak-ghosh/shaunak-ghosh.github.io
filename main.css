@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 :root
 {
     --scrollbar: #1200359a;
@@ -10,7 +8,7 @@
     --palette-color-2: #cabbff;
     --palette-color-3: #e3ddff;
     --active-tab: #d3c9f5;
-    --all-tab: #c1b2ff;
+    --recent-tab: #c1b2ff;
     --design-tab:#f09f9f;
     --illustrations-tab: #9ac9ff;
     --gamedev-tab: #9adc7d;
@@ -55,7 +53,7 @@ a
 {   
     background: var(--scrollbar);
 }
-.links
+.links-panel
 {
     position: fixed;
     top: 0;
@@ -69,17 +67,22 @@ a
     z-index: 20;
 
     padding: 100px;
-    padding-top: 200px;
     box-shadow: 10px 15px 0px rgb(0, 0, 0);
 }
-.links.open 
+.links-panel.open 
 {
     right: 0; /* Displayed when the menu is open */
+}
+.links-panel-contain
+{
+    position: absolute;
+    bottom: 20%;
 }
 .links-panel-contain ul
 {
     display: flex;
     flex-direction: column;
+    align-self: baseline;
 }
 .links-panel-contain strong, .links-panel-contain a
 {
@@ -283,7 +286,12 @@ nav
 }
 /*@media screen and (min-width:768px) and height*/
 @media screen and (max-width:1041px) 
-{
+{    
+    .links-btn
+    {
+        position: fixed;
+        bottom: 0;
+    }
     .credit
     {
         border-right: none;

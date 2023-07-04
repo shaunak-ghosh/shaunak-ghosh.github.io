@@ -5,7 +5,7 @@ linksToggleButton.addEventListener('click', function() {
     {
         linksPanel.classList.remove('open');
     } 
-    else 
+    else
     {
         linksPanel.classList.add('open');
     }
