@@ -69,12 +69,6 @@
     outline: none;
     caret-shape: underscore;
 }
-.input input[type="text"]:focus, .input input[type="email"]:focus
-{
-    color: black;
-    border: none;
-    border-bottom: 3px solid black;
-}
 .contact-info
 {
     display: flex;
@@ -132,10 +126,20 @@
 {
     border-left: 2px dashed black;
 }
+@media screen and (min-width:768px)
+{
+    .social-small, .bottom-socials-span
+    {
+        display: none;
+    }
+}
 @media screen and (max-width:768px)
 {
     .contact-text
     {
+        height: auto;
+        margin-top: 5%;
+        margin-left: -5%;
         height: auto;
     }
     .tab
@@ -147,44 +151,54 @@
     {
         font-size: 18px;
     }
-    .textbox, .contact-text
+    .textbox
     {    
         padding: 7%;
         border-top: none;
         padding-top: 5em;
-        height: 90vh;
+        height: auto;
     }
     .active{
         border-left: var(--thin-border);
         text-align: center;
         border-bottom: var(--dashed-border);
     }
-}
-@media screen and (max-width:768px) and (min-width: 680px)
-{
-    
     .contact-info span
     {
-        font-size: 20px;
+        font-weight: bold;
+    }
+    .contact-info a
+    {
+        font-weight: normal;
+    }
+    .social
+    {
+        display: none;
+    }
+    .bottom-socials-span
+    {
+        margin-left: 2.5%;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .social-small
+    {
+        margin-left: 2.5%;
+        margin-bottom: 10%;
+        width: 85vw;
+    }
+    .social-small a
+    {
+        color: black;
+        font-size: 18px;
+        margin-right: 10px;
+        flex-wrap: wrap;
     }
     .contact
     {
-        width: 100%;
+        flex-direction: column-reverse;
+        padding: 0;
         margin: 0;
-        padding: 7% 0 5% 0;
-    }
-    .form, .info
-    {
-        margin-left: 0;
-    }
-    input[type="email"], input[type="text"]
-    {
-        margin-top: 6%;
-        width: 100%;
-    }
-    .send
-    {
-        margin-top: 10%;
     }
 }
 @media screen and (max-width: 680px)
@@ -198,5 +212,16 @@
     .info
     {
         margin: 5%;
+    }
+}
+@media screen and (max-width: 520px)
+{
+    .input input[type="text"], .input input[type="email"]
+    {
+        border-bottom: var(--thin-border);
+    }
+    .form
+    {
+        width: 100vw;
     }
 }

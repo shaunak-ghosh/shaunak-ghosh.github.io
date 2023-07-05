@@ -51,6 +51,7 @@ button
     justify-items: stretch;
     align-items: stretch;
     padding-right: 5%;
+    margin-bottom: 80px;
 }
 .grid-item
 {
@@ -84,7 +85,7 @@ button
 }
 .grid-item strong
 {
-    font-size: 25px;
+    font-size: 24px;
 }
 .grid-item
 {
@@ -95,6 +96,11 @@ button
 svg
 {
     color: var(--work-item-hover);
+}
+.work-text svg
+{
+    height: 30px;
+    margin-bottom: -5px;
 }
 @media screen and (max-width:768px)
 {
