@@ -14,7 +14,7 @@
     animation-name: line-2-appear;
     animation-duration: 2s;
 }
-.work, .send, .question, .button-contain button, .grid-item, .links-panel
+.work, .send, .question, .button-contain button, .grid-item, .links-panel, .me
 {
     transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.92);
 }
@@ -25,6 +25,15 @@
 .work:hover, .send:hover, .links-btn:hover, .question:hover
 {
     transform:scale(125%);
+}
+.me:hover
+{
+    transform: translate(-5%, -10%);
+    box-shadow: 7px 7px rgb(0, 0, 0);
+}
+.me:active
+{
+    /*TODO animation*/
 }
 .work:active, .send:active, .links-btn:active, .question:active, .button-contain button:active
 {
@@ -145,4 +154,17 @@
     {
         display: none;
     }
+}/*
+.line-1, .line-2
+{
+    transition: all .8s cubic-bezier(0.61, 0.01, 0.02, 0.92);
 }
+.cross .line-1
+{
+    rotate: 45deg;
+}
+.cross .line-2
+{
+    rotate: -45deg;
+    transform: rotate(-45deg);
+}*/

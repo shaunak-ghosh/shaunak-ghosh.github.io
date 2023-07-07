@@ -124,7 +124,7 @@
                         Hi, <strong>I</strong> am 
                     </span>
                     <br>
-                    <strong id="name">Shaunak Ghosh</strong>
+                    <span id="name">Shaunak Ghosh</span>
                 </div>
                 <div class="intro-2">
                     <div class="home-about" id="home-about">
@@ -133,18 +133,22 @@
                         </div>
                         <div class="buttons">
                             <button class="work work-head button">
-                                <img src="assets\home\icons8-external-link.svg" alt="">
+                                <img src="assets\home\external-link.svg" alt="">
                                 <a href="work.html">Portfolio</a>
                             </button>
-                            <a href="#about" class="question">
-                                
-                            </a>
-                        </div>                                
+                            <button class="work work-head button question">
+                                <a href="#about">?</a>
+                            </button>
+                        </div>
                     </div> 
                 </div>
             </div>
-            <div class="face box home-contain-div">                        
-                <img src="assets\home\Face.jpg" alt="">
+            <div class="face box home-contain-div">           
+                <img class="face-small" src="assets\home\Face.jpg" alt="">
+                <a class="me" href="#">
+                    <img src="assets\home\up-left-arrow.png" alt="Arrow symbol">
+                    That is me!
+                </a>
             </div>
         </div>
         <section class="category about box" id="about">
@@ -163,7 +167,7 @@
                         I am a junior graphic designer and front-end developer located in Kolkata, India with a passion for creating beautiful, functional designs, with a strong foundation in design principles and a willingness to learn and grow.
                     </p>
                     <button class="work work-1 button">
-                        <img src="assets\home\icons8-external-link.svg" alt="">
+                        <img src="assets\home\external-link.svg" alt="">
                         <a href="work.html#design"">My projects</a>
                     </button>
                 </div>
@@ -179,7 +183,7 @@
                         <strong>Besides</strong> design, I like to make character illustrations, of different sorts and comic based concept art. You may find some of them here!
                     </p>
                     <button class="work work-2 button">
-                        <img src="assets\home\icons8-external-link.svg" alt="">
+                        <img src="assets\home\external-link.svg" alt="">
                         <a href="work.html">Illustrations</a>
                     </button>
                 </div>
@@ -199,7 +203,7 @@
                         <strong>Apart</strong> from art and design, I am a beginner in game design, aiming to bring cool and fun looking video games to life!
                     </p>
                     <button class="work work-3 button">
-                        <img src="assets\home\icons8-external-link.svg" alt="">
+                        <img src="assets\home\external-link.svg" alt="">
                         <a href="work.html#game">Have a look!</a>
                     </button>
                 </div>
@@ -307,6 +311,7 @@
                 <!--<img src="assets/scissors.svg" class="scissors" alt="">-->
             </section>
         </div>
-        <script src="scripts/sidemenu.js"></script>
+        <script src="scripts/tabChange.js"></script>
+        <script src="scripts/sideMenu.js"></script>
     </body>
 </html>

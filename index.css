@@ -41,8 +41,8 @@
 }
 #name
 {
-    font-family: 'Cutive Mono', monospace;
-    letter-spacing: -5px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
     font-size:  70px;
 }
 
@@ -72,17 +72,16 @@
 }
 .question
 {
-    background-color: var(--palette-color-2);
-    text-align: center;
     width: 45px;
     height: 45px;
-    border: 2px solid black;
-    font-size: 20px;
     margin-left: 60px;
     border-radius: 55px;
+    padding: auto;
     cursor: default;
     animation-name: question-slide;
     animation-duration: 2s;
+    align-items: center;
+    text-align: center;
     /*todo slide*/
 }
 .button:hover
@@ -112,24 +111,46 @@
 }
 .face
 {
-    background-image: url("assets/patterns.png");
-    background-size: 100%;
-    image-rendering: auto;
+    background-image: url("assets/home/Face1.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 60%;
+    background-color: var(--palette-color-2);
     background-origin: border-box;
     margin-left: -3px;
     width: 50vw;
     border-left: var(--thick-border);
     border-right: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-end;
+    align-items:end;
 }
-.face img
+.me
 {
-    border: 3px solid black;
-    width: 300px;
-    display: block;
-    top: 50%;
+    position: relative;
+    background-color: var(--background);
+    width:fit-content;
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    padding: 1%;
+    border-radius: 55px;
+    border: var(--thin-border);
+    bottom: 23%;
+    right: 8%;
+    cursor: default;
+}
+.me img
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 55px;
+    background-color: var(--gamedev-tab);
+    border: var(--thin-border);
+    padding: 2%;
+    margin-right: 10px;
 }
 .category
 {    
@@ -308,6 +329,13 @@ progress
     background-color: #f4f1ea;
     margin-right: 10%;
 }
+@media screen and (min-width:1041px) 
+{    
+    .face-small
+    {
+        display: none;
+    }
+}
 @media screen and (max-width:1560px)
 {
     #name
@@ -362,12 +390,29 @@ progress
         border-left: 2px dashed black;
     }
 }
+
 @media screen and (max-width:1041px) 
 {
+    .me
+    {
+        display: none;
+    }
+    .face
+    {
+        background-image: url("assets/home/patterns.png");
+        background-origin: border-box;
+        background-size: 100%;
+        background-color: var(--baackground);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .face-small
+    {
+        border: var(--thin-border);
+    }
     .home-contain
     {
-        margin-top: 0;
-        margin-left: 0;
         width: 100vw;
         height: 80vh;        
         height: auto;
@@ -388,18 +433,9 @@ progress
         width: 100%;/*set background from bottom*/
         border-left: none;
     }
-    .tab
-    {
-        border-left: none;
-    }
     .active
     {
-        border-left: 3px solid black;
-    }
-    
-    .about-contain
-    {
-        margin-left: 0;
+        border-left: var(--dashed-border);
     }
     .about-text
     {
@@ -466,14 +502,6 @@ progress
     {
         font-size: 30px;
     }
-    .home-tab
-    {
-        border-left: none;
-    }
-    .contact-tab
-    {
-        border-right: none;
-    }
     .para
     {
         font-size: 18px;
@@ -526,6 +554,10 @@ progress
 }
 @media screen and (max-width:1041px) and (min-width: 520px)
 {
+    .skill-contain
+    {
+        margin-left: 98px;
+    }
     .face
     {
         text-align: left;
@@ -539,17 +571,30 @@ progress
 }
 @media screen and (max-width:768px)
 {
+    .home-contain, .about-contain, .skill-contain
+    {
+        margin-left: 0;
+    }
+    .image
+    {
+        background-size: 50%;
+        background-origin: 0;
+    }
     .face
     {
         margin-top: 67px;
+    }    
+    .home-tab, .about-tab.active
+    {
+        border-left: none;
     }
     .about-tab
     {
         border-bottom: var(--thin-border);
-    }
-    .about-tab.active
+    }    
+    .contact-tab, .home-tab, .about-tab, .work-tab
     {
-        border-left: none;
+        border-right: none;
     }
     .home-tab.active, .about-tab.active
     {

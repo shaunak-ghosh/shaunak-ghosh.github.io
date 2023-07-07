@@ -51,8 +51,23 @@ button
     justify-items: stretch;
     align-items: stretch;
     padding-right: 5%;
-    margin-bottom: 80px;
 }
+.suggest/*TODO add after effect on hover */
+{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    margin-bottom: 85px;
+    margin-left: 1.4%;
+    display: flex;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+.suggest img
+{
+    width: 22px;
+    margin-left: 15px;
+}
+
 .grid-item
 {
     color: black;
@@ -102,8 +117,47 @@ svg
     height: 30px;
     margin-bottom: -5px;
 }
-@media screen and (max-width:768px)
+.button-contain
 {
+    display: flex;
+    flex-wrap: nowrap ;
+    width: auto;
+    overflow-x: scroll;
+    position: relative;
+    padding: 1% 0 0 1%;
+    scrollbar-face-color: none;
+    margin-left: -1%;
+    margin-bottom: -3%;
+}
+.button-contain button
+{
+    margin-right: 10px;
+}
+.button-contain::-webkit-scrollbar 
+{
+    display: none;
+}
+@media screen and (max-width:1041px) and (min-width: 520px)
+{
+    .skill-contain
+    {
+        margin-left: 98px;
+    }
+    .work-text
+    {
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width:768px)
+{    
+    .skill-contain
+    {
+        margin-left: 0;
+    }
+    .work-text
+    {
+        padding-left: 10%;
+    }
     .grid-contain
     {
         width: auto;
@@ -128,10 +182,7 @@ svg
         border-bottom: var(--thin-border);
         border-right: none;
     }
-    .button-contain::-webkit-scrollbar 
-    {
-        display: none;
-    }
+    
     .head-text, .work-text
     {
         margin-left: -5%;
@@ -145,17 +196,6 @@ svg
     .links-btn
     {
         display:none;
-    }    
-    .button-contain
-    {
-        position: relative;
-        margin-left: -12%;
-        padding: 5% 0 0 0;
-        display: flex;
-        width: auto;
-        flex-wrap: nowrap ;
-        overflow-x: scroll;
-        scrollbar-face-color: none;
     }
     .button-contain button
     {

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 :root
 {
@@ -40,6 +41,27 @@ a
 {
     text-decoration: none;
     cursor: pointer;
+}
+.underline
+{
+    width: max-content;
+    position: relative;
+    text-decoration: none;
+}
+.underline:after
+{
+    content: "";
+    position: absolute;
+    background-color:var(--palette-color-1);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.2s;
+}
+.underline:hover:after
+{
+    width: 100%;
 }
 ::-webkit-scrollbar
 {
@@ -87,7 +109,7 @@ a
 .links-panel-contain strong, .links-panel-contain a
 {
     color: black;
-    font-size: 20px;
+    font-size: 20px;    
     line-height: 30px;
 }
 .links-panel-contain a:hover
@@ -189,10 +211,6 @@ nav
     writing-mode: vertical-lr;
     position: relative;
 }
-.tab:hover
-{
-    cursor: pointer;
-}
 .active
 {
     background-color: var(--palette-color-2);
@@ -204,6 +222,7 @@ nav
 .active:hover, .active a:hover
 {
     cursor: default;
+    background-color: var(--palette-color-2);
 }
 .button
 {
@@ -263,11 +282,19 @@ nav
 {
     font-size: 55px;
 }
-@media screen and (min-width:768px)
+@media screen and (min-width:1200px)
 {
     .box
     {
-        border: var(--thin-border);
+        border: var(--thick-border);
+    }
+}
+@media screen and (min-width:768px)
+{    
+    .tab a:hover
+    {
+        cursor: pointer;
+        background-color: var(--background);
     }
     body
     {
@@ -285,8 +312,8 @@ nav
     }
 }
 /*@media screen and (min-width:768px) and height*/
-@media screen and (max-width:1041px) 
-{    
+@media screen and (max-width:1041px) and (min-width: 768px)
+{
     .links-btn
     {
         position: fixed;
@@ -297,8 +324,21 @@ nav
         border-right: none;
     }
 }
+@media screen and (max-width:1200px)
+{
+    .box
+    {
+        border: var(--thin-border);
+    }
+}
 @media screen and (max-width:768px)
 {
+    .links-btn
+    {
+        vertical-align: bottom;
+        bottom: 0;
+        align-self: flex-end;
+    }
     .box
     {
         border: var(--thin-border);
@@ -360,6 +400,12 @@ nav
 }
 @media screen and (max-width:639px)
 {
+    .links-panel
+    {
+        right: -100vw;
+        width: 100vw;
+        height: 100vh;
+    }
     .credit a
     {
         font-size: 16px;
@@ -384,10 +430,7 @@ nav
     }
     .credit img
     {
-        width: 15px;
-    }
-    .credit a 
-    {
-        font-size: 12px;
+        width: 17px;
+        height: 17px;
     }
 }
