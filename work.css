@@ -67,7 +67,6 @@ button
     width: 22px;
     margin-left: 15px;
 }
-
 .grid-item
 {
     color: black;
@@ -86,17 +85,16 @@ button
 .tags
 {
     display: flex;
-    flex-wrap: wrap;
     flex-wrap: wrap-reverse;
     justify-content: end;
+    font-size: 15px;
 }
 .tags span
 {
     margin-left: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 55px;
-    font-size: 15px;
+    border-radius: 55px;    
 }
 .grid-item strong
 {
@@ -148,6 +146,106 @@ svg
         padding-left: 20px;
     }
 }
+    
+@media screen and (max-width:1660px)
+{
+    .grid-item strong
+    {
+        font-size: 22px;
+    }
+    .tags
+    {
+        margin-top: -10px;
+    }
+    
+}
+@media screen and (max-width:1560px)
+{
+    .grid-item strong
+    {
+        font-size: 20px;
+    }    
+}
+@media screen and (max-width:1360px)
+{
+    .grid-item
+    {
+        padding-bottom: 10px;
+    }
+    .grid-item strong
+    {
+        font-size: 18px;
+    }
+    .tags
+    {
+        font-size: 12px;
+        margin-top: -10px;
+        height: 70%;
+    }
+    .tags span
+    {
+        margin-left: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 55px;
+        height: 20px;
+        margin-top: 3px;
+    }
+}
+@media screen and (max-width:1041px)
+{
+    .grid-contain
+    {
+        grid-gap: 12px;
+    }    
+}
+@media screen and (max-width:910px)
+{
+    .grid-item strong
+    {
+        font-size: 17px;
+    }
+    .tags span
+    {
+        margin-left: 5px;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 55px;
+        height: 20px;
+        margin-top: 3px;
+    }    
+}
+@media screen and (max-width:1200px)
+{
+    .grid-item
+    {
+        border: var(--thin-border);
+    } 
+    .grid-item strong
+    {        
+        min-height:17px;
+        text-overflow:ellipsis;
+    }
+}
+@media screen and (max-width:1041px)
+{
+    .work-text strong
+    {
+        margin-left: 10px;
+    }
+    .button-contain
+    {
+        margin-left: -20px;
+    }
+    .recent
+    {
+        margin-left: 2%;
+    }
+    .grid-item strong
+    {        
+        max-height:17px;text-overflow:ellipsis;
+    }
+}
 @media screen and (max-width:768px)
 {    
     .skill-contain
@@ -171,11 +269,10 @@ svg
     .grid-item
     {
         width: auto;
-        margin: none;
     }
-    .tags
+    .grid-item strong
     {
-        display: none;
+        font-size: 28px;
     }
     .contact-tab
     {
@@ -196,15 +293,18 @@ svg
     .links-btn
     {
         display:none;
+    }.button-contain
+    {
+        margin-left: -5.5%;
     }
     .button-contain button
     {
         font-size: 25px;
         margin-right: 10px;
     }
-    .all
+    .recent
     {
-        margin-left: 11%;
+        margin-left: 4%;
     }
 }
 @media screen and (max-width:585px)

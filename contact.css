@@ -126,21 +126,131 @@
 {
     border-left: 2px dashed black;
 }
-@media screen and (min-width:768px)
+.bottom-socials-span
+{
+    margin-left: 2.5%;
+    font-weight: bold;
+}
+@media screen and (min-width:870px)
 {
     .social-small, .bottom-socials-span
     {
         display: none;
     }
 }
+@media screen and (max-width:1041px) and (min-width: 768px)
+{
+    .contact-contain
+    {
+        margin-left: 98px;
+    }
+    .contact-text
+    {
+        padding-left: 2%;
+    }
+}
+@media screen and (max-width:1200px)
+{
+    .contact
+    {
+        width: 90%;
+        padding-right: 0;
+    }
+    .contact-contain
+    {
+        margin-left: 98px;
+    }
+    .contact-text
+    {
+        padding-left: 2%;
+    }
+    .input input[type="text"], .input input[type="email"]
+    {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:970px)
+{
+    .form label
+    {
+        font-size: 25px;
+    }
+    .contact-info span
+    {
+        font-size: 20px;
+    }
+    .contact-info a
+    {
+        font-size: 18px;
+    }    
+    .input input[type="text"], .input input[type="email"]
+    {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:870px)
+{
+    .contact-contain
+    {
+        margin-left: 98px;
+    }
+    .info
+    {
+        margin: 5%;
+    }
+    .contact
+    {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+    }
+    .social
+    {
+        display: none;
+    }
+    .contact-text
+    {
+        padding-left: 1.5em;
+    }
+    .textbox
+    {
+        border-top: none;
+        height: auto;
+    }
+    .info, .form
+    {
+        margin: 1em;
+    }
+    .bottom-socials-span
+    {
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .social-small
+    {
+        margin-left: 20px;
+        margin-bottom: 10%;
+    }
+    .social-small a
+    {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }    
+}
 @media screen and (max-width:768px)
 {
+    .contact-contain
+    {
+        margin-left: 0;
+    }
     .links-btn
     {
         display: none;
     }
     .contact-text
     {
+        padding-left: 10%;
         height: auto;
         margin-top: 5%;
         margin-left: -5%;
@@ -155,13 +265,7 @@
     {
         font-size: 18px;
     }
-    .textbox
-    {    
-        padding: 7%;
-        border-top: none;
-        padding-top: 5em;
-        height: auto;
-    }
+    
     .active{
         border-left: var(--thin-border);
         text-align: center;
@@ -180,11 +284,7 @@
     {
         display: none;
     }
-    .bottom-socials-span
-    {
-        margin-left: 2.5%;
-        font-weight: bold;
-    }
+    
     .social-small
     {
         margin-left: 2.5%;
@@ -207,16 +307,8 @@
 }
 @media screen and (max-width: 680px)
 {
-    .contact
-    {
-        flex-direction: column-reverse;
-        padding: 0;
-        margin: 0;
-    }
-    .info
-    {
-        margin: 5%;
-    }
+    
+    
 }
 @media screen and (max-width: 520px)
 {

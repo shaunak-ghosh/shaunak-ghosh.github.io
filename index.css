@@ -154,7 +154,8 @@
 }
 .category
 {    
-    font-size: 50px;
+    padding: .5%;
+    font-size: 60px;
     text-align: center;
     border-left: none;
     border-right: none;
@@ -342,6 +343,10 @@ progress
     {
         font-size: 50px;
     }
+    .image-2
+    {
+        background-size: 80%;
+    }
 } 
 @media screen and (max-width:1440px) 
 {
@@ -354,8 +359,9 @@ progress
         font-size: 35px;
     }
     .category
-    {
-        font-size: 45px;
+    {    
+        padding: .3%;
+        font-size: 50px;
     }
     .num
     {
@@ -365,6 +371,10 @@ progress
     .image-1
     {
         width: 300%;
+    }
+    .image-2
+    {
+        background-size: 75%;
     }
     .work-1 a, .work-2 a, .work-3 a
     {
@@ -388,6 +398,10 @@ progress
     .active
     {
         border-left: 2px dashed black;
+    }
+    .category
+    {
+        margin-left: 98px;
     }
 }
 
@@ -454,6 +468,10 @@ progress
     .image-1
     {
         border-bottom: 3px solid black;
+    }
+    .image-2
+    {
+        background-size: 40%;
     }
     .textbox-num
     {
@@ -537,10 +555,6 @@ progress
         rotate: 0deg;
         z-index: 0;
     }
-    #name
-    {
-        font-size: 3em;
-    }
 }
 @media screen and (max-width:1200px) 
 {
@@ -557,6 +571,7 @@ progress
     .skill-contain
     {
         margin-left: 98px;
+        padding-right: 50%;
     }
     .face
     {
@@ -571,6 +586,16 @@ progress
 }
 @media screen and (max-width:768px)
 {
+    .question
+    {
+        display: none;
+    }
+    .category
+    {    
+        padding: .2%;
+        font-size: 45px;
+        margin-left: 0;
+    }
     .home-contain, .about-contain, .skill-contain
     {
         margin-left: 0;
@@ -601,6 +626,18 @@ progress
         border-top: none;
         border-bottom: var(--dashed-border) black;
     }
+    .buttons
+    {
+        height: 200px;
+    }
+    .skill-contain
+    {
+        padding-right: 0;
+    }
+    .sect
+    {
+        width: 97%;
+    }
 }
 @media screen and (max-width:639px)
 {
@@ -620,6 +657,14 @@ progress
 }
 @media screen and (max-width:520px)
 {
+    #name
+    {
+        font-size: 45px;
+    }
+    .rotate-about span
+    {
+        font-size: 30px;
+    }
     .head
     {
         font-size: 19px;
@@ -631,6 +676,17 @@ progress
     .info span
     {
         font-size: 15px;
+    }
+}
+@media screen and (max-width:420px)
+{
+    #name
+    {
+        font-size: 38px;
+    }
+    .rotate-about span
+    {
+        font-size: 25px;
     }
 }
 /*height mqs*/
