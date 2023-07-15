@@ -20,7 +20,7 @@
     --dashed-border: 2px dashed;
     --thick-dashed-border: 3px dashed;
     --work-item-hover:#7454bb;
-    --scrollbar-background: #c1b3ff72;
+    --scrollbar-background: #ddd6f2;
 }
 *
 {
@@ -36,6 +36,11 @@ html, body
     background-color: var(--background );
     max-width: 100%;
     overflow-x: hidden;
+
+    background-color: #f4f1ea;
+    opacity: 1;
+    background-image: radial-gradient(#1200ff 1.2000000000000002px, #f4f1ea 1.2000000000000002px);
+    background-size: 24px 24px;
 }
 a
 {
@@ -53,15 +58,19 @@ a
     content: "";
     position: absolute;
     background-color:var(--palette-color-1);
-    height: 2px;
+    height: 3px;
     width: 0;
     left: 0;
     bottom: -3px;
-    transition: 0.2s;
+    transition: all .35s cubic-bezier(0.61, 0.01, 0.02, 0.92);
 }
 .underline:hover:after
 {
     width: 100%;
+}
+ul a:hover:after
+{
+    width: 105%;
 }
 ::-webkit-scrollbar
 {
@@ -87,7 +96,6 @@ a
     border-bottom: var(--thick-border);
     transition: right 0.3s ease-in-out;
     z-index: 20;
-
     padding: 100px;
     box-shadow: 10px 15px 0px rgb(0, 0, 0);
 }
@@ -116,11 +124,11 @@ a
     font-size: 20px;    
     line-height: 32px;
 }
-.links-panel-contain a:after, .mail-div:after
+.links-panel-contain a:hover:after, .mail-div:hover:after
 {
     background-color: var(--work-item-hover);
-    bottom: 2px;
-    height: 3px;
+    width: 105%;
+    height: 4px;
 }
 .mail-div 
 {
@@ -262,6 +270,7 @@ nav
     font-weight: 500;
     border-top: var(--dashed-border);
     border-bottom: none;
+    background-color: var(--background);
 }
 .credit a
 {
@@ -287,6 +296,13 @@ nav
 .head-text strong
 {
     font-size: 55px;
+}
+.heading
+{
+    padding-left: .2%;
+    background-color: var(--background);
+    width: fit-content;
+    word-wrap: normal;
 }
 @media screen and (min-width:1200px)
 {
@@ -377,6 +393,7 @@ nav
         position: fixed;
         top: 87%;
         margin-bottom: -50px;
+        display: none;
     }
     .box
     {

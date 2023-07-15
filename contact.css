@@ -14,7 +14,6 @@
     margin-top: 0;
     padding-top: 5em;
     padding-left: 10%;
-    min-height: inherit;
 }
 .work-tab
 {
@@ -40,6 +39,9 @@
 .info
 {
     margin-left: 10%;
+    background-color: var(--background);
+    padding-left: 1%;
+    margin-left: 1%;
 }
 .form label
 {
@@ -63,7 +65,7 @@
     width: 80%;
     font-size: 18px;
     padding-left: 15px;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
     margin-bottom: 8%;
     cursor:auto;
     outline: none;
@@ -130,6 +132,14 @@
 {
     margin-left: 2.5%;
     font-weight: bold;
+}
+.form, .info
+{
+    height: max-content;
+}
+.input, .contact-info, .social-small, .bottom-socials-span
+{
+    background-color: var(--background);
 }
 @media screen and (min-width:870px)
 {
@@ -276,6 +286,10 @@
         font-weight: bold;
         font-size: 20px;
     }
+    .contact-info
+    {
+        width: fit-content;
+    }
     .contact-info a
     {
         font-weight: normal;
@@ -283,13 +297,12 @@
     .social
     {
         display: none;
-    }
-    
+    }    
     .social-small
     {
         margin-left: 2.5%;
         margin-bottom: 10%;
-        width: 85vw;
+        width: fit-content;
     }
     .social-small a
     {
@@ -297,6 +310,7 @@
         font-size: 18px;
         margin-right: 10px;
         flex-wrap: wrap;
+        font-weight: 100;
     }
     .contact
     {
@@ -307,8 +321,7 @@
 }
 @media screen and (max-width: 680px)
 {
-    
-    
+        
 }
 @media screen and (max-width: 520px)
 {

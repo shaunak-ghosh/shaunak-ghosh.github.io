@@ -11,7 +11,6 @@
 }
 .intro
 {
-    background-image: url("assets/home/red-star-shape.png");
     background-repeat: no-repeat;
     background-size: 45%;
     background-position-x: -40%;
@@ -25,9 +24,15 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.intro-1
+{
+    background-color: var(--background);
+    width: fit-content;
+    padding: 1%;
+    padding-top: 0;
+}
 .intro-2
 {
-    background-image: url("assets/home/blue-star-shape.png");
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: right;   
@@ -154,6 +159,7 @@
 }
 .category
 {    
+    background-color: var(--background);
     padding: .5%;
     font-size: 60px;
     text-align: center;
@@ -187,7 +193,6 @@
 }
 .image-3
 {
-    /*background-image: url("assets/gamedev/cube_simulator.gif");*/
     width: 120%;
     display: flex;
     justify-content: center;
@@ -198,7 +203,7 @@
 }
 .about-1, .about-2
 {
-    border-bottom: var(--thick-dashed-border) black;
+    border-bottom: var(--thick-border);
 }
 .about-text, .skills-text
 {
@@ -215,6 +220,10 @@
 .textbox-2, .textbox-3
 {
     width: 130%;
+}
+.textbox p
+{
+    background-color: var(--background);
 }
 .rotate-about
 {
@@ -264,6 +273,7 @@
     font-family: 'Space Mono', monospace;
     font-weight: 400;
     line-height: 247.4%;
+    padding: 2%;
 }
 .para-1, .para-3
 {
@@ -329,6 +339,11 @@ progress
     height: 30px;
     background-color: #f4f1ea;
     margin-right: 10%;
+}
+.skill-contain
+{
+    margin-top: 5px;
+    background-color: var(--background);
 }
 @media screen and (min-width:1041px) 
 {    
@@ -404,7 +419,6 @@ progress
         margin-left: 98px;
     }
 }
-
 @media screen and (max-width:1041px) 
 {
     .me
@@ -413,13 +427,29 @@ progress
     }
     .face
     {
-        background-image: url("assets/home/patterns.png");
+        background-image: none;
         background-origin: border-box;
         background-size: 100%;
         background-color: var(--baackground);
         display: flex;
         justify-content: center;
         align-items: center;
+
+        --s: 150px; /* control the size */
+        --c1: #f7d2a1;
+        --c2: #d15629;
+
+        --_g: 
+            var(--c1) 0%  5% ,var(--c2) 6%  15%,var(--c1) 16% 25%,var(--c2) 26% 35%,var(--c1) 36% 45%,
+            var(--c2) 46% 55%,var(--c1) 56% 65%,var(--c2) 66% 75%,var(--c1) 76% 85%,var(--c2) 86% 95%,
+            #0000 96%;
+        background:
+            radial-gradient(50% 50% at 100% 0,var(--_g)),
+            radial-gradient(50% 50% at 0 100%,var(--_g)),
+            radial-gradient(50% 50%,var(--_g)),
+            radial-gradient(50% 50%,var(--_g)) calc(var(--s)/2) calc(var(--s)/2)
+            var(--c1);
+        background-size: var(--s) var(--s);
     }
     .face-small
     {
