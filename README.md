@@ -2,4 +2,4 @@
 Visit https://rooveloftcodes.github.io/Website
 
 ### What's new? 🔊
-On desktop views, click on the black button on the top right corner to bring up the side panel!
+Added graphic representations in work page grid items

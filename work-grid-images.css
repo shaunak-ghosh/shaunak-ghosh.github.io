@@ -1,6 +1,6 @@
 .grid-item
 {
-    background-size: 100%;
+    background-size: 100%;    
 }
 .grid-item:hover
 {
@@ -71,6 +71,17 @@
 {
     background-image: url("assets/work/illustrations/2023/low_poly_man.jpg");
     background-size: 130%;
+}
+.feel
+{
+    background-image: url("https://mir-s3-cdn-cf.behance.net/projects/808/719f75162347367.Y3JvcCwxMDU4LDgyNywwLDExNQ.jpg");
+    background-size: 140%;
+    background-position-x: 50%;
+    background-position-y: 10%;
+}
+.feel:hover
+{
+    background-size: 110%;
 }
 .yellow-mando
 {

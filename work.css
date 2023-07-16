@@ -27,7 +27,7 @@ button
     padding-top: 5em;
     padding-left: 10%;
     padding-bottom: 4%;
-    min-height: inherit;
+    min-height: 100vh;
 }
 .workbox
 {
@@ -41,9 +41,22 @@ button
 {
     font-size: 25px;
     font-weight: bold;
-    /*border-left: 10px solid var(--palette-color-1);*/
+    /* border-left: 10px solid var(--palette-color-1); */
     padding-left: 10px;
     background-color: var(--background);
+    margin-top: 2%;
+    width: fit-content;
+}
+.note
+{
+    background-color: var(--background);
+    width: fit-content;
+    font-size: 20px;
+}
+.note a
+{
+    color: black;
+    cursor: pointer;
 }
 .grid-contain
 {
@@ -57,7 +70,6 @@ button
 {
     font-family: 'Roboto Mono', monospace;
     font-size: 17px;
-    margin-bottom: 85px;
     margin-left: 1.4%;
     display: flex;
     cursor: pointer;
@@ -148,7 +160,6 @@ svg
         padding-left: 20px;
     }
 }
-    
 @media screen and (max-width:1660px)
 {
     .grid-item strong
@@ -159,13 +170,16 @@ svg
     {
         margin-top: -10px;
     }
-    
-}
+}    
 @media screen and (max-width:1560px)
 {
     .grid-item strong
     {
         font-size: 20px;
+    }    
+    .grid-item:hover > strong
+    {
+        font-size: 26px;
     }    
 }
 @media screen and (max-width:1360px)
@@ -173,11 +187,15 @@ svg
     .grid-item
     {
         padding-bottom: 10px;
-    }
+    }    
     .grid-item strong
     {
         font-size: 18px;
     }
+    .grid-item:hover > strong
+    {
+        font-size: 18px;
+    } 
     .tags
     {
         font-size: 12px;
@@ -193,22 +211,6 @@ svg
         height: 20px;
         margin-top: 3px;
     }
-}
-@media screen and (max-width:910px)
-{
-    .grid-item strong
-    {
-        font-size: 17px;
-    }
-    .tags span
-    {
-        margin-left: 5px;
-        padding-left: 6px;
-        padding-right: 6px;
-        border-radius: 55px;
-        height: 20px;
-        margin-top: 3px;
-    }    
 }
 @media screen and (max-width:1200px)
 {
@@ -237,15 +239,31 @@ svg
         max-height:17px;text-overflow:ellipsis;
     }
 }
+@media screen and (max-width:910px)
+{
+    .grid-item strong
+    {
+        font-size: 17px;
+    }
+    .tags span
+    {
+        margin-left: 5px;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 55px;
+        height: 20px;
+        margin-top: 3px;
+    }    
+}
 @media screen and (max-width:768px)
-{    
+{
     .skill-contain
     {
         margin-left: 0;
     }
     .work-text
     {
-        padding-left: 10%;
+        padding-left: 10%;        
     }
     .grid-contain
     {
@@ -265,12 +283,15 @@ svg
     {
         font-size: 28px;
     }
+    .grid-item:hover > .grid-item strong
+    {
+        font-size: 28px;
+    }
     .contact-tab
     {
         border-bottom: var(--thin-border);
         border-right: none;
-    }
-    
+    }    
     .head-text, .work-text
     {
         margin-left: -5%;
@@ -297,12 +318,16 @@ svg
     {
         margin-left: 4%;
     }
+    .tags
+    {
+        margin-top: -10%;
+    }
 }
 @media screen and (max-width:585px)
 {
     .head-text strong 
     {
-        font-size: 40px;
+        font-size: 25px;
     }
 }
 @media screen and (max-width:450px)
@@ -318,6 +343,6 @@ svg
     }
     .head-text strong 
     {
-        font-size: 35px;
+        font-size: 20px;
     }
 }

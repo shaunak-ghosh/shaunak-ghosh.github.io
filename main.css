@@ -209,7 +209,6 @@ nav
     display: flex;
     justify-content: center;
     align-content: center;
-    line-height: 94px;
     height: 100%;
     border-bottom: var(--thick-border);
     border-left: var(--thick-border);
@@ -229,7 +228,6 @@ nav
 {
     background-color: var(--palette-color-2);
     margin-bottom: -1px;
-    line-height: 110px;
     border-left: var(--dashed-border);
     width: 115px;
 }
@@ -313,10 +311,15 @@ nav
 }
 @media screen and (min-width:768px)
 {    
-    .tab a:hover
+    .tab a:hover, .tab:hover
     {
         cursor: pointer;
         background-color: var(--palette-color-3);
+    }
+    .active a:hover, .active:hover, .active, .active a
+    {
+        cursor: default;
+        background-color: var(--palette-color-2);
     }
     body
     {
