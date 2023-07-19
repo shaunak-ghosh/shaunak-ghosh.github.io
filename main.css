@@ -31,12 +31,18 @@
     -webkit-user-select: none;
     user-select: none;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 html, body
 {
     background-color: var(--background );
     max-width: 100%;
     overflow-x: hidden;
-
+}
+body
+{
     background-color: #f4f1ea;
     opacity: 1;
     background-image: radial-gradient(#1200ff 1.2000000000000002px, #f4f1ea 1.2000000000000002px);
@@ -206,6 +212,7 @@ nav
 }
 .tab
 {
+    pointer-events:auto;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -213,10 +220,15 @@ nav
     border-bottom: var(--thick-border);
     border-left: var(--thick-border);
     border-right: var(--thick-border);
+    line-height: 590%;
 }
 .tab a
 {
-    text-align: center;    
+
+    text-align: center;
+    
+    line-height: inherit;
+
     font-size: 30px;
     font-family: 'Roboto Mono';
     font-weight: 400;

@@ -116,11 +116,11 @@
 }
 .face
 {
-    background-image: url("assets/home/Face1.jpg");
+    background-image: url("assets/home/face.png");
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 50%;
-    background-size: 60%;
+    background-size: 80%;
     background-color: var(--palette-color-2);
     background-origin: border-box;
     margin-left: -3px;
