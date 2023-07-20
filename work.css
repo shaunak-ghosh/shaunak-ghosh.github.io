@@ -73,6 +73,8 @@ button
     margin-left: 1.4%;
     display: flex;
     cursor: pointer;
+
+    background-color: var(--background);
 }
 .suggest img
 {
