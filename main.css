@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redacted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 :root
 {
     --scrollbar: #1200359a;
@@ -96,7 +100,7 @@ ul a:hover:after
     top: 0;
     right: -530px; /* Initially hidden */
     width: 530px;
-    height: 60%;
+    height: 75%;
     background: var(--palette-color-2);
     border-left: var(--thick-border);
     border-bottom: var(--thick-border);
@@ -122,7 +126,8 @@ ul a:hover:after
 }
 .links-panel-contain strong
 {
-    font-size: 25px;
+    font-size: 30px;
+    /*TODO change font here*/
 }
 .links-panel-contain a
 {
