@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Redacted&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 :root
 {
     --scrollbar: #1200359a;
@@ -509,4 +510,22 @@ nav
         width: 17px;
         height: 17px;
     }
+}/*
+#home
+{
+    z-index: 0;
+    background-image: url("assets/home/logo.png");
+    background-position-y: 100%;
+    background-position-x: 0%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
 }
+.intro-1, .intro-2
+{
+    z-index: 2;
+    filter: blur(0);
+    z-index: 10;
+}*/
