@@ -141,6 +141,7 @@
     font-weight: bold;
     color: black;
     padding: 1%;
+    padding-right: 2.5%;
     border-radius: 55px;
     border: var(--thin-border);
     bottom: 23%;
@@ -154,7 +155,7 @@
     border-radius: 55px;
     background-color: var(--gamedev-tab);
     border: var(--thin-border);
-    padding: 2%;
+    padding: 4%;
     margin-right: 10px;
 }
 .category

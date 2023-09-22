@@ -183,6 +183,17 @@
 {
     background-size: 110%;
 }
+.cube-simulator
+{
+    background-image: url("assets/work/gamedev/cube-simulator.jpg");
+    background-position-x: 55%;
+    background-position-y: 50%;
+    background-size: 200%;
+}
+.cube-simulator:hover
+{
+    background-size: 175%;
+}
 .gd-plat
 {
     background-image: url("assets/work/gamedev/gd-platformer.png");
