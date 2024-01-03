@@ -71,6 +71,15 @@
 {
     display: flex;
 }
+.buttons-about-1
+{
+    display: flex;
+    justify-content: right;
+}
+.work-1
+{
+    margin-left: 5%;
+}
 .work-head, .question
 {
     margin-top: 15%;

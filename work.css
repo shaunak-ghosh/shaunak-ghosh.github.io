@@ -2,6 +2,10 @@ button
 {
     background-color: var(--background);
 }
+.button-contain
+{
+    margin-top: 2%;
+}
 .button-contain button
 {
     border: var(--thin-border);
@@ -32,10 +36,6 @@ button
 .workbox
 {
     padding: 0%;
-}
-.button-contain
-{
-    margin-top: 2%;
 }
 .category, .year
 {
@@ -307,7 +307,8 @@ svg
     .links-btn
     {
         display:none;
-    }.button-contain
+    }
+    .button-contain
     {
         margin-left: -5.5%;
     }

@@ -56,7 +56,7 @@
     background-size: 140%;
 }
 .p-c
-{
+{   
     background-image: url("assets/work/design/pharm-care.jpg");
     background-size: 155%;
     background-position-x: 50%;
@@ -67,6 +67,94 @@
     background-size: 125%;
 }
 /*illustrations*/
+.winter-snow
+{
+    background-image: url("assets/work/illustrations/2023/winter-snow.jpg");
+    background-size: 190%;
+    background-position-y: 40%;
+}
+.winter-snow:hover
+{
+    background-size: 150%;
+    background-position-x: 10%;
+}
+.winter-snow strong
+{
+    color: white;
+}
+.chief
+{
+    background-image: url("assets/work/illustrations/2023/chief.jpg");
+    background-size: 110%;
+    background-position-y: 40%;
+}
+.gwen-swinging
+{
+    background-image: url("assets/work/illustrations/2023/gwen-swinging.jpg");
+    background-size: 110%;
+    background-position-y: 90%;
+}
+.gwen-swinging strong
+{
+    color: white;
+}
+.dark-garfield
+{
+    background-image: url("assets/work/illustrations/2023/dark-garfield.jpg");
+    background-size: 110%;
+    background-position-y: 30%;
+}
+.dark-garfield strong
+{
+    color: white;
+}
+.woman-grey
+{
+    background-image: url("assets/work/illustrations/2023/woman_with_greys.jpg");
+    background-size: 110%;
+    background-position-y: 30%;
+}
+.grumpy-man-cd
+{
+    background-image: url("assets/work/illustrations/2023/grumpy-man-cover.jpg");
+    background-size: 110%;
+    background-position-y: 30%;
+}
+.ahsoka-white
+{
+    background-image: url("assets/work/illustrations/2023/ahsoka-the-white.jpg");
+    background-size: 105%;
+    background-position-y: 30%;
+}
+.xamira-cd
+{
+    background-image: url("assets/work/illustrations/2023/xamira.jpg");
+    background-size: 110%;
+    background-position-y: 10%;
+}
+.xamira-cd:hover
+{
+    background-size: 90%;
+    background-position-y: 10%;
+}
+.woman-dark
+{
+    background-image: url("assets/work/illustrations/2023/woman-in-dark.jpg");
+    background-size: 110%;
+    background-position-y: 15%;
+}
+.practice-2023
+{
+    background-image: url("       ");
+    background-size: 110%;
+    background-position-y: 15%;
+}
+.spider-punk-comic
+{
+    background-image: url("assets/work/illustrations/2023/spider-punk-comic.jpg");
+    background-size: 110%;
+    background-position-y: 15%;
+}
 .low-poly-man
 {
     background-image: url("assets/work/illustrations/2023/low_poly_man.jpg");
@@ -240,15 +328,4 @@
 .well:hover
 {
     background-size: 145%;
-}
-.donut
-{
-    background-image: url("assets/work/experiments/donut.png");
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-size: 150%;
-}
-.donut:hover
-{
-    background-size: 120%;
 }

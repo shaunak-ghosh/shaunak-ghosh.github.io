@@ -9,10 +9,10 @@
 :root
 {
     --scrollbar: #1200359a;
-    --background: #f4f1ea;    
+    --background: #e7e5dd;    
     --palette-color-1: #8b79d4;
-    --palette-color-2: #cabbff;
-    --palette-color-3: #e3ddff;
+    --palette-color-2: #b7aae8;
+    --palette-color-3: #d4ceed;
     --active-tab: #d3c9f5;
     --recent-tab: #c1b2ff;
     --design-tab:#f09f9f;
@@ -48,9 +48,9 @@ html, body
 }
 body
 {
-    background-color: #f4f1ea;
+    background-color: var(--background);
     opacity: 1;
-    background-image: radial-gradient(#1200ff 1.2000000000000002px, #f4f1ea 1.2000000000000002px);
+    background-image: radial-gradient(#1200ff 1.2000000000000002px, var(--background) 1.2000000000000002px);
     background-size: 24px 24px;
 }
 a
