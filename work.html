@@ -46,14 +46,15 @@
             {
                 cursor:pointer;
             }
-            .popup-image-contain
+            #popup-content
             {
-                width: 90%;
-                height: 85vh;
                 padding: 5%;
+                height: 85vh;
+                overflow-y: scroll;
             }
             .popup-sub-container
             {
+                min-width: 450px;
                 padding-inline: 0 2% 2% 2%;
                 width: 50%;
                 height: auto;
@@ -87,7 +88,7 @@
             }
             #popup-title
             {
-                font-family: Consolas;
+                word-spacing: -5px;
                 background-color: #83ff6f;
                 font-size: 25px;
                 margin: .25%;
@@ -241,9 +242,7 @@
             <div id="popupContainer" style="display: none; z-index: 40;" class="parent">
                 <div class="popup-sub-container centered">
                     <div class="popup-head">
-                        <span id="popup-title">
-                            
-                        </span>
+                        <span id="popup-title"></span>
                         <button id="close">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -252,12 +251,9 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="popup-image-contain">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa suscipit velit eos recusandae eum. Dolore in facilis magni adipisci architecto dicta exercitationem vitae, dolorum asperiores numquam, voluptatum esse quisquam!
-                    </div>
+                    <p id="popup-content"></p>
                 </div>
             </div>
-
             <div class="skill-contain">
                 <section class="work-text head-text">
                     <div class="heading">
@@ -301,19 +297,13 @@
                                         </div>
                                         <strong>Counter app</strong>
                                     </a>
-                                    <a onclick="showPopup()" class="grid-item grid-item-3 typography">
+                                    <a onclick="showPopup()" class="grid-item typography">
                                         <div class="tags">
                                             <span class="indesign">InDesign</span>
                                             <span class="figma">Figma</span>
                                         </div>
                                         <strong>Typography</strong>
                                     </a>
-                                    <!--<a href="error.html" class="grid-item grid-item-3">
-                                        <div class="tags">
-                                            <span class="figma">Figma</span>
-                                        </div>
-                                        <strong>Brochure</strong>
-                                    </a>-->
                                 </div>
                                 <span class="suggest">
                                     <a class="underline" onclick="showPanel(2,'var(--design-tab)')" style="background: transparent; border: none;">
@@ -332,8 +322,8 @@
                                         </svg>
                                     Illustrations
                                     </div>
-                                <div class="grid-contain">                                        
-                                    <a onclick="showPopup()" class="grid-item low-poly-man">
+                                <div class="grid-contain">
+                                    <a onclick="showPopup('Low Poly Man')" class="grid-item low-poly-man">
                                         <div class="tags">
                                             <span class="illustrator">Illustrator</span>
                                         </div>                                            
@@ -357,7 +347,7 @@
                                     Game development
                                 </div>
                                 <div class="grid-contain">                                        
-                                    <a onclick="showPopup()" class="dj grid-item grid-item-3 dj">
+                                    <a onclick="showPopup('Dwarfs Journey')" class="dj grid-item grid-item-3 dj">
                                         <div class="tags">                                                
                                             <span class="unity">Unity</span>
                                             <span class="cs">C#</span>
@@ -429,12 +419,6 @@
                                             </div>
                                         <strong>Typography</strong>
                                     </a>
-                                    <!--<a href="error.html" class="grid-item grid-item-3">
-                                            <div class="tags">
-                                                <span class="figma">Figma</span>
-                                            </div>
-                                        <strong>Brochure</strong>
-                                    </a>-->
                                     <a onclick="showPopup()" class="grid-item grid-item-3 logofolio-1">
                                             <div class="tags">
                                                 <span class="illustrator">Illustrator</span>
@@ -761,37 +745,6 @@
             </div>
             <script src="scripts/sideMenu.js"></script>
             <script src="scripts/worktabs.js"></script>
-            <script>
-                var title = document.querySelectorAll(".anchor").textContent;//store title of clicked element (error: only checking first element with same id | fix: target the vlivked element)
-                console.log(title);
-                var popupTitle = document.getElementById("popup-title");
-                var closeButton = document.getElementById('close');
-                //paste the copied text from chatgpt
-                function showPopup() {
-                    var popup = document.getElementById('popupContainer');
-                    popup.style.display = 'block';
-                    popupTitle.innerText = title; //paste title of clicked element
-                    // Hide popup when the user clicks outside the container
-                    closeButton.onclick = function(event) {
-                        popup.style.display = 'none';
-                    }
-                    window.onclick = function(event) {
-                        if (event.target == popup){
-                            popup.style.display = 'none';                        
-                        }
-                    }
-                    function handleKeyDown(event) {
-                        if (event.key === 'Escape') {
-                            if (popup.style.display == 'block')
-                            {
-                                popup.style.display = 'none';
-                                popup.style.transition = 'cubic-bezier(0.03, 0.6, 0.3, 1.09)';
-                            }
-                        }
-                    }
-                    // Attach the event listener to the window object
-                    window.addEventListener('keydown', handleKeyDown);
-                }
-            </script>
+            <script src="scripts/togglepopup.js"></script>
     </body>
 </html
