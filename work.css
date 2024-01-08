@@ -69,17 +69,25 @@ button
 .suggest
 {
     font-family: 'Roboto Mono', monospace;
-    font-size: 17px;
+    font-size: 20px;
     margin-left: 1.4%;
     display: flex;
     cursor: pointer;
-
+    padding-bottom: -10%;
     background-color: var(--background);
+    width: fit-content; 
+    justify-content: center;
+    vertical-align: bottom;
+}
+.suggest:hover, .suggest a:hover
+{
+    cursor: default;
 }
 .suggest img
 {
-    width: 22px;
-    margin-left: 15px;
+    height: 55%;
+    justify-content: center;
+    vertical-align: middle;
 }
 .grid-item
 {

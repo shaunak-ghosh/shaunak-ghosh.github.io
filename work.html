@@ -75,15 +75,10 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
                 border-bottom: 2px solid black;
                 width: 100%;
-                /*align-self: right;
-                text-align: right;
-                float: right;*/
-
                 background-color: #83ff6f;
                 opacity: 1;
                 background-image:  radial-gradient(#6a37d6 1px, transparent 1px), radial-gradient(#6a37d6 1px, #83ff6f 1px);
@@ -247,7 +242,7 @@
                 <div class="popup-sub-container centered">
                     <div class="popup-head">
                         <span id="popup-title">
-                            title
+                            
                         </span>
                         <button id="close">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -264,7 +259,7 @@
             </div>
 
             <div class="skill-contain">
-                <section class="work-text head-text">             
+                <section class="work-text head-text">
                     <div class="heading">
                         <strong>What I have been doing.</strong>
                     </div>                        
@@ -320,10 +315,12 @@
                                         <strong>Brochure</strong>
                                     </a>-->
                                 </div>
-                                <a class="suggest underline" onclick="showPanel(1,'var(--design-tab)')" style="background: transparent; border: none;">
-                                    Go to design tab
-                                    <img src="assets\home\external-link.svg" alt="">
-                                </a>
+                                <span class="suggest">
+                                    <a class="underline" onclick="showPanel(2,'var(--design-tab)')" style="background: transparent; border: none;">
+                                        Go to design tab
+                                        <img src="assets\home\external-link.svg">
+                                    </a>
+                                </span>
                                 <br>
                                 <div class="category">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brush" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -336,17 +333,19 @@
                                     Illustrations
                                     </div>
                                 <div class="grid-contain">                                        
-                                    <a onclick="showPopup()" class="grid-item grid-item-1 low-poly-man">
+                                    <a onclick="showPopup()" class="grid-item low-poly-man">
                                         <div class="tags">
                                             <span class="illustrator">Illustrator</span>
                                         </div>                                            
                                         <strong>Low poly man</strong>
                                     </a>
                                 </div>
-                                <button class="suggest underline" onclick="showPanel(2,'var(--illustrations-tab)')" style="background: transparent; border: none;">
-                                    Go to illustrations tab
-                                    <img src="assets\home\external-link.svg" alt="">
-                                </button>
+                                <span class="suggest">
+                                    <a class="underline" onclick="showPanel(2,'var(--illustrations-tab)')" style="background: transparent; border: none;">
+                                        Go to illustrations tab
+                                        <img src="assets\home\external-link.svg">
+                                    </a>
+                                </span>
                                 <br>
                                 <div class="category">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-among-us" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -375,10 +374,12 @@
                                         <strong>Beskar Armor</strong>
                                     </a>                                        
                                 </div>
-                                <button class="suggest underline" onclick="showPanel(3,'var(--gamedev-tab)')" style="background: transparent; border: none;">
-                                    Go to gamedev tab
-                                    <img src="assets\home\external-link.svg" alt="">
-                                </button>
+                                <span class="suggest">
+                                    <a class="underline" onclick="showPanel(3,'var(--gamedev-tab)')" style="background: transparent; border: none;">
+                                        Go to gamedev tab
+                                        <img src="assets\home\external-link.svg" alt="">
+                                    </a>
+                                </span>
                             </div>
                             <div class="tab-panel tab-panel-2">
                                 <div class="category">
@@ -760,7 +761,6 @@
             </div>
             <script src="scripts/sideMenu.js"></script>
             <script src="scripts/worktabs.js"></script>
-
             <script>
                 var title = document.querySelectorAll(".anchor").textContent;//store title of clicked element (error: only checking first element with same id | fix: target the vlivked element)
                 console.log(title);
