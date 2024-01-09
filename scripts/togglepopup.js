@@ -42,8 +42,8 @@ function showPopup(title) {
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b54e23168280493.6437b21ba1190.jpg">' +
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9e8fca168280493.6437b21ba1c5a.jpg">' + 
-                    '</div>' + 
-                    '<p style="text-align: left; font-size: 20px;"><a href="https://www.behance.net/gallery/168280493/Typography-Brand-identity">View this on Behance</a></p>';
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.behance.net/gallery/168280493/Typography-Brand-identity" class="underline" style=" border: none;">View this on Behance<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     if(title === 'Logofolio')
     {
@@ -63,8 +63,8 @@ function showPopup(title) {
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d976b3167076873.6423144d17782.png">' +
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e0e184167076873.6423144d14db3.png">' + 
-                    '</div>' + 
-                    '<p style="text-align: left; font-size: 20px;"><a href="https://www.behance.net/gallery/167076873/Logofolio-2023-Vol-1">View this on Behance</a></p>';
+                    '</div>'+
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.behance.net/gallery/167076873/Logofolio-2023-Vol-1" class="underline" style=" border: none;">View this on Behance<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     if(title === 'Pharm-Care')
     {
@@ -82,8 +82,8 @@ function showPopup(title) {
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2accc1167319465.6426c2807f6f8.png">' +
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/65caf3167319465.6426c2807cc8f.png">' + 
-                    '</div>' + 
-                    '<p style="text-align: left; font-size: 20px;"><a href="https://www.behance.net/gallery/167076873/Logofolio-2023-Vol-1">View this on Behance</a></p>';
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.behance.net/gallery/167319465/Pharm-Care-Magazine-logo-and-branding" class="underline" style=" border: none;">View this on Behance<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     if(title === 'Winter Snow')
     {
@@ -133,8 +133,8 @@ function showPopup(title) {
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/969/349/large/shaunak-ghosh-2.jpg?1696664253">' +
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/969/340/large/shaunak-ghosh-sketch.jpg?1696664237">' + 
-                    '</div>' + 
-                    '<p style="text-align: left; font-size: 20px;"><a href="https://www.behance.net/gallery/168280493/Typography-Brand-identity">View this on Behance</a></p>';
+                    '</div>' +
+                    '<p class="suggest" style="cursor: pointer;background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://rooveloft.artstation.com/projects/DvKXle?album_id=10004696" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     if(title === 'Xamira (character sheet)')
     {
@@ -153,8 +153,44 @@ function showPopup(title) {
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/068/318/313/large/shaunak-ghosh-wansd-girl.jpg?1697531177">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/068/318/305/large/shaunak-ghosh-wadnd-girl.jpg?1697531168">' + 
-                    '</div>' + 
-                    '<p style="text-align: left; font-size: 20px;"><a href="https://www.behance.net/gallery/168280493/Typography-Brand-identity">View this on Behance</a></p>';
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://rooveloft.artstation.com/projects/el1XKG?album_id=10004699" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+    }
+    if(title === 'Woman in dark')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/896/473/large/shaunak-ghosh-dual-light-woman.jpg?1696491324">';
+    }
+    if(title === 'Crater')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/794/837/large/shaunak-ghosh-crater.jpg?1696261010">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/794/877/large/shaunak-ghosh-crater4.jpg?1696261049">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/794/855/large/shaunak-ghosh-crater1.jpg?1696261018">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/794/863/large/shaunak-ghosh-crater2.jpg?1696261033">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/794/869/large/shaunak-ghosh-crater3.jpg?1696261042">' +
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/aoryzk" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+    }
+    if(title === 'Spider-Punk(Comics)')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<img style="height: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/008/458/large/rooveloft-spider-punk.jpg?1694331946">' + 
+                    '<br>' +
+                    '<img style="height: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/008/542/large/rooveloft-sketch.jpg?1694332242">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/008/546/large/rooveloft-spider-punk.jpg?1694332250"></img>'; 
     }
     if(title === 'Low Poly Man')
     {
@@ -162,6 +198,49 @@ function showPopup(title) {
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
         content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2023/low_poly_man.jpg">';
+    }
+    if(title === 'Cliffs')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/717/643/large/shaunak-ghosh-rocks.jpg?1696045957">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/717/647/large/shaunak-ghosh-rocfks.jpg?1696045968">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/717/650/large/shaunak-ghosh-5.jpg?1696045975">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/717/652/large/shaunak-ghosh-r4ocks.jpg?1696045985">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/717/658/large/shaunak-ghosh-rock2s.jpg?1696045996">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/717/660/large/shaunak-ghosh-ocks.jpg?1696046006">' + 
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/aoryzk" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+    }
+    if(title === 'Practice dump')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/284/133/large/shaunak-ghosh-untitled-1-2.jpg?1695022530">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/253/280/large/shaunak-ghosh-376918982-270627499236165-4690595841735228305-n.jpg?1694940106">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/066/815/616/large/rooveloft-colorjpg.jpg?1693849984">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/253/275/large/shaunak-ghosh-375339965-1383414629277414-1764811630579831530-n.jpg?1694940101">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/153/054/large/rooveloft-untitled-1-1.jpg?1694676423">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/253/278/large/shaunak-ghosh-371472648-272791892215315-4973794584596394529-n.jpg?1694940104">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/253/280/large/shaunak-ghosh-376918982-270627499236165-4690595841735228305-n.jpg?1694940106">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/253/274/large/shaunak-ghosh-378801179-988286972396455-7686516756908011341-n.jpg?1694940096">' + 
+                    '</div>'
     }
     if(title === 'Dwarf\'s Journey')
     {
@@ -173,12 +252,9 @@ function showPopup(title) {
                     '<span style="font-size:30px; font-weight: bold; filter:blur(0)">Dwarf\'s Journey</span>' + 
                     '<br>' +
                     '<p style="margin-top: 2%;font-size:20px; filter:blur(0); margin-bottom: 5%;">A platformer game where a tiny dwarf embarks on a journey in a dangerous, yet beautiful pixelart world</p>' + 
-                    
                     '<p style="margin-top: 2%;font-size:20px; filter:blur(0); margin-bottom: 2%;">This game is being built using Unity engine and C#, it is still under development</p>' + 
                     '<br>' + 
-                    '<span>Follow on Twitter</span>' + 
-                    '<br>' + 
-                    '<span>Follow on Instagram</span>';
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;">Follow me on&emsp;<a href="https://twitter.com/Rooveloft" class="underline" style=" border: none;">Twitter<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a>' + ' and&emsp;' + '<a href="https://twitter.com/Rooveloft" class="underline" style=" border: none;"> Instagram<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     popupContent.innerHTML = content;
     window.addEventListener('keydown', handleKeyDown);
