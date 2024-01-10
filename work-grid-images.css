@@ -6,7 +6,7 @@
 {
     background-size: 100%;
 }
-.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .venom strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong
+.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .venom strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong
 {
     color: whitesmoke;
 }
@@ -78,10 +78,6 @@
     background-size: 150%;
     background-position-x: 10%;
 }
-.winter-snow strong
-{
-    color: white;
-}
 .chief
 {
     background-image: url("assets/work/illustrations/2023/chief.jpg");
@@ -94,19 +90,11 @@
     background-size: 110%;
     background-position-y: 90%;
 }
-.gwen-swinging strong
-{
-    color: white;
-}
 .dark-garfield
 {
     background-image: url("assets/work/illustrations/2023/dark-garfield.jpg");
     background-size: 110%;
     background-position-y: 30%;
-}
-.dark-garfield strong
-{
-    color: white;
 }
 .woman-grey
 {
@@ -124,7 +112,7 @@
 {
     background-image: url("assets/work/illustrations/2023/ahsoka-the-white.jpg");
     background-size: 105%;
-    background-position-y: 30%;
+    background-position-y: 85%;
 }
 .xamira-cd
 {
@@ -137,17 +125,29 @@
     background-size: 90%;
     background-position-y: 10%;
 }
+.crater
+{
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/067/794/837/large/shaunak-ghosh-crater.jpg?1696261010");
+    background-size: 110%;
+    background-position-y: 50%;
+}
 .woman-dark
 {
     background-image: url("assets/work/illustrations/2023/woman-in-dark.jpg");
     background-size: 110%;
     background-position-y: 15%;
 }
+.cliffs
+{
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/067/717/643/large/shaunak-ghosh-rocks.jpg?1696045957");
+    background-size: 110%;
+    background-position-y: 45%;
+}
 .practice-2023
 {
-    background-image: url("       ");
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/067/253/278/large/shaunak-ghosh-371472648-272791892215315-4973794584596394529-n.jpg?1694940104");
     background-size: 110%;
-    background-position-y: 15%;
+    background-position-y: 40%;
 }
 .spider-punk-comic
 {
@@ -318,6 +318,30 @@
     background-size: 70%;
 }
 /*experiments*/
+.wizard-staff
+{
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/070/198/274/large/shaunak-ghosh-stx.jpg?1701964805");
+    background-position-x: 50%;
+    background-size: 130%;
+}
+.pillows
+{
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/068/729/514/large/shaunak-ghosh-coushion-render.jpg?1698508448");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 130%;
+}
+.soda-can
+{
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/068/599/917/large/shaunak-ghosh-can-render.jpg?1698217736");
+    background-position-x: 45%;
+    background-position-y: 50%;
+    background-size: 170%;
+}
+.soda-can:hover
+{
+    background-size: 140%;
+}
 .well
 {
     background-image: url("assets/work/experiments/well.jpg");

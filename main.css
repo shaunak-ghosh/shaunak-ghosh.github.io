@@ -168,7 +168,6 @@ ul a:hover:after
     display: flex;
     justify-content: center;
     align-items: center;
-    /*bottom: 20px; <-- apply this in media query*/
 }
 .line-contain
 {
@@ -328,7 +327,7 @@ nav
     }
 }
 @media screen and (min-width:768px)
-{    
+{
     .tab a:hover, .tab:hover
     {
         cursor: pointer;
@@ -414,7 +413,6 @@ nav
         position: fixed;
         top: 87%;
         margin-bottom: -50px;
-        display: none;
     }
     .box
     {

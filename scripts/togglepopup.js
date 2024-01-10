@@ -179,7 +179,7 @@ function showPopup(title) {
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/794/869/large/shaunak-ghosh-crater3.jpg?1696261042">' +
                     '</div>' +
-                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/aoryzk" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/DvKlwe" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     if(title === 'Spider-Punk(Comics)')
     {
@@ -242,6 +242,94 @@ function showPopup(title) {
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/253/274/large/shaunak-ghosh-378801179-988286972396455-7686516756908011341-n.jpg?1694940096">' + 
                     '</div>'
     }
+    if(title === 'Yellow Mandalorian')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2022/mandalorian_character.jpg">';
+    }
+    if(title === 'Master Chief')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2022/Master chief.jpg">';
+    }
+    if(title === 'Xamira')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2022/Xamira.jpg">';
+    }
+    if(title === 'Flat characters')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/057/134/703/large/rooveloft-2d-character-art.jpg?1670910995">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/057/134/771/large/rooveloft-happy-man.jpg?1670911227">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="https://cdna.artstation.com/p/assets/images/images/057/134/776/large/rooveloft-man-listening-to-music.jpg?1670911240">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/057/134/777/large/rooveloft-math-teacher.jpg?1670911251">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4c6549162347367.63d3f6b405e28.jpg">' + 
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/aoryzk" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+    }
+    if(title === 'Dwarf')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2022/dwarf.jpg">';
+    }
+    if(title === 'Boba Fett')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2022/boba-fett.jpg">';
+    }
+    if(title === 'Grumpy Man')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2022/green_suit_man.jpg">';
+    }
+    if(title === 'Low Poly Woman')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2022/Face_poly_small.jpg">';
+    }
+    if(title === 'Venom')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2022/venom.jpg">';
+    }
+    if(title === 'Spaceman vs eye monster')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2022/spaceman.jpg">';
+    }
+    if(title === 'Doraemon and friends')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'hidden';
+        content = '<img style="height: 100%" class="image-content box" src="assets/work/illustrations/2022/doraemon.jpg">';
+    }
     if(title === 'Dwarf\'s Journey')
     {
         popupWindow.style.width = 'max-content';
@@ -256,6 +344,59 @@ function showPopup(title) {
                     '<br>' + 
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;">Follow me on&emsp;<a href="https://twitter.com/Rooveloft" class="underline" style=" border: none;">Twitter<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a>' + ' and&emsp;' + '<a href="https://twitter.com/Rooveloft" class="underline" style=" border: none;"> Instagram<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
+    if(title === 'Wizard Staff')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/070/198/274/large/shaunak-ghosh-stx.jpg?1701964805">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/070/198/198/large/shaunak-ghosh-screenshot-78.jpg?1701964716">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/070/198/200/large/shaunak-ghosh-screenshot-79.jpg?1701964720">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/070/198/197/large/shaunak-ghosh-screenshot-82.jpg?1701964712">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/070/198/201/large/shaunak-ghosh-screenshot-80.jpg?1701964723">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/070/198/205/large/shaunak-ghosh-screenshot-81.jpg?1701964730">' + 
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/8bgqaQ" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+    }
+    if(title === 'Pillows')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/729/514/large/shaunak-ghosh-coushion-render.jpg?1698508448">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/729/490/large/shaunak-ghosh-coushion.jpg?1698508429">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/729/494/large/shaunak-ghosh-coushion1.jpg?1698508433">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/068/729/497/large/shaunak-ghosh-coushion2.jpg?1698508436">' + 
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/DvWK3E" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+    }
+    if(title === 'Soda Can')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/068/599/917/large/shaunak-ghosh-can-render.jpg?1698217736">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/599/920/large/shaunak-ghosh-can.jpg?1698217174">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/068/599/999/large/shaunak-ghosh-can-top.jpg?1698217442">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/600/012/large/shaunak-ghosh-tap.jpg?1698217466">' + 
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/Xg0Plw" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+    }
+    
     popupContent.innerHTML = content;
     window.addEventListener('keydown', handleKeyDown);
 }
