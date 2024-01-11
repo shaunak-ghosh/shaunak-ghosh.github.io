@@ -431,35 +431,11 @@ progress
 }
 @media screen and (max-width:1041px) 
 {
-    .me
-    {
-        display: none;
-    }
     .face
     {
-        background-image: none;
-        background-origin: border-box;
-        background-size: 100%;
-        background-color: var(--baackground);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        --s: 150px; /* control the size */
-        --c1: #f7d2a1;
-        --c2: #d15629;
-
-        --_g: 
-            var(--c1) 0%  5% ,var(--c2) 6%  15%,var(--c1) 16% 25%,var(--c2) 26% 35%,var(--c1) 36% 45%,
-            var(--c2) 46% 55%,var(--c1) 56% 65%,var(--c2) 66% 75%,var(--c1) 76% 85%,var(--c2) 86% 95%,
-            #0000 96%;
-        background:
-            radial-gradient(50% 50% at 100% 0,var(--_g)),
-            radial-gradient(50% 50% at 0 100%,var(--_g)),
-            radial-gradient(50% 50%,var(--_g)),
-            radial-gradient(50% 50%,var(--_g)) calc(var(--s)/2) calc(var(--s)/2)
-            var(--c1);
-        background-size: var(--s) var(--s);
+        border-bottom: var(--thick-border);
+        height: 70vh;
+        width: 101vw;
     }
     .face-small
     {
@@ -481,11 +457,6 @@ progress
         width: 100%;
         margin-left: -3px;
         border-right: none;
-    }
-    .face
-    {
-        width: 100%;/*set background from bottom*/
-        border-left: none;
     }
     .active
     {
@@ -566,12 +537,7 @@ progress
     }
     .face
     {
-        height: 35vh;
         align-self: flex-start;
-    }
-    .intro
-    {
-        height: 60vh;
     }
     .face img
     {
@@ -581,8 +547,9 @@ progress
     }    
     .intro
     {
+        height: 60vh;
         padding-left: 8%;
-        padding-top: 25%;
+        padding-top: 12%;
         padding-bottom: 2%;
         line-height: 50px;
     }
@@ -607,21 +574,27 @@ progress
     }
 }
 @media screen and (max-width:1041px) and (min-width: 520px)
-{
+{    
+    .face
+    {
+        width: 100%;
+    }
     .skill-contain
     {
         margin-left: 98px;
         padding-right: 50%;
     }
+}
+@media screen and (max-width:1041px) and (min-width: 768px)
+{
+    .home-contain
+    {
+        width: 87vw;
+    }
     .face
     {
-        text-align: left;
-        justify-content: left;
-    }
-    .face img
-    {
-        width: 20vw;
-        margin-left: 7%;
+        background-size: 70%;
+        background-position-x: 40%;
     }
 }
 @media screen and (max-width:768px)
@@ -697,6 +670,10 @@ progress
 }
 @media screen and (max-width:520px)
 {
+    .face, .intro
+    {
+        height: 65vh;
+    }
     #name
     {
         font-size: 45px;
@@ -717,9 +694,19 @@ progress
     {
         font-size: 15px;
     }
+    .buttons-about-1
+    {
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media screen and (max-width:420px)
 {
+    .face, .intro
+    {
+        height: 50vh;
+    }
+    
     #name
     {
         font-size: 38px;
@@ -727,6 +714,18 @@ progress
     .rotate-about span
     {
         font-size: 25px;
+    }
+    .buttons-about-1
+    {
+        flex-direction: column;
+        position: relative;
+        right: 0;
+        height: 20vh;
+        text-align: right;
+    }
+    .portfolio-button
+    {
+        margin-bottom: 0%;
     }
 }
 /*height mqs*/

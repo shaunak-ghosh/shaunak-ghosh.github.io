@@ -275,11 +275,11 @@ function showPopup(title) {
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="https://cdna.artstation.com/p/assets/images/images/057/134/776/large/rooveloft-man-listening-to-music.jpg?1670911240">' +
                     '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/057/134/777/large/rooveloft-math-teacher.jpg?1670911251">' + 
-                    '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4c6549162347367.63d3f6b405e28.jpg">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/057/134/777/large/rooveloft-math-teacher.jpg?1670911251">' + 
                     '</div>' +
-                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/aoryzk" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/lR0Xra" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     if(title === 'Dwarf')
     {
