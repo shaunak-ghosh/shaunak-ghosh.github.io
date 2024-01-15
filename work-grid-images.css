@@ -6,7 +6,7 @@
 {
     background-size: 100%;
 }
-.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .venom strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong
+.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .venom strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong, .train-chase strong
 {
     color: whitesmoke;
 }
@@ -67,6 +67,18 @@
     background-size: 125%;
 }
 /*illustrations*/
+.train-chase
+{
+    background-image: url("assets/work/illustrations/2024/train-chase.jpg");
+    background-size:210%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+.train-chase:hover
+{
+    background-size:190%;
+    background-position-x: 50%;
+}
 .winter-snow
 {
     background-image: url("assets/work/illustrations/2023/winter-snow.jpg");

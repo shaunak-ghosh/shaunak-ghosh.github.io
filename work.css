@@ -21,6 +21,11 @@ button
     margin-bottom: 5%;
     cursor: pointer;
 }
+.image-content
+{
+    height: 100%;
+    margin-bottom: 35px;
+}
 .active
 {
     border-top: var(--thick-border);
@@ -104,9 +109,11 @@ button
     width: 25vw;
     height: 20vw;
     margin: 5%;
-    text-align: end;
+    text-align: right;
     align-content: end;
     align-items: end;
+    vertical-align: bottom;
+    justify-content: baseline;
 }
 .tags
 {
@@ -162,6 +169,91 @@ svg
 .button-contain::-webkit-scrollbar
 {
     display: none;
+}
+/*popup container*/
+#popupContainer 
+{ /*donot touch*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.479);
+    transition: cubic-bezier(0.03, 0.6, 0.3, 1.09);
+}
+#close
+{
+    background: #83ff6f;
+    border-radius: 8px;
+    border: none;
+    margin: .25%;
+    margin-left: 1%;
+    padding: .75%;
+    cursor: pointer;
+}
+#close:hover
+{
+    color: rgb(117, 75, 255);
+}
+a:hover
+{
+    cursor:pointer;
+}
+#popup-content
+{
+    padding: 5%;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-width: 100vw;
+    padding-top: 60px;
+}
+.popup-sub-container
+{
+    max-width: 75%;
+    min-width: 45%;
+    height: max-content;
+    right: 0;
+    background-color: rgb(244, 229, 186);
+    border-radius: 5px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    box-shadow: 15px 15px black;
+}
+.popup-head
+{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    background-color: #83ff6f;
+    opacity: 1;
+    background-image:  radial-gradient(#6a37d6 1px, transparent 1px), radial-gradient(#6a37d6 1px, #83ff6f 1px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+}
+#popup-title
+{
+    word-spacing: -5px;
+    background-color: #83ff6f;
+    font-size: 25px;
+    margin: .25%;
+    margin-left: 2%;
+    padding: .75%;
+}
+.multiple-image-content
+{
+    width: 100%;
+    margin-bottom: 35px;
 }
 @media screen and (max-width:1041px) and (min-width: 520px)
 {
@@ -228,6 +320,10 @@ svg
 }
 @media screen and (max-width:1200px)
 {
+    .note
+    {
+        margin-top: 2%;
+    }
     .grid-item
     {
         border: var(--thin-border);
@@ -271,6 +367,20 @@ svg
 }
 @media screen and (max-width:768px)
 {
+    .popup-sub-container
+    {
+        height: 100vh;
+        min-width: 100vw;
+    }
+    .image-content
+    {
+        font-size: 18px;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: auto;
+        margin-top: 25vh;
+    }
     .skill-contain
     {
         margin-left: 0;
@@ -338,15 +448,67 @@ svg
         margin-top: -10%;
     }
 }
+@media screen and (max-width:639px)
+{
+    .note
+    {
+        margin-left: 2%;
+    }
+}
 @media screen and (max-width:585px)
 {
-    .head-text strong 
+    .head-text strong
+    {
+        font-size: 35px;
+    }
+    .grid-item strong
     {
         font-size: 25px;
     }
 }
+@media screen and (max-width:520px)
+{
+    .grid-item strong
+    {
+        font-size: 20px;
+    }
+}
 @media screen and (max-width:450px)
-{    
+{   
+    
+    #popup-title
+    {
+        font-size: 20px;
+        padding: 2%;
+    }
+    #popup-content
+    {
+        height: 100%;
+        align-self: center;
+        position: inherit;
+        justify-content: center;
+        vertical-align: middle;
+
+        padding-bottom: 15%;
+    }
+    .popup-sub-container
+    {
+        position: relative;
+        justify-content: center;
+        vertical-align: middle;
+    }
+    .image-content
+    {        
+        margin-top: 25vh;
+    }
+    .image-content, .multiple-image-content
+    {
+        width: 100%;
+        height: auto;
+        align-self: center;
+        
+        margin-bottom: 5%;
+    }
     .button-contain button
     {
         font-size: 18px;
@@ -356,8 +518,19 @@ svg
     {
         padding-top: 24%;
     }
-    .head-text strong 
+    @media screen and (max-width:450px)
     {
-        font-size: 20px;
+        .suggest
+        {
+            font-size: 17px;
+        }
+        .suggest img
+        {
+            height: 48%;
+        }
+        .grid-item strong
+        {
+            font-size: 16px;
+        }
     }
 }

@@ -16,84 +16,6 @@
         <link rel="stylesheet" href="animations.css">
         <link rel="icon" href="assets\home\logo.png">
         <style>
-            #popupContainer 
-            { /*donot touch*/
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100vw;
-                height: 100vh;
-                background-color: rgba(0, 0, 0, 0.479);
-                transition: cubic-bezier(0.03, 0.6, 0.3, 1.09);
-            }
-            #close
-            {
-                background: #83ff6f;
-                border-radius: 8px;
-                border: none;
-                margin: .25%;
-                margin-left: 1%;
-                padding: .75%;
-                cursor: pointer;
-            }
-            #close:hover
-            {
-                color: rgb(117, 75, 255);
-            }
-            a:hover
-            {
-                cursor:pointer;
-            }
-            #popup-content
-            {
-                padding: 5%;
-                height: 80vh;
-                overflow-y: scroll;
-                overflow-x: hidden;
-                max-width: 100vw;
-            }
-            .popup-sub-container
-            {
-                min-width: 450px;
-                height: max-content;
-                right: 0;
-                background-color: rgb(244, 229, 186);
-                border-radius: 5px;
-                height: auto;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                border: 2px solid black;
-                box-shadow: 15px 15px black;
-            }
-            .popup-head
-            {
-                height: 50px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-                border-bottom: 2px solid black;
-                width: 100%;
-                background-color: #83ff6f;
-                opacity: 1;
-                background-image:  radial-gradient(#6a37d6 1px, transparent 1px), radial-gradient(#6a37d6 1px, #83ff6f 1px);
-                background-size: 40px 40px;
-                background-position: 0 0,20px 20px;
-            }
-            #popup-title
-            {
-                word-spacing: -5px;
-                background-color: #83ff6f;
-                font-size: 25px;
-                margin: .25%;
-                margin-left: 2%;
-                padding: .75%;
-            }
-
             .java
             {
                 background-color: #ff9538;
@@ -222,8 +144,7 @@
                     </div>
                 </ul>
             </div>
-        </div>
-        
+        </div>        
         <a class="links-btn" id="links-toggle-btn">
             <div class="line-contain">
                 <div class="line line-1"></div>
@@ -329,6 +250,14 @@
                                 Illustrations
                                 </div>
                             <div class="grid-contain">
+                                <a onclick="showPopup('Nueva York train chase')" class="grid-item train-chase">
+                                    <div class="tags">
+                                        <span class="anatomy">Anatomy</span>
+                                        <span class="lighting">Lighting</span>
+                                        <span class="illustration">Illustration</span>
+                                    </div>                                            
+                                    <strong>Nueva York train chase</strong>
+                                </a>
                                 <a onclick="showPopup('Winter Snow')" class="grid-item winter-snow">
                                     <div class="tags">
                                         <span class="illustration">Illustration</span>
@@ -341,13 +270,7 @@
                                     </div>                                            
                                     <strong>Chief</strong>
                                 </a>
-                                <a onclick="showPopup('Swinging through New York')" class="grid-item gwen-swinging">
-                                    <div class="tags">
-                                        <span class="anatomy">Anatomy</span>
-                                        <span class="illustration">Illustration</span>
-                                    </div>                                            
-                                    <strong>Swinging-through New York</strong>
-                                </a>
+                                
                             </div>
                             <span class="suggest">
                                 <a href="#heading" class="underline" onclick="showPanel(2,'var(--illustrations-tab)')" style="background: transparent; border: none;">
@@ -462,6 +385,28 @@
                                 See my <a class="underline" href="https://www.instagram.com/rooveloftdraws">Instagram</a>, <a class="underline" href="https://www.artstation.com/rooveloft">Artstation</a>, <a class="underline" href="https://www.tumblr.com/blog/shaunakghosh">Tumblr</a> and <a class="underline" href="https://www.behance.net/shaunakghosh">Behance</a> for more drawings!
                             </div>
                             <br>
+                            <div class="year">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-stats" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4"></path>
+                                    <path d="M18 14v4h4"></path>
+                                    <path d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                                    <path d="M15 3v4"></path>
+                                    <path d="M7 3v4"></path>
+                                    <path d="M3 11h16"></path>
+                                </svg>
+                                2024
+                            </div>
+                            <div class="grid-contain">
+                                <a onclick="showPopup('Nueva York train chase')" class="grid-item train-chase">
+                                    <div class="tags">
+                                        <span class="anatomy">Anatomy</span>
+                                        <span class="lighting">Lighting</span>
+                                        <span class="illustration">Illustration</span>
+                                    </div>                                            
+                                    <strong>Nueva York train chase</strong>
+                                </a>
+                            </div>
                             <div class="year">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-stats" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
