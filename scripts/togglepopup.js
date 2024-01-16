@@ -262,21 +262,21 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img style="height: auto" class="image-content box" src="assets/work/illustrations/2022/mandalorian_character.jpg">';
+        content = '<img class="image-content box" src="assets/work/illustrations/2022/mandalorian_character.jpg">';
     }
     if(title === 'Master Chief')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img style="height: auto" class="image-content box" src="assets/work/illustrations/2022/Master chief.jpg">';
+        content = '<img class="image-content box" src="assets/work/illustrations/2022/Master chief.jpg">';
     }
     if(title === 'Xamira')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img style="height: auto" class="image-content box" src="assets/work/illustrations/2022/Xamira.jpg">';
+        content = '<img class="image-content box" src="assets/work/illustrations/2022/Xamira.jpg">';
     }
     if(title === 'Flat characters')
     {
@@ -302,49 +302,49 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img style="height: auto" class="image-content box" src="assets/work/illustrations/2022/dwarf.jpg">';
+        content = '<img class="image-content box" src="assets/work/illustrations/2022/dwarf.jpg">';
     }
     if(title === 'Boba Fett')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img style="height: auto" class="image-content box" src="assets/work/illustrations/2022/boba-fett.jpg">';
+        content = '<img class="image-content box" src="assets/work/illustrations/2022/boba-fett.jpg">';
     }
     if(title === 'Grumpy Man')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img style="height: auto" class="image-content box" src="assets/work/illustrations/2022/green_suit_man.jpg">';
+        content = '<img class="image-content box" src="assets/work/illustrations/2022/green_suit_man.jpg">';
     }
     if(title === 'Low Poly Woman')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img style="height: auto" class="image-content box" src="assets/work/illustrations/2022/Face_poly_small.jpg">';
+        content = '<img class="image-content box" src="assets/work/illustrations/2022/Face_poly_small.jpg">';
     }
     if(title === 'Venom')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img style="height: auto" class="image-content box" src="assets/work/illustrations/2022/venom.jpg">';
+        content = '<img class="image-content box" src="assets/work/illustrations/2022/venom.jpg">';
     }
     if(title === 'Spaceman vs eye monster')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img style="height: auto" class="image-content box" src="assets/work/illustrations/2022/spaceman.jpg">';
+        content = '<img class="image-content box" src="assets/work/illustrations/2022/spaceman.jpg">';
     }
     if(title === 'Doraemon and friends')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img style="height: auto" class="image-content box" src="assets/work/illustrations/2022/doraemon.jpg">';
+        content = '<img class="image-content box" src="assets/work/illustrations/2022/doraemon.jpg">';
     }
     if(title === 'Dwarf\'s Journey')
     {

@@ -190,9 +190,9 @@
 }
 .image-1
 {
-    /* background-image: url("assets/home/hash-pattern.jpg"); */
     width: 200%;
     background-color: #ff6a0043;
+    display: none;
 }
 .image-2
 {

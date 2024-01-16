@@ -63,6 +63,7 @@ a
     width: max-content;
     position: relative;
     text-decoration: none;
+    max-height: 38px;
 }
 .underline:after
 {
@@ -358,7 +359,6 @@ nav
         cursor: default;
     }
 }
-/*@media screen and (min-width:768px) and height*/
 @media screen and (max-width:1041px) and (min-width: 768px)
 {
     

@@ -190,11 +190,12 @@ svg
     margin: .25%;
     margin-left: 1%;
     padding: .75%;
-    cursor: pointer;
+    cursor: default;
 }
-#close:hover
+#close svg:hover, #close path:hover
 {
-    color: rgb(117, 75, 255);
+    cursor: pointer;
+    color: red;
 }
 a:hover
 {
@@ -426,10 +427,6 @@ a:hover
     {
         border-left: none;
     }
-    .links-btn
-    {
-        display:none;
-    }
     .button-contain
     {
         margin-left: -5.5%;
@@ -533,4 +530,5 @@ a:hover
             font-size: 16px;
         }
     }
+    
 }
