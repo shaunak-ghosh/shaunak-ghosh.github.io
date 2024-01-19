@@ -6,7 +6,7 @@
 {
     background-size: 100%;
 }
-.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .venom strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong, .train-chase strong
+.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .venom strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong, .train-chase strong, .axe strong, .crystals strong
 {
     color: whitesmoke;
 }
@@ -330,11 +330,28 @@
     background-size: 70%;
 }
 /*experiments*/
+.axe
+{
+    background-image: url("assets/work/experiments/axe_render.png");
+    background-position-x: 50%;
+    background-size: 130%;
+}
 .wizard-staff
 {
     background-image: url("https://cdna.artstation.com/p/assets/images/images/070/198/274/large/shaunak-ghosh-stx.jpg?1701964805");
     background-position-x: 50%;
     background-size: 130%;
+}
+.crystals
+{
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/071/682/800/large/shaunak-ghosh-crystals.jpg?1705691719");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 200%;
+}
+.crystals:hover
+{
+    background-size: 180%;
 }
 .pillows
 {

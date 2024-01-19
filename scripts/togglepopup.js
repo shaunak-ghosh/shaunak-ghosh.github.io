@@ -411,8 +411,25 @@ function showPopup(title) {
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/600/012/large/shaunak-ghosh-tap.jpg?1698217466">' + 
                     '</div>' +
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/Xg0Plw" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
-    }
-    
+    }    
+    if(title === 'Glowing crystals')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/071/682/800/large/shaunak-ghosh-crystals.jpg?1705691719">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/071/682/803/large/shaunak-ghosh-crystals1.jpg?1705691726">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/071/682/805/large/shaunak-ghosh-crystals2.jpg?1705691729">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/071/682/806/large/shaunak-ghosh-crystals3.jpg?1705691732">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/071/682/820/large/shaunak-ghosh-tv-1.jpg?1705691759">' + 
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/n05Y5r" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+    }   
     popupContent.innerHTML = content;
     window.addEventListener('keydown', handleKeyDown);
 }

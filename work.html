@@ -108,13 +108,17 @@
             {
                 background-color: rgb(153, 220, 220);
             }
-            .game-prop
+            .game-asset
             {
                 background-color: rgb(111, 189, 131);
             }
             .environment
             {
                 background-color: rgb(239, 169, 216);
+            }
+            .substance-3d-painter
+            {
+                background-color: rgb(154, 233, 63);
             }
             .mail-div svg
             {
@@ -165,7 +169,6 @@
                 <a href="contact.html">CONTACT</a>
             </div>
         </nav>
-
         <div id="popupContainer" style="display: none; z-index: 40;" class="parent">
             <div class="popup-sub-container centered" id="popup-window">
                 <div class="popup-head">
@@ -207,6 +210,38 @@
                         </div>
                         <div class="tab-panel tab-panel-1">
                             <div class="category">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sparkles" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z" />
+                                </svg>
+                                New
+                            </div>
+                            <div class="grid-contain">
+                                <a href="error.html" class="grid-item axe">
+                                    <div class="tags">
+                                        <span class="game-asset">Game Asset</span>
+                                        <span class="blender">Blender</span>
+                                    </div>                                            
+                                    <strong>Axe</strong>
+                                </a>  
+                                <a onclick="showPopup('Nueva York train chase')" class="grid-item train-chase">
+                                    <div class="tags">
+                                        <span class="anatomy">Anatomy</span>
+                                        <span class="lighting">Lighting</span>
+                                        <span class="illustration">Illustration</span>
+                                    </div>                                            
+                                    <strong>Nueva York train chase</strong>
+                                </a>
+                                <a onclick="showPopup('Glowing crystals')" class="grid-item crystals">
+                                    <div class="tags">
+                                        <span class="game-asset">Game Asset</span>
+                                        <span class="substance-3d-painter">Substance 3D Painter</span>
+                                        <span class="blender">Blender</span>
+                                    </div>                                            
+                                    <strong>Glowing crystals</strong>
+                                </a>
+                            </div>
+                            <div class="category">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
@@ -231,6 +266,12 @@
                                     </div>
                                     <strong>Typography</strong>
                                 </a>
+                                <a onclick="showPopup('Pharm-Care')" class="grid-item grid-item-3 p-c">
+                                    <div class="tags">
+                                        <span class="indesign">Indesign</span>
+                                    </div>
+                                    <strong>Pharm-Care</strong>
+                                </a> 
                             </div>
                             <span class="suggest">
                                 <a href="#heading" class="underline" onclick="showPanel(1,'var(--design-tab)')" style="background: transparent; border: none;">
@@ -239,6 +280,7 @@
                                 </a>
                             </span>
                             <br>
+
                             <div class="category">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brush" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -332,12 +374,6 @@
                                     </div>
                                     <strong>Counter app</strong>
                                 </a>
-                                <a href="error.html" class="grid-item grid-item-2 tanner-goods">                                            
-                                    <div class="tags">
-                                        <span class="css">CSS</span>
-                                    </div>
-                                    <strong>Tanner Goods</strong>
-                                </a>
                                 <a href="https://rooveloftcodes.github.io/Old/" class="grid-item grid-item-3 old">
                                     <div class="tags">
                                         <span class="css">CSS</span>
@@ -360,18 +396,18 @@
                                         </div>
                                     <strong>Typography</strong>
                                 </a>
+                                <a onclick="showPopup('Pharm-Care')" class="grid-item grid-item-3 p-c">
+                                        <div class="tags">
+                                            <span class="indesign">Indesign</span>
+                                        </div>
+                                    <strong>Pharm-Care</strong>
+                                </a>                                  
                                 <a onclick="showPopup('Logofolio')" class="grid-item grid-item-3 logofolio-1">
                                         <div class="tags">
                                             <span class="vector">Vector</span>
                                         </div>
                                     <strong>Logofolio 2023 Vol. 1</strong>
                                 </a>
-                                <a onclick="showPopup('Pharm-Care')" class="grid-item grid-item-3 p-c">
-                                        <div class="tags">
-                                            <span class="indesign">Indesign</span>
-                                        </div>
-                                    <strong>Pharm-Care</strong>
-                                </a>                                        
                             </div>
                         </div>
                         <div class="tab-panel tab-panel-3">
@@ -675,12 +711,27 @@
                                 Experimental work
                             </div>
                             <div class="grid-contain">
+                                <a href="error.html" class="grid-item axe">
+                                    <div class="tags">
+                                        <span class="game-asset">Game Asset</span>
+                                        <span class="blender">Blender</span>
+                                    </div>                                            
+                                    <strong>Axe</strong>
+                                </a>                                
                                 <a onclick="showPopup('Wizard Staff')" class="grid-item wizard-staff">
                                     <div class="tags">
-                                        <span class="game-prop">Game Prop</span>
+                                        <span class="game-asset">Game Asset</span>
                                         <span class="blender">Blender</span>
                                     </div>                                            
                                     <strong>Wizard Staff</strong>
+                                </a>
+                                <a onclick="showPopup('Glowing crystals')" class="grid-item crystals">
+                                    <div class="tags">
+                                        <span class="game-asset">Game Asset</span>
+                                        <span class="substance-3d-painter">Substance 3D Painter</span>
+                                        <span class="blender">Blender</span>
+                                    </div>                                            
+                                    <strong>Glowing crystals</strong>
                                 </a>
                                 <a onclick="showPopup('Pillows')" class="grid-item pillows">
                                     <div class="tags">
