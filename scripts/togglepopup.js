@@ -7,7 +7,6 @@ var popupWindow = document = document.getElementById("popup-window")
 function showPopup(title) {
     
     popupTitle.innerText = title;
-    //popupTitle.style.backgroundColor = "red";
     popup.style.display = 'block';
 
     closeButton.onclick = function() {

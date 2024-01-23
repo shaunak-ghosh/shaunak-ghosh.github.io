@@ -8,12 +8,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 :root
 {
-    --scrollbar: #1200359a;
     --background: #e7e5dd;    
+    --scrollbar-thumb: #1200359a;
+    --scrollbar-background: #ddd6f2;
     --palette-color-1: #8b79d4;
     --palette-color-2: #b7aae8;
     --palette-color-3: #d4ceed;
     --active-tab: #d3c9f5;
+    --green: #7bfc68;
+    --popup-background: #f4e5ba;
     --recent-tab: #c1b2ff;
     --design-tab:#f09f9f;
     --illustrations-tab: #9ac9ff;
@@ -25,7 +28,6 @@
     --dashed-border: 2px dashed;
     --thick-dashed-border: 3px dashed;
     --work-item-hover:#7454bb;
-    --scrollbar-background: #ddd6f2;
 }
 *
 {
@@ -35,9 +37,6 @@
     font-family: 'Space Mono', monospace;
     -webkit-user-select: none;
     user-select: none;
-}
-html
-{
     scroll-behavior: smooth;
 }
 html, body
@@ -94,7 +93,7 @@ ul a:hover:after
 }
 ::-webkit-scrollbar-thumb
 {   
-    background: var(--scrollbar);
+    background: var(--scrollbar-thumb);
 }
 .links-panel
 {
@@ -508,22 +507,4 @@ nav
         width: 17px;
         height: 17px;
     }
-}/*
-#home
-{
-    z-index: 0;
-    background-image: url("assets/home/logo.png");
-    background-position-y: 100%;
-    background-position-x: 0%;
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
 }
-.intro-1, .intro-2
-{
-    z-index: 2;
-    filter: blur(0);
-    z-index: 10;
-}*/

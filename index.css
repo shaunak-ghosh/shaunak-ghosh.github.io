@@ -334,6 +334,11 @@ progress
     width: 50vw;
     height: 25px;
     border-radius: 0px;
+    border: var(--thin-border);
+}
+progress::-webkit-progress-value
+{
+    border-right: var(--thin-border);;
 }
 .info
 {

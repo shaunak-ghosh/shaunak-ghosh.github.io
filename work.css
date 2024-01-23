@@ -184,13 +184,12 @@ svg
 }
 #close
 {
-    background: #83ff6f;
-    border-radius: 8px;
+    background: var(--green);
     border: none;
     margin: .25%;
     margin-left: 1%;
     padding: .75%;
-    cursor: default;
+    cursor: pointer;
 }
 #close svg:hover, #close path:hover
 {
@@ -216,7 +215,7 @@ a:hover
     min-width: 45%;
     height: max-content;
     right: 0;
-    background-color: rgb(244, 229, 186);
+    background-color: var(--popup-background);
     border-radius: 5px;
     height: auto;
     position: absolute;
@@ -236,16 +235,14 @@ a:hover
     border-top-right-radius: 5px;
     border-bottom: 2px solid black;
     width: 100%;
-    background-color: #83ff6f;
     opacity: 1;
-    background-image:  radial-gradient(#6a37d6 1px, transparent 1px), radial-gradient(#6a37d6 1px, #83ff6f 1px);
+    background-image:  radial-gradient(#6a37d6 1px, transparent 1px), radial-gradient(#6a37d6 1px, var(--green) 1px);
     background-size: 40px 40px;
     background-position: 0 0,20px 20px;
 }
 #popup-title
 {
     word-spacing: -5px;
-    background-color: #83ff6f;
     font-size: 25px;
     margin: .25%;
     margin-left: 2%;
