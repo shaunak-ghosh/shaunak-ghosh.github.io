@@ -480,6 +480,38 @@ nav
         width: 100vw;
         height: 100vh;
     }
+    .links-panel-contain
+    {
+        top: 15%;
+        width: auto;
+        align-items: end;
+        right: 20%;
+        text-align: right;
+    }
+    .links-panel-contain strong 
+    {
+        font-size: 50px;
+        height: 500px;
+        height: max-content;
+    }
+    .links-panel-contain ul > a, .mail-div
+    {
+        height: 50px;
+        font-size: 35px;
+        min-width: max-content;
+        margin: 5%;
+        text-align: right;
+        align-self: self-end;
+    }
+    .mail-div a
+    {
+        font-size: 35px;
+    }
+    .links-panel-contain svg 
+    {
+        height: 36px;
+        width: 36px;
+    }
     .credit a
     {
         font-size: 16px;

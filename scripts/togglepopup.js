@@ -268,7 +268,7 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2022/Master chief.jpg">';
+        content = '<img class="multiple-image-content box" style="height: 100%" src="assets/work/illustrations/2022/Master chief.jpg">';
     }
     if(title === 'Xamira')
     {

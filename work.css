@@ -50,7 +50,6 @@ button
 {
     font-size: 25px;
     font-weight: bold;
-    /* border-left: 10px solid var(--palette-color-1); */
     padding-left: 10px;
     background-color: var(--background);
     margin-top: 2%;
@@ -243,10 +242,12 @@ a:hover
 #popup-title
 {
     word-spacing: -5px;
-    font-size: 25px;
-    margin: .25%;
+    font-size: 24px;
+    margin: 0.25%;
     margin-left: 2%;
-    padding: .75%;
+    height: auto;
+    background-color: var(--green);
+    padding: 0.25%;
 }
 .multiple-image-content
 {
@@ -441,6 +442,10 @@ a:hover
     {
         margin-top: -10%;
     }
+    #popup-title
+    {
+        padding: 0.5%;
+    }
 }
 @media screen and (max-width:639px)
 {
@@ -465,6 +470,10 @@ a:hover
     .grid-item strong
     {
         font-size: 20px;
+    }
+    #popup-title
+    {
+        padding: 1%;
     }
 }
 @media screen and (max-width:450px)
