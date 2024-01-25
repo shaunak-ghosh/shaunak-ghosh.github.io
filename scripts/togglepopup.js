@@ -359,6 +359,26 @@ function showPopup(title) {
                     '<br>' + 
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;">Follow me on&emsp;<a href="https://twitter.com/Rooveloft" class="underline" style=" border: none;">Twitter<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a>' + ' and&emsp;' + '<a href="https://twitter.com/Rooveloft" class="underline" style=" border: none;"> Instagram<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
+    if(title === 'Axe')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/071/903/787/large/shaunak-ghosh-axe-render.jpg?1706192468">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/071/903/791/large/shaunak-ghosh-axe1.jpg?1706192473">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/071/903/793/large/shaunak-ghosh-axe2.jpg?1706192476">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/071/903/793/large/shaunak-ghosh-axe2.jpg?1706192476">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/071/903/800/large/shaunak-ghosh-axe4.jpg?1706192483">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/071/903/803/large/shaunak-ghosh-axe5.jpg?1706192489">' + 
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/obwo8J" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+    }
     if(title === 'Wizard Staff')
     {
         popupWindow.style.width = 'fit-content';
