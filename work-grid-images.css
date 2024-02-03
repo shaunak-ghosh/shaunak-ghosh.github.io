@@ -67,6 +67,13 @@
     background-size: 125%;
 }
 /*illustrations*/
+.practice-2024
+{
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/072/065/577/large/shaunak-ghosh-face-girl.jpg?1706555176");
+    background-size: 120%;
+    background-position-y: 50%;
+    background-position-x: 55%;
+}
 .train-chase
 {
     background-image: url("assets/work/illustrations/2024/train-chase.jpg");
@@ -157,7 +164,7 @@
 }
 .practice-2023
 {
-    background-image: url("https://cdna.artstation.com/p/assets/images/images/067/253/278/large/shaunak-ghosh-371472648-272791892215315-4973794584596394529-n.jpg?1694940104");
+    background-image: url("https://64.media.tumblr.com/2864ec6559e1d98502361e4fad5947ad/de30fdfc00a5a888-34/s2048x3072/1c558702a498c43246f7d09e753a6ee254de41f7.jpg");
     background-size: 110%;
     background-position-y: 40%;
 }

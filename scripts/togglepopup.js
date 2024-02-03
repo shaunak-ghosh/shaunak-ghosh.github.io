@@ -11,10 +11,12 @@ function showPopup(title) {
 
     closeButton.onclick = function() {
         popup.style.display = 'none';
+        popupContent.innerHTML = content;
     }
     window.onclick = function(event) {
         if (event.target == popup){
-            popup.style.display = 'none';                        
+            popup.style.display = 'none';    
+            popupContent.innerHTML = content;                    
         }
     }
     function handleKeyDown(event) {
@@ -22,6 +24,7 @@ function showPopup(title) {
             if (popup.style.display == 'block')
             {
                 popup.style.display = 'none';
+                popupContent.innerHTML = content;
                 popup.style.transition = 'cubic-bezier(0.03, 0.6, 0.3, 1.09)';
             }
         }
@@ -84,12 +87,42 @@ function showPopup(title) {
                     '</div>' +
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.behance.net/gallery/167319465/Pharm-Care-Magazine-logo-and-branding" class="underline" style=" border: none;">View this on Behance<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
+    if(title === 'Sketches & scribbles 2024')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%;">Caption</p>' +
+                    '<br>' + '<div>' +
+                    '<img class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/065/577/large/shaunak-ghosh-face-girl.jpg?1706555176">'+
+                    '</div>'
+    }
     if(title === 'Nueva York train chase')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2024/train-chase.jpg">';
+        popupContent.style.overflowY = 'scroll';
+        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Keyframe study from the Nueva York lunar train chase scene from Spider-Man: Across the Spider-Verse</p>' +
+                    '<br>' + '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/433/large/shaunak-ghosh-2099angry.jpg?1706880052">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/235/139/large/shaunak-ghosh-1.jpg?1706894718">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/843/large/shaunak-ghosh-2.jpg?1706880525">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/211/large/shaunak-ghosh-3.jpg?1706879595">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/072/225/274/large/shaunak-ghosh-4.jpg?1706879664">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/072/225/318/large/shaunak-ghosh-5.jpg?1706879717">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/337/large/shaunak-ghosh-6.jpg?1706879741">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/357/large/shaunak-ghosh-7.jpg?1706879777">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/072/225/404/large/shaunak-ghosh-8.jpg?1706879823">' +
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/YBlbRK" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     if(title === 'Winter Snow')
     {
@@ -232,13 +265,15 @@ function showPopup(title) {
                     '</div>' +
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/aoryzk" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
-    if(title === 'Practice dump')
+    if(title === 'Sketches & scribbles 2023')
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
         content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%;">Caption</p>' +
                     '<br>' + '<div>' +
+                    '<img class="multiple-image-content box" src="https://64.media.tumblr.com/2864ec6559e1d98502361e4fad5947ad/de30fdfc00a5a888-34/s2048x3072/1c558702a498c43246f7d09e753a6ee254de41f7.jpg">' + 
+                    '<br>' + 
                     '<img class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/284/133/large/shaunak-ghosh-untitled-1-2.jpg?1695022530">' + 
                     '<br>' + 
                     '<img class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/253/280/large/shaunak-ghosh-376918982-270627499236165-4690595841735228305-n.jpg?1694940106">' +

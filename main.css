@@ -27,7 +27,8 @@
     --thin-border: 2px solid black;    
     --dashed-border: 2px dashed;
     --thick-dashed-border: 3px dashed;
-    --work-item-hover:#7454bb;
+    --work-category:#5e32bc;
+    --work-item-hover: #55ff00;
 }
 *
 {
@@ -138,7 +139,7 @@ ul a:hover:after
 }
 .links-panel-contain a:hover:after, .mail-div:hover:after
 {
-    background-color: var(--work-item-hover);
+    background-color: var(--work-category);
     width: 105%;
     height: 4px;
 }
@@ -160,7 +161,8 @@ ul a:hover:after
     position: absolute;
     height: 100px;
     width: 100px;
-    background-color: black;
+    background-color: #9ce46c;
+    border: 2px solid black;
     float: right;
     border-radius: 50%;
     right: 5%;
@@ -168,6 +170,11 @@ ul a:hover:after
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.links-btn svg, .links-btn path
+{
+    cursor: pointer;
+    color: black;
 }
 .line-contain
 {
@@ -183,11 +190,16 @@ ul a:hover:after
 {
     border-top: var(--thick-border);
 }
+.alien
+{
+    width: 50%;
+    height: 50%;
+}
 .line
 {
     float: right;
     height: 4px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     cursor: pointer;
 }
 .line-1
@@ -308,6 +320,10 @@ nav
     display: flex;
     justify-content: center;
 }
+.credit-contain svg
+{
+    /*change color from here*/
+}
 .head-text strong
 {
     font-size: 55px;
@@ -328,6 +344,10 @@ nav
 }
 @media screen and (min-width:768px)
 {
+    html
+    {
+        overflow: hidden;
+    }
     .tab a:hover, .tab:hover
     {
         cursor: pointer;

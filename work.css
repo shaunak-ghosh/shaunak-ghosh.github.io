@@ -141,7 +141,7 @@ button
 }
 svg
 {
-    color: var(--work-item-hover);
+    color: var(--work-category);
 }
 .work-text svg
 {
@@ -188,11 +188,13 @@ svg
     margin: .25%;
     margin-left: 1%;
     padding: .75%;
-    cursor: pointer;
 }
-#close svg:hover, #close path:hover
+#close svg, #close path, #close
 {
     cursor: pointer;
+}
+#close svg:hover, #close:hover > #close svg
+{
     color: red;
 }
 a:hover

@@ -33,8 +33,9 @@
 }
 .form
 {
-    width: 70vw;
+    width: 65vw;
     margin-left: 5%;
+    margin-right: 5%;
 }
 .info
 {
@@ -48,12 +49,13 @@
     font-size: 30px;
     font-weight: bold;
 }
-.input
+.input, textarea
 {
     display: flex;
     flex-direction: column;
+    padding-right: 5%;
 }
-.input input::selection
+.input input::selection, textarea::selection
 {
     background-color: var(--highlight);
 }
@@ -70,6 +72,32 @@
     cursor:auto;
     outline: none;
     caret-shape: underscore;
+}
+textarea
+{
+    margin-top: 15px;
+    max-width: 30vw;
+    min-width: 30vw;
+    min-height: 45px;
+    background-color: transparent;
+    max-height: 200px;
+    border: none;
+    font-size: 18px;
+    padding-left: 15px;
+    border-bottom: 2px solid black;
+    margin-bottom: 8%;
+    cursor:auto;
+    outline: none;
+}
+textarea::-webkit-scrollbar
+{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 10px;
+}
+textarea::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
 }
 .contact-info
 {
@@ -105,9 +133,9 @@
 }
 .send svg
 {
-    width: inherit 85%;
     margin-left: 5px;
-    height: auto;
+    height: 100%;
+    padding: 3%;
 }
 .credit-contain a
 {
@@ -137,7 +165,7 @@
 {
     height: max-content;
 }
-.input, .contact-info, .social-small, .bottom-socials-span
+.input, .contact-info, .social-small, .bottom-socials-span, textarea
 {
     background-color: var(--background);
 }
@@ -174,7 +202,7 @@
     {
         padding-left: 2%;
     }
-    .input input[type="text"], .input input[type="email"]
+    .input input[type="text"], .input input[type="email"], textarea
     {
         font-size: 17px;
     }
@@ -193,7 +221,7 @@
     {
         font-size: 18px;
     }    
-    .input input[type="text"], .input input[type="email"]
+    .input input[type="text"], .input input[type="email"], textarea
     {
         font-size: 15px;
     }
@@ -321,7 +349,7 @@
 }
 @media screen and (max-width: 520px)
 {
-    .input input[type="text"], .input input[type="email"]
+    .input input[type="text"], .input input[type="email"], textarea
     {
         border-bottom: var(--thin-border);
     }

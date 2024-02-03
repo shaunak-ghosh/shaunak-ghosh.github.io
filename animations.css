@@ -66,10 +66,11 @@
     .button-contain button:hover, .grid-item:hover
     {
         transform:scale(105%);
-        box-shadow: 7px 7px rgb(0, 0, 0);        
+        box-shadow: 7px 7px rgb(0, 0, 0);
     }
     .grid-item:hover
     {
+        border-radius: 7px;
         border-color: var(--work-item-hover);
     }
 }

@@ -150,11 +150,11 @@
             </div>
         </div>        
         <a class="links-btn" id="links-toggle-btn">
-            <div class="line-contain">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-            </div>
-        </a>            
+            <svg xmlns="http://www.w3.org/2000/svg" class="alien icon icon-tabler icon-tabler-alien-filled" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12.004 2c4.942 0 8.288 2.503 8.85 6.444a12.884 12.884 0 0 1 -2.163 9.308a11.794 11.794 0 0 1 -3.51 3.356c-1.982 1.19 -4.376 1.19 -6.373 -.008a11.763 11.763 0 0 1 -3.489 -3.34a12.808 12.808 0 0 1 -2.171 -9.306c.564 -3.95 3.91 -6.454 8.856 -6.454zm1.913 14.6a1 1 0 0 0 -1.317 -.517l-.146 .055a1.5 1.5 0 0 1 -1.054 -.055l-.11 -.04a1 1 0 0 0 -.69 1.874a3.5 3.5 0 0 0 2.8 0a1 1 0 0 0 .517 -1.317zm-5.304 -6.39a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -1.497l-2 -2zm8.094 .083a1 1 0 0 0 -1.414 0l-2 2l-.083 .094a1 1 0 0 0 1.497 1.32l2 -2l.083 -.094a1 1 0 0 0 -.083 -1.32z" stroke-width="0" fill="currentColor" />
+            </svg>
+        </a>           
         <nav id="nav">
             <div class="tab home-tab">
                 <a href="index.html">HOME</a>
@@ -217,6 +217,13 @@
                                 New
                             </div>
                             <div class="grid-contain">
+                                <a onclick="showPopup('Sketches & scribbles 2024')" class="grid-item practice-2024">
+                                    <div class="tags">
+                                        <span class="anatomy">Anatomy</span>
+                                        <span class="illustration">Illustration</span>
+                                    </div>                                            
+                                    <strong>Sketches and scribbles</strong>
+                                </a>
                                 <a onclick="showPopup('Axe')" class="grid-item axe">
                                     <div class="tags">
                                         <span class="game-asset">Game Asset</span>
@@ -231,14 +238,6 @@
                                         <span class="illustration">Illustration</span>
                                     </div>                                            
                                     <strong>Nueva York train chase</strong>
-                                </a>
-                                <a onclick="showPopup('Glowing crystals')" class="grid-item crystals">
-                                    <div class="tags">
-                                        <span class="game-asset">Game Asset</span>
-                                        <span class="substance-3d-painter">Substance 3D Painter</span>
-                                        <span class="blender">Blender</span>
-                                    </div>                                            
-                                    <strong>Glowing crystals</strong>
                                 </a>
                             </div>
                             <div class="category">
@@ -412,12 +411,16 @@
                         </div>
                         <div class="tab-panel tab-panel-3">
                             <div class="note">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                                    <path d="M16.5 7.5l0 .01"></path>
-                                    </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-social" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M5 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M19 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M12 14m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                    <path d="M12 7l0 4" />
+                                    <path d="M6.7 17.8l2.8 -2" />
+                                    <path d="M17.3 17.8l-2.8 -2" />
+                                </svg>
                                 See my <a class="underline" href="https://www.instagram.com/rooveloftdraws">Instagram</a>, <a class="underline" href="https://www.artstation.com/rooveloft">Artstation</a>, <a class="underline" href="https://www.tumblr.com/blog/shaunakghosh">Tumblr</a> and <a class="underline" href="https://www.behance.net/shaunakghosh">Behance</a> for more drawings!
                             </div>
                             <br>
@@ -434,6 +437,13 @@
                                 2024
                             </div>
                             <div class="grid-contain">
+                                <a onclick="showPopup('Sketches & scribbles 2024')" class="grid-item practice-2024">
+                                    <div class="tags">
+                                        <span class="anatomy">Anatomy</span>
+                                        <span class="illustration">Illustration</span>
+                                    </div>                                            
+                                    <strong>Sketches & scribbles</strong>
+                                </a>
                                 <a onclick="showPopup('Nueva York train chase')" class="grid-item train-chase">
                                     <div class="tags">
                                         <span class="anatomy">Anatomy</span>
@@ -530,11 +540,12 @@
                                     </div>                                            
                                     <strong>Cliffs</strong>
                                 </a>
-                                <a onclick="showPopup('Practice dump')" class="grid-item practice-2023">
+                                <a onclick="showPopup('Sketches & scribbles 2023')" class="grid-item practice-2023">
                                     <div class="tags">
-                                        <span class="anatomy">Anatomy</span>                                            
+                                        <span class="anatomy">Anatomy</span>    
+                                        <span class="illustration">Illustration</span>                                        
                                     </div>                                            
-                                    <strong>Practice dump</strong>
+                                    <strong>Sketches & scribbles</strong>
                                 </a>
                                 <a onclick="showPopup('Spider-Punk(Comics)')" class="grid-item spider-punk-comic">
                                     <div class="tags">
@@ -717,7 +728,7 @@
                                         <span class="blender">Blender</span>
                                     </div>                                            
                                     <strong>Axe</strong>
-                                </a>                                  
+                                </a>
                                 <a onclick="showPopup('Wizard Staff')" class="grid-item wizard-staff">
                                     <div class="tags">
                                         <span class="game-asset">Game Asset</span>

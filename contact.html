@@ -44,28 +44,28 @@
                     <strong>Let's get in touch!</strong>
                 </div>                
                 <div class="textbox contact">
-                    <div class="form">
+                    <form action="https://formsubmit.co/ghosh.shaunak@outlook.com" method="POST" class="form">
                         <div class="name-input input">
                             <label for="">Your name</label>
-                            <input type="text" placeholder="Han Solo">
+                            <input type="text" placeholder="Han Solo" name="Name" required>
                         </div>
                         <div class="email-input input">
                             <label for="">Email</label>
-                            <input type="email" placeholder="someone@example.com">
-                        </div>   
+                            <input type="email" placeholder="someone@example.com" name="Email" required>
+                        </div>
                         <div class="message-input input">
                             <label for="">Message</label>
-                            <input type="text" placeholder="Hello friend...">
+                            <textarea name="message" placeholder="Hello friend..." required></textarea>
                         </div>
-                        <div class="send button">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <button type="submit" class="send button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M10 14l11 -11"></path>
                                 <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"></path>
-                                </svg>
-                            <a href="#">Send</a>
-                        </div>
-                    </div>
+                            </svg>
+                            <a>Send</a>
+                        </button>
+                    </form>
                     <div class="info">
                         <div class="email contact-info">
                             <span>Email</span>
@@ -100,19 +100,6 @@
             </div>
             <!--<img src="assets/scissors.svg" class="scissors" alt="">-->
         </section>
-        <!--<script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "username",
-                Password : "password",
-                To : 'them@website.com',
-                From : "you@isp.com",
-                Subject : "This is the subject",
-                Body : "And this is the body"
-            }).then(
-                message => alert(message)
-            );
-        </script>-->
+        
     </body>
 </html>
