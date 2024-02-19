@@ -87,6 +87,7 @@ function showPopup(title) {
                     '</div>' +
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.behance.net/gallery/167319465/Pharm-Care-Magazine-logo-and-branding" class="underline" style=" border: none;">View this on Behance<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
+    //illustrations
     if(title === 'Sketches & scribbles 2024')
     {
         popupWindow.style.width = 'fit-content';
@@ -291,26 +292,37 @@ function showPopup(title) {
                     '<img class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/253/274/large/shaunak-ghosh-378801179-988286972396455-7686516756908011341-n.jpg?1694940096">'
                     '</div>'
     }
-    if(title === 'Yellow Mandalorian')
+    if(title === 'Casual illustrations 2022')
     {
-        popupWindow.style.width = 'max-content';
+        popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2022/mandalorian_character.jpg">';
+        popupContent.style.overflowY = 'scroll';
+        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%;">Caption</p>' +
+                    '<br>' + '<div>' +
+                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/mandalorian_character.jpg">' + 
+                    '<br>' + 
+                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/Xamira.jpg">' + 
+                    '<br>' + 
+                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/green_suit_man.jpg">' +
+                    '<br>' + 
+                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/dwarf.jpg">' + 
+                    '<br>' + 
+                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/venom.jpg">' + 
+                    '<br>' + 
+                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/boba-fett.jpg">' + '</div>'
     }
-    if(title === 'Master Chief')
+    if(title === 'Vector illustrations')
     {
-        popupWindow.style.width = 'max-content';
+        popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="multiple-image-content box" style="height: 100%" src="assets/work/illustrations/2022/Master chief.jpg">';
-    }
-    if(title === 'Xamira')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2022/Xamira.jpg">';
+        popupContent.style.overflowY = 'scroll';
+        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%;">Caption</p>' +
+                    '<br>' + '<div>' +
+                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/Master chief.jpg">' + 
+                    '<br>' + 
+                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/Face_poly_small.jpg">' + 
+                    '<br>' + 
+                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/doraemon.jpg">' + '</div>'
     }
     if(title === 'Flat characters')
     {
@@ -331,41 +343,6 @@ function showPopup(title) {
                     '<div>' +
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/lR0Xra" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
-    if(title === 'Dwarf')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2022/dwarf.jpg">';
-    }
-    if(title === 'Boba Fett')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2022/boba-fett.jpg">';
-    }
-    if(title === 'Grumpy Man')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2022/green_suit_man.jpg">';
-    }
-    if(title === 'Low Poly Woman')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2022/Face_poly_small.jpg">';
-    }
-    if(title === 'Venom')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2022/venom.jpg">';
-    }
     if(title === 'Spaceman vs eye monster')
     {
         popupWindow.style.width = 'max-content';
@@ -373,13 +350,7 @@ function showPopup(title) {
         popupContent.style.overflowY = 'hidden';
         content = '<img class="image-content box" src="assets/work/illustrations/2022/spaceman.jpg">';
     }
-    if(title === 'Doraemon and friends')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2022/doraemon.jpg">';
-    }
+    //gamedev
     if(title === 'Dwarf\'s Journey')
     {
         popupWindow.style.width = 'max-content';

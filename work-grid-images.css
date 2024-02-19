@@ -6,7 +6,7 @@
 {
     background-size: 100%;
 }
-.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .venom strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong, .train-chase strong, .axe strong, .crystals strong
+.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .illustration-2022 strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong, .train-chase strong, .axe strong, .crystals strong
 {
     color: whitesmoke;
 }
@@ -179,30 +179,13 @@
     background-image: url("assets/work/illustrations/2023/low_poly_man.jpg");
     background-size: 130%;
 }
-.feel
-{
-    background-image: url("https://mir-s3-cdn-cf.behance.net/projects/808/719f75162347367.Y3JvcCwxMDU4LDgyNywwLDExNQ.jpg");
-    background-size: 140%;
-    background-position-x: 50%;
-    background-position-y: 10%;
-}
-.feel:hover
-{
-    background-size: 110%;
-}
-.yellow-mando
-{
-    background-image: url("assets/work/illustrations/2022/mandalorian_character.jpg");
-    background-size: 120%;
-    background-position-x: 50%;
-}
-.master-chief
+.vector-illustrations-2022
 {
     background-image: url("assets/work/illustrations/2022/Master chief.jpg");
     background-size: 150%;
     background-position-x: 50%;
 }
-.master-chief:hover
+.vector-illustrations-2022:hover
 {
     background-size: 120%;
 }
@@ -224,43 +207,14 @@
 {
     background-size: 110%;
 }
-.dwarf
-{
-    background-image: url("assets/work/illustrations/2022/dwarf.jpg");
-    background-size: 120%;
-    background-position-x: 50%;
-    background-position-y: 20%;
-
-}
-.fett
-{
-    background-image: url("assets/work/illustrations/2022/boba-fett.jpg");
-    background-size: 120%;
-    background-position-x: 50%;
-    background-position-y: 20%;
-}
-.green-suit
-{
-    background-image: url("assets/work/illustrations/2022/green_suit_man.jpg");
-    background-position-x: 50%;
-    background-position-y: 20%;
-    background-size: 120%;
-}
-.low-poly-woman
-{
-    background-image: url("assets/work/illustrations/2022/Face_poly_small.jpg");
-    background-position-x: 20%;
-    background-position-y: 10%;
-    background-size: 120%;
-}
-.venom
+.illustration-2022
 {
     background-image: url("assets/work/illustrations/2022/venom.jpg");
     background-size: 145%;
     background-position-x: 30%;
     background-position-y: 10%;
 }
-.venom:hover
+.illustration-2022:hover
 {
     background-size: 115%;
 }
@@ -270,13 +224,6 @@
     background-size: 130%;
     background-position-x: 50%;
     background-position-y: 50%;
-}
-.doraemon
-{
-    background-image: url("assets/work/illustrations/2022/doraemon.jpg");
-    background-size: 130%;
-    background-position-x: 50%;
-    background-position-y: 30%;
 }
 /*gamedev*/
 .dj
