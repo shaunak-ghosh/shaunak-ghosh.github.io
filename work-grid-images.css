@@ -6,7 +6,7 @@
 {
     background-size: 100%;
 }
-.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .illustration-2022 strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong, .train-chase strong, .axe strong, .crystals strong
+.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .illustration-2022 strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong, .train-chase strong, .axe strong, .crystals strong, .research-station strong
 {
     color: whitesmoke;
 }
@@ -67,12 +67,27 @@
     background-size: 125%;
 }
 /*illustrations*/
-.practice-2024
+.research-station
 {
-    background-image: url("https://cdnb.artstation.com/p/assets/images/images/072/065/577/large/shaunak-ghosh-face-girl.jpg?1706555176");
-    background-size: 120%;
-    background-position-y: 50%;
+    background-image: url("assets/work/illustrations/2024/outpost.jpg");
+    background-size: 200%;
+    background-position-y: 80%;
+    background-position-x: 25%;
+}
+.research-station:hover
+{
+    background-size: 150%;
+}
+.studies-2024
+{
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/074/460/283/large/shaunak-ghosh-howrah-bridge-view.jpg?1712130652");
+    background-size: 100%;
+    background-position-y: 70%;
     background-position-x: 55%;
+}
+.studies-2024:hover
+{
+    background-size: 95%;
 }
 .train-chase
 {
@@ -83,7 +98,7 @@
 }
 .train-chase:hover
 {
-    background-size:190%;
+    background-size:140%;
     background-position-x: 50%;
 }
 .winter-snow

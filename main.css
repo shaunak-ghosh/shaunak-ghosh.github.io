@@ -17,11 +17,15 @@
     --active-tab: #d3c9f5;
     --green: #7bfc68;
     --popup-background: #f4e5ba;
-    --recent-tab: #c1b2ff;
-    --design-tab:#f09f9f;
+    
+    --character-design-tab:#f09f9f;
+    --concept-art-tab: #e6e795;
     --illustrations-tab: #9ac9ff;
+    --3d-tab: #78dfe2;
     --gamedev-tab: #9adc7d;
     --experiments-tab: #f5c67a;
+    
+
     --highlight: #f8d040;
     --thick-border: 3px solid black;
     --thin-border: 2px solid black;    

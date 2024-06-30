@@ -15,4 +15,4 @@ function showPanel(panelIndex,colorCode)
     });
     tabPanels[panelIndex].style.display = "block";
 }
-showPanel(0,'var(--recent-tab)');
+showPanel(0,'var(--character-design-tab)');

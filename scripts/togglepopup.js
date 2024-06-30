@@ -88,15 +88,28 @@ function showPopup(title) {
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.behance.net/gallery/167319465/Pharm-Care-Magazine-logo-and-branding" class="underline" style=" border: none;">View this on Behance<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     //illustrations
-    if(title === 'Sketches & scribbles 2024')
+    if(title === 'Studies')
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
         content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%;">Caption</p>' +
                     '<br>' + '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/074/460/283/large/shaunak-ghosh-howrah-bridge-view.jpg?1712130652">' + 
+                    '<br>' + 
                     '<img class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/065/577/large/shaunak-ghosh-face-girl.jpg?1706555176">'+
                     '</div>'
+    }
+    if(title === 'Research station')
+    {
+        popupWindow.style.width = 'max-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%"> A research station</p>' +
+                    '<br>' + '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/outpost.jpg">' + 
+                    '<div>'
+                    //'<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/YBlbRK" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     if(title === 'Nueva York train chase')
     {
