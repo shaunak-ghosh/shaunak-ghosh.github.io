@@ -383,6 +383,7 @@ a:hover
     {
         height: 100vh;
         min-width: 100vw;
+        border: none;
     }
     #popup-content
     {
