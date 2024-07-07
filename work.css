@@ -12,6 +12,7 @@ button
 }
 .button-contain button
 {
+    text-wrap: nowrap;
     border: var(--thin-border);
     border-radius: 55px;
     font-size: 25px;
@@ -181,21 +182,23 @@ svg
     background-color: rgba(0, 0, 0, 0.479);
     transition: cubic-bezier(0.03, 0.6, 0.3, 1.09);
 }
-#close
+#close, #window
 {
     background: var(--green);
     border: none;
-    margin: .25%;
-    margin-left: 1%;
-    padding: .75%;
+    padding-top: 10%;
 }
-#close svg, #close path, #close
+#close svg, #close path, #close, #window svg, #window path, #window
 {
     cursor: pointer;
 }
 #close svg:hover, #close:hover > #close svg
 {
     color: red;
+}
+#window svg:hover, #window:hover > #window svg
+{
+    color: rgb(0, 0, 0);
 }
 a:hover
 {
@@ -212,9 +215,7 @@ a:hover
 }
 .popup-sub-container
 {
-    max-width: 75%;
-    min-width: 45%;
-    height: max-content;
+    width: fit-content;
     right: 0;
     background-color: var(--popup-background);
     border-radius: 5px;
@@ -250,6 +251,12 @@ a:hover
     height: auto;
     background-color: var(--green);
     padding: 0.25%;
+}
+.action-buttons
+{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
 }
 .multiple-image-content
 {
@@ -368,10 +375,19 @@ a:hover
 }
 @media screen and (max-width:768px)
 {
+    #window
+    {
+        display: none;
+    }
     .popup-sub-container
     {
         height: 100vh;
         min-width: 100vw;
+    }
+    #popup-content
+    {
+        height: 100vh;
+        padding-bottom: 20%;
     }
     .image-content
     {
@@ -537,6 +553,20 @@ a:hover
         {
             font-size: 16px;
         }
-    }
-    
+    }    
+}
+.nothing
+{
+    width: 90%;
+    height: 100%;
+    padding: 15%;
+    align-items: center;
+    align-content: center;
+}
+.nothing p
+{
+    width: fit-content;
+    font-size: 25px;
+    background-color: rgb(201, 201, 32);
+    /*background-color: var(--background);*/
 }

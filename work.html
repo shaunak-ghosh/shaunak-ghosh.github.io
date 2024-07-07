@@ -173,13 +173,18 @@
             <div class="popup-sub-container centered" id="popup-window">
                 <div class="popup-head">
                     <p id="popup-title"></p>
-                    <button id="close">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M18 6l-12 12"></path>
-                            <path d="M6 6l12 12"></path>
-                        </svg>
-                    </button>
+                    <div class="action-buttons">
+                        <button id="window">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="35"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-square"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /></svg>
+                        </button>
+                        <button id="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="35" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M18 6l-12 12"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
                 <p id="popup-content"></p>
             </div>
@@ -195,19 +200,16 @@
                             <button onclick="showPanel(0,'var(--character-design-tab)')" class="character-design-tab">
                                 Character Design
                             </button>
-                            <button onclick="showPanel(1,'var(--concept-art-tab)')" class="concept-art-tab">
-                                Concept Art
-                            </button>
-                            <button onclick="showPanel(2,'var(--illustrations-tab)')" class="illustrations">
+                            <button onclick="showPanel(1,'var(--illustrations-tab)')" class="illustrations">
                                 Illustrations
                             </button>
-                            <button onclick="showPanel(3,'var(--3d-tab)')" class="3d">
+                            <button onclick="showPanel(2,'var(--3d-tab)')" class="3d">
                                 3D
                             </button>
-                            <button onclick="showPanel(4,'var(--gamedev-tab)')" class="gamedev">                                    
+                            <button onclick="showPanel(3,'var(--gamedev-tab)')" class="gamedev">                                    
                                 Gamedev
                             </button>
-                            <button onclick="showPanel(5,'var(--experiments-tab)')" class="experiments">                                    
+                            <button onclick="showPanel(4,'var(--experiments-tab)')" class="experiments">                                    
                                 Experiments
                             </button>
                         </div>
@@ -218,41 +220,18 @@
                                         <span class="anatomy">Anatomy</span>
                                         <span class="character-design">Character design</span>
                                     </div>                                            
-                                    <strong>Grumpy Man (character sheet)</strong>
+                                    <strong>The scientist</strong>
                                 </a>
-                                <a onclick="showPopup('Xamira (character sheet)')" class="grid-item xamira-cd">
+                                <a onclick="showPopup('Xamira')" class="grid-item xamira-cd">
                                     <div class="tags">
                                         <span class="anatomy">Anatomy</span>
                                         <span class="character-design">Character design</span>
                                     </div>                                            
-                                    <strong>Xamira (character sheet)</strong>
+                                    <strong>Xamira</strong>
                                 </a>
                             </div>
                         </div>
                         <div class="tab-panel tab-panel-2">
-                            <div class="grid-contain">
-                                <a onclick="showPopup('Research station')" class="grid-item research-station">
-                                    <div class="tags">
-                                        <span class="concept-art">Concept Art</span>
-                                        <span class="illustration">Illustration</span>
-                                    </div>                                            
-                                    <strong>Research station</strong>
-                                </a>                        
-                                <a onclick="showPopup('Crater')" class="grid-item crater">
-                                    <div class="tags">
-                                        <span class="concept-art">Concept art</span>
-                                    </div>
-                                    <strong>Crater</strong>
-                                </a>
-                                <a onclick="showPopup('Cliffs')" class="grid-item cliffs">
-                                    <div class="tags">
-                                        <span class="concept-art">Concept art</span>
-                                    </div>                                            
-                                    <strong>Cliffs</strong>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-panel tab-panel-3">
                             <div class="note">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-social" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -280,12 +259,31 @@
                                 2024
                             </div>
                             <div class="grid-contain">
+                                <a onclick="showPopup('Research station')" class="grid-item research-station">
+                                    <div class="tags">
+                                        <span class="concept-art">Concept Art</span>
+                                        <span class="illustration">Illustration</span>
+                                    </div>                                            
+                                    <strong>Research station</strong>
+                                </a>                        
+                                <a onclick="showPopup('Crater')" class="grid-item crater">
+                                    <div class="tags">
+                                        <span class="concept-art">Concept art</span>
+                                    </div>
+                                    <strong>Crater</strong>
+                                </a>
+                                <a onclick="showPopup('Cliffs')" class="grid-item cliffs">
+                                    <div class="tags">
+                                        <span class="concept-art">Concept art</span>
+                                    </div>                                            
+                                    <strong>Cliffs</strong>
+                                </a>
                                 <a onclick="showPopup('Studies')" class="grid-item studies-2024">
                                     <div class="tags">
                                         <span class="illustration">Illustration</span>
                                     </div>                                            
                                     <strong>Studies</strong>
-                                </a>  
+                                </a>
                                 <a onclick="showPopup('Nueva York train chase')" class="grid-item train-chase">
                                     <div class="tags">
                                         <span class="anatomy">Anatomy</span>
@@ -401,7 +399,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="tab-panel tab-panel-4">                                    
+                        <div class="tab-panel tab-panel-3">                                    
                             <div class="grid-contain">
                                 <a onclick="showPopup('Axe')" class="grid-item axe">
                                     <div class="tags">
@@ -446,7 +444,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="tab-panel tab-panel-5">
+                        <div class="tab-panel tab-panel-4">
                             <div class="year" id="#game">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -473,8 +471,7 @@
                                         <span class="pixelart">Pixelart</span>
                                     </div>                                            
                                     <strong>Dwarf's Journey</strong>
-                                </a>
-                                
+                                </a>                                
                             </div>                                    
                             <div class="year">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cube" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -502,6 +499,13 @@
                                     <strong>Pong</strong>
                                 </a>
                             </div>                            
+                        </div>
+                        <div class="tab-panel tab-panel-5">
+                            <div class="nothing">
+                                <p>
+                                    Nothing to see here yet!
+                                </p>   
+                            </div>                                                    
                         </div>
                     </div>
                 </div>

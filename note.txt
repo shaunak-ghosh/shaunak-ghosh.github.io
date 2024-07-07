@@ -1,0 +1,1 @@
+Make the width of images/image group the same as the width of small window when window is big

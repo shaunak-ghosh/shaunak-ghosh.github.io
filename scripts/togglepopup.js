@@ -1,8 +1,13 @@
 var popup = document.getElementById('popupContainer');
+var popupWindow = document.getElementById('popup-window');
+var popupContent = document.getElementById('popup-content');
 var popupTitle = document.getElementById("popup-title");
 var popupContent = document.getElementById("popup-content");
 var closeButton = document.getElementById('close');
+var windowButton = document.getElementById('window');
 var popupWindow = document = document.getElementById("popup-window")
+
+var isFullScreen = false;
 
 function showPopup(title) {
     
@@ -13,10 +18,31 @@ function showPopup(title) {
         popup.style.display = 'none';
         popupContent.innerHTML = content;
     }
+    windowButton.onclick = function() {
+        if(isFullScreen == false)
+        {
+            popupWindow.style.width = "100vw";
+            popupWindow.style.height = "100vh";
+            popupWindow.style.border = "none";
+            popupContent.style.height = "100vh";
+            isFullScreen = true;
+        }
+        else
+        {
+            popupWindow.style.width = "fit-content";
+            popupWindow.style.height = "auto";
+            popupContent.style.height = "80vh";
+            popupWindow.style.borderColor = "black;";
+            popupWindow.style.borderWidth = "2px";
+            popupWindow.style.borderStyle = "solid";
+            isFullScreen = false;
+        }
+        
+    }
     window.onclick = function(event) {
         if (event.target == popup){
             popup.style.display = 'none';    
-            popupContent.innerHTML = content;                    
+            popupContent.innerHTML = content;
         }
     }
     function handleKeyDown(event) {
@@ -25,68 +51,10 @@ function showPopup(title) {
             {
                 popup.style.display = 'none';
                 popupContent.innerHTML = content;
-                popup.style.transition = 'cubic-bezier(0.03, 0.6, 0.3, 1.09)';
             }
         }
     }
     var content;
-    if(title === 'Typography')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.overflowY = 'scroll';
-        popupContent.style.textAlign = 'center';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Some Typography designs...</p>' +
-                    '<br>' + '<div>' +
-                    '<imgstyle="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/cd9471168280493.6437b21ba0444.png">' + 
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7cf038168280493.6437b21ba3881.png">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b54e23168280493.6437b21ba1190.jpg">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9e8fca168280493.6437b21ba1c5a.jpg">' + 
-                    '</div>' +
-                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.behance.net/gallery/168280493/Typography-Brand-identity" class="underline" style=" border: none;">View this on Behance<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
-    }
-    if(title === 'Logofolio')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.overflowY = 'scroll';
-        popupContent.style.textAlign = 'center';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Some Logos I designed as personal work last year...</p>' +
-                    '<br>' + '<div>' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1a9419167076873.6423343eefeb0.png">' + 
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e314f5167076873.6423144d1327e.png">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/3f5c96167076873.6423144d13e4d.png">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f0e58d167076873.6423144d15ba3.png">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d976b3167076873.6423144d17782.png">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e0e184167076873.6423144d14db3.png">' + 
-                    '</div>'+
-                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.behance.net/gallery/167076873/Logofolio-2023-Vol-1" class="underline" style=" border: none;">View this on Behance<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
-    }
-    if(title === 'Pharm-Care')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.overflowY = 'scroll';
-        popupContent.style.textAlign = 'center';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">A magazine I worked on as a personal work</p>' +
-                    '<br>' + '<div>' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0a44a2167319465.6426c2807e9b2.png">' + 
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/59a271167319465.6426c28079be9.png">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/276aef167319465.6426c2807bc8e.png">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2accc1167319465.6426c2807f6f8.png">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/65caf3167319465.6426c2807cc8f.png">' + 
-                    '</div>' +
-                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.behance.net/gallery/167319465/Pharm-Care-Magazine-logo-and-branding" class="underline" style=" border: none;">View this on Behance<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
-    }
     //illustrations
     if(title === 'Studies')
     {
@@ -190,7 +158,7 @@ function showPopup(title) {
                     '</div>' +
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/DvKXle" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
-    if(title === 'Xamira (character sheet)')
+    if(title === 'Xamira')
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
@@ -324,38 +292,6 @@ function showPopup(title) {
                     '<br>' + 
                     '<img class="multiple-image-content box" src="assets/work/illustrations/2022/boba-fett.jpg">' + '</div>'
     }
-    if(title === 'Vector illustrations')
-    {
-        popupWindow.style.width = 'fit-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'scroll';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%;">Caption</p>' +
-                    '<br>' + '<div>' +
-                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/Master chief.jpg">' + 
-                    '<br>' + 
-                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/Face_poly_small.jpg">' + 
-                    '<br>' + 
-                    '<img class="multiple-image-content box" src="assets/work/illustrations/2022/doraemon.jpg">' + '</div>'
-    }
-    if(title === 'Flat characters')
-    {
-        popupWindow.style.width = 'fit-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'scroll';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%;">Caption</p>' +
-                    '<br>' + '<div>' +
-                    '<img class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/057/134/703/large/rooveloft-2d-character-art.jpg?1670910995">' + 
-                    '<br>' + 
-                    '<img class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/057/134/771/large/rooveloft-happy-man.jpg?1670911227">' +
-                    '<br>' + 
-                    '<img class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/057/134/776/large/rooveloft-man-listening-to-music.jpg?1670911240">' +
-                    '<br>' + 
-                    '<img class="multiple-image-content box" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4c6549162347367.63d3f6b405e28.jpg">' + 
-                    '<br>' + 
-                    '<img class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/057/134/777/large/rooveloft-math-teacher.jpg?1670911251">' + 
-                    '<div>' +
-                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/lR0Xra" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
-    }
     if(title === 'Spaceman vs eye monster')
     {
         popupWindow.style.width = 'max-content';
@@ -467,7 +403,7 @@ function showPopup(title) {
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/071/682/820/large/shaunak-ghosh-tv-1.jpg?1705691759">' + 
                     '</div>' +
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/n05Y5r" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
-    }   
+    }
     popupContent.innerHTML = content;
     window.addEventListener('keydown', handleKeyDown);
 }
