@@ -13,6 +13,7 @@ function showPopup(title) {
     
     popupTitle.innerText = title;
     popup.style.display = 'block';
+    //put if else condition here for maximized mode
 
     closeButton.onclick = function() {
         popup.style.display = 'none';
@@ -56,17 +57,102 @@ function showPopup(title) {
     }
     var content;
     //illustrations
-    if(title === 'Studies')
+    if(title === 'Boombot')
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%;">Caption</p>' +
+        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">An original character designed by me</p>' +
                     '<br>' + '<div>' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/074/460/283/large/shaunak-ghosh-howrah-bridge-view.jpg?1712130652">' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot1.jpg">' + 
                     '<br>' + 
-                    '<img class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/065/577/large/shaunak-ghosh-face-girl.jpg?1706555176">'+
-                    '</div>'
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot2.jpg">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot3.jpg">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot4.jpg">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot5.jpg">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot6.jpg">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/0.1.jpg">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/0.jpg">' +
+                    '</div>' /*
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/g8ex6K" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';*/
+    }
+    if(title === 'The scientist')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">An original character designed by me</p>' +
+                    '<br>' + '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/scientist.jpg">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/scientist2.jpg">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/scientist3.jpg">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/scientist4.jpg">' +
+                    '</div>' /*
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/g8ex6K" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';*/
+    }
+    if(title === 'Verena')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">An original character designed by me</p>' +
+                    '<br>' + '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/055/950/443/large/rooveloft-character-design.jpg?1668100140">' + 
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/055/950/447/large/rooveloft-picture1.jpg?1668100153">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/055/950/450/large/rooveloft-picture2.jpg?1668100160">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/055/950/455/large/rooveloft-picture3.jpg?1668100170">' +
+                    '<br>' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/055/950/462/large/rooveloft-picture4.jpg?1668100178">' +
+                    '</div>' +
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/g8ex6K" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+    }
+    if(title === 'NY street')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<br>' + '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/ny-street.jpg">' + 
+                    '<br>' + '</div>'
+    }
+    if(title === 'Window')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<br>' + '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/window.jpg">' + 
+                    '<br>' + '</div>'
+    }
+    if(title === 'Kolkata bus')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<br>' + '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/074/460/283/large/shaunak-ghosh-howrah-bridge-view.jpg?1712130652">' + 
+                    '<br>' + '</div>'
+    }
+    if(title === 'Smile')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<br>' + '<div>' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/smile.jpg">' + 
+                    '<br>' + '</div>'
     }
     if(title === 'Research station')
     {
@@ -77,7 +163,6 @@ function showPopup(title) {
                     '<br>' + '<div>' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/outpost.jpg">' + 
                     '<div>'
-                    //'<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/YBlbRK" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     if(title === 'Nueva York train chase')
     {

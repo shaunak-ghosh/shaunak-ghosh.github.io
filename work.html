@@ -20,6 +20,14 @@
             {
                 background-color: #ff9538;
             }
+            .stylized
+            {
+                background-color: #ff8b6e;
+            }
+            .scene-study
+            {
+                background-color: #6eff99;
+            }
             .cpp
             {
                 background-color: rgb(255, 133, 153);
@@ -102,7 +110,7 @@
             }
             .anatomy
             {
-                background-color: rgb(185, 149, 129);
+                background-color: rgb(239, 162, 121);
             }
             .pixelart
             {
@@ -192,7 +200,7 @@
         <div class="skill-contain">
             <section class="work-text head-text">
                 <div class="heading" id="heading">
-                    <strong>What I have been doing.</strong>
+                    <strong>Things I have been doing.</strong>
                 </div>                        
                 <div class="textbox workbox">            
                     <div class="tab-contain">
@@ -215,7 +223,20 @@
                         </div>
                         <div class="tab-panel tab-panel-1">
                             <div class="grid-contain">
-                                <a href="error.html" class="grid-item grumpy-man-cd">
+                                <!--<a href="error.html" class="grid-item grey-woman-cd">
+                                    <div class="tags">
+                                        <span class="anatomy">Anatomy</span>
+                                        <span class="character-design">Character design</span>
+                                    </div>                                            
+                                    <strong>Woman in greys</strong>
+                                </a>-->
+                                <a onclick="showPopup('Boombot')" class="grid-item boombot-cd">
+                                    <div class="tags">
+                                        <span class="character-design">Character design</span>
+                                    </div>                                            
+                                    <strong>Boombot</strong>
+                                </a>
+                                <a onclick="showPopup('The scientist')" class="grid-item scientist-cd">
                                     <div class="tags">
                                         <span class="anatomy">Anatomy</span>
                                         <span class="character-design">Character design</span>
@@ -228,6 +249,13 @@
                                         <span class="character-design">Character design</span>
                                     </div>                                            
                                     <strong>Xamira</strong>
+                                </a>
+                                <a onclick="showPopup('Verena')" class="grid-item verena-cd">
+                                    <div class="tags">
+                                        <span class="anatomy">Anatomy</span>
+                                        <span class="character-design">Character design</span>
+                                    </div>
+                                    <strong>Verena</strong>
                                 </a>
                             </div>
                         </div>
@@ -259,10 +287,30 @@
                                 2024
                             </div>
                             <div class="grid-contain">
+                                <a onclick="showPopup('NY street')" class="grid-item ny-street">
+                                    <div class="tags">
+                                        <span class="stylized">Stylized</span>
+                                    </div>                                            
+                                    <strong>NY street</strong>
+                                </a> 
+                                <a onclick="showPopup('Red building')" class="grid-item red-building">
+                                    <div class="tags">
+                                        <span class="concept-art">Concept Art</span>
+                                        <span class="stylized">Stylized</span>
+                                    </div>                                            
+                                    <strong>Red building</strong>
+                                </a>  
+                                <a onclick="showPopup('Window')" class="grid-item window">
+                                    <div class="tags">
+                                        <span class="concept-art">Concept Art</span>
+                                        <span class="stylized">Stylized</span>
+                                    </div>                                            
+                                    <strong>Window</strong>
+                                </a>   
                                 <a onclick="showPopup('Research station')" class="grid-item research-station">
                                     <div class="tags">
                                         <span class="concept-art">Concept Art</span>
-                                        <span class="illustration">Illustration</span>
+                                        <span class="stylized">Stylized</span>
                                     </div>                                            
                                     <strong>Research station</strong>
                                 </a>                        
@@ -278,17 +326,24 @@
                                     </div>                                            
                                     <strong>Cliffs</strong>
                                 </a>
-                                <a onclick="showPopup('Studies')" class="grid-item studies-2024">
+                                <a onclick="showPopup('Kolkata bus')" class="grid-item kolkata-bus">
+                                    <div class="tags">
+                                        <span class="stylized">Stylized</span>
+                                        <span class="illustration">Illustration</span>
+                                    </div>                                            
+                                    <strong>Kolkata bus</strong>
+                                </a>
+                                <a onclick="showPopup('Smile')" class="grid-item smile">
                                     <div class="tags">
                                         <span class="illustration">Illustration</span>
                                     </div>                                            
-                                    <strong>Studies</strong>
+                                    <strong>Smile</strong>
                                 </a>
                                 <a onclick="showPopup('Nueva York train chase')" class="grid-item train-chase">
                                     <div class="tags">
                                         <span class="anatomy">Anatomy</span>
                                         <span class="lighting">Lighting</span>
-                                        <span class="illustration">Illustration</span>
+                                        <span class="scene-study">Scene study</span>
                                     </div>                                            
                                     <strong>Nueva York train chase</strong>
                                 </a>
@@ -306,12 +361,6 @@
                                 2023
                             </div>
                             <div class="grid-contain">
-                                <a onclick="showPopup('Winter Snow')" class="grid-item winter-snow">
-                                    <div class="tags">
-                                        <span class="illustration">Illustration</span>
-                                    </div>                                            
-                                    <strong>Winter Snow</strong>
-                                </a>
                                 <a onclick="showPopup('Chief')" class="grid-item chief">
                                     <div class="tags">
                                         <span class="illustration">Illustration</span>
@@ -334,25 +383,23 @@
                                 </a>                                    
                                 <a onclick="showPopup('Woman with greys')" class="grid-item woman-grey">
                                     <div class="tags">
-                                        <span class="anatomy">Anatomy</span>
-                                        <span class="character-design">Character design</span>
+                                        <span class="stylized">Stylized</span>
                                         <span class="illustration">Illustration</span>
                                     </div>                                            
                                     <strong>Woman with greys</strong>
                                 </a>
                                 <a onclick="showPopup('Ahsoka the white')" class="grid-item ahsoka-white">
                                     <div class="tags">
-                                        <span class="concept-art">Concept Art</span>
-                                        <span class="lighting">Lighting</span>
-                                        <span class="illustration">Illustration</span>
+                                        <span class="stylized">Stylized</span>
+                                        <span class="scene-study">Scene study</span>
                                     </div>                                            
                                     <strong>Ahsoka the white</strong>
                                 </a>
-                                <a onclick="showPopup('Woman in dark')" class="grid-item woman-dark">
+                                <a onclick="showPopup('Winter Snow')" class="grid-item winter-snow">
                                     <div class="tags">
-                                        <span class="lighting">Lighting</span>
-                                    </div>
-                                    <strong>Woman in dark</strong>
+                                        <span class="illustration">Illustration</span>
+                                    </div>                                            
+                                    <strong>Winter Snow</strong>
                                 </a>
                                 <a onclick="showPopup('Sketches & scribbles 2023')" class="grid-item practice-2023">
                                     <div class="tags">

@@ -6,67 +6,36 @@
 {
     background-size: 100%;
 }
-.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .illustration-2022 strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong, .train-chase strong, .axe strong, .crystals strong, .research-station strong
+.yellow-mando strong, .master-chief strong, .low-poly-man strong, .xamira strong, .dwarf strong, .fett strong, .green-suit strong, .low-poly-woman strong, .illustration-2022 strong, .spaceman strong, .dj strong, .well strong, .gd-plat strong, .b-armor strong, .pong strong, .donut strong, .crater strong, .woman-grey strong, .winter-snow strong, .gwen-swinging strong, .dark-garfield strong, .woman-dark strong, .spider-punk-comic strong, .ahsoka-white strong, .pillows strong, .wizard-staff strong, .train-chase strong, .axe strong, .crystals strong, .research-station strong, .verena-cd strong, .boombot-cd strong, .cliffs strong, .ny-street strong
 {
     color: whitesmoke;
 }
-/*web*/
-.counter-app
+.boombot-cd
 {
-    background-image: url("assets/work/design/count-page.jpg");
-    background-size: 130%;
-    background-position-x: 50%;
-    background-position-y: 50%;
+    background-image: url("assets/work/character_design/Boombot/boombot_cover.jpg");
+    background-size: 170%;
+    background-position-y: 0%;
+    background-position-x: 0%;
 }
-.counter-app:hover
+.boombot-cd:hover
 {
-    background-size: 110%;
-}
-.tanner-goods
-{
-    background-image: url("assets/work/design/tanner-goods.jpeg");
-    background-position-x: 50%;
-    background-position-y: 90%;
-    background-size: 130%;
-}
-.old
-{
-    background-image: url("assets/work/design/old.jpg");
-    background-size: 130%;
-    background-position-x: 50%;
-    background-position-y: 30%;
-}
-/*graphic design*/
-.typography
-{
-    background-image: url("assets/work/design/typography.jpg");
-    background-size: 110%;
-    background-position-x: 50%;
-    background-position-y: 50%;
-}
-.logofolio-1
-{
-    background-image: url("assets/work/design/logofolio-1.jpg");
-    background-size: 170%;    
-    background-position-x: 50%;
-    background-position-y: 10%;
-}
-.logofolio-1:hover
-{
-    background-size: 140%;
-}
-.p-c
-{   
-    background-image: url("assets/work/design/pharm-care.jpg");
-    background-size: 155%;
-    background-position-x: 50%;
-    background-position-y: 20%;
-}
-.p-c:hover
-{
-    background-size: 125%;
+    background-size: 150%;
 }
 /*illustrations*/
+.red-building
+{
+    background-image: url("assets/work/illustrations/2024/red-building.jpg");
+    background-size: 120%;
+    background-position-x: 50%;
+    background-position-y: 25%;
+}
+.window
+{
+    background-image: url("assets/work/illustrations/2024/window.jpg");
+    background-size: 110%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
 .research-station
 {
     background-image: url("assets/work/illustrations/2024/outpost.jpg");
@@ -78,16 +47,29 @@
 {
     background-size: 150%;
 }
-.studies-2024
+.ny-street
+{
+    background-image: url("assets/work/illustrations/2024/ny-street.jpg");
+    background-size: 120%;
+    background-position-y: 35%;
+    background-position-x: 25%;
+}
+.kolkata-bus
 {
     background-image: url("https://cdnb.artstation.com/p/assets/images/images/074/460/283/large/shaunak-ghosh-howrah-bridge-view.jpg?1712130652");
-    background-size: 100%;
+    background-size: 110%;
     background-position-y: 70%;
     background-position-x: 55%;
 }
 .studies-2024:hover
 {
     background-size: 95%;
+}
+.smile
+{
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/072/065/577/large/shaunak-ghosh-face-girl.jpg?1706555176");
+    background-size: 110%;
+    background-position-x: 55%;
 }
 .train-chase
 {
@@ -136,9 +118,9 @@
     background-size: 110%;
     background-position-y: 30%;
 }
-.grumpy-man-cd
+.scientist-cd
 {
-    background-image: url("assets/work/illustrations/2023/grumpy-man-cover.jpg");
+    background-image: url("assets/work/illustrations/2023/scientist.jpg");
     background-size: 110%;
     background-position-y: 30%;
 }
@@ -148,10 +130,18 @@
     background-size: 105%;
     background-position-y: 85%;
 }
+.verena-cd
+{
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/055/950/443/large/rooveloft-character-design.jpg?1668100140");
+    background-size: 120%;
+    background-position-x: 60%;
+    background-position-y: 30%;
+}
 .xamira-cd
 {
     background-image: url("assets/work/illustrations/2023/xamira.jpg");
     background-size: 110%;
+    background-position-x: 40%;
     background-position-y: 10%;
 }
 .xamira-cd:hover
