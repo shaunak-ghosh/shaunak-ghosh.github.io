@@ -1,6 +1,5 @@
 var popup = document.getElementById('popupContainer');
-var popupWindow = document.getElementById('popup-window');
-var popupContent = document.getElementById('popup-content');
+var popupWindow = document.getElementById('popup-window');  
 var popupTitle = document.getElementById("popup-title");
 var popupContent = document.getElementById("popup-content");
 var closeButton = document.getElementById('close');
@@ -13,6 +12,15 @@ function showPopup(title) {
     
     popupTitle.innerText = title;
     popup.style.display = 'block';
+    if(isFullScreen == true)
+    {
+        popupWindow.style.width = "100vw";
+        popupContent.style.width = "100vw";
+    }
+    else
+    {
+        popupContent.style.width = "100%";
+    }
     //put if else condition here for maximized mode
 
     closeButton.onclick = function() {
@@ -21,18 +29,32 @@ function showPopup(title) {
     }
     windowButton.onclick = function() {
         if(isFullScreen == false)
-        {
+        {//while maximized
             popupWindow.style.width = "100vw";
+            popupWindow.style.maxWidth = "100vw";
             popupWindow.style.height = "100vh";
+            popupWindow.style.maxHeight = "100vh";
+            
+            popupContent.style.height = "80vh";
+            popupContent.style.textAlign = "center";
+
+            //borders
             popupWindow.style.border = "none";
             popupContent.style.height = "100vh";
             isFullScreen = true;
         }
         else
-        {
+        {//while restored
             popupWindow.style.width = "fit-content";
+            popupWindow.style.maxWidth = "80vw";
             popupWindow.style.height = "auto";
             popupContent.style.height = "80vh";
+            
+            popupContent.style.width = "100%";
+            
+            //popupContent.style.height = "80vh";
+
+            //borders
             popupWindow.style.borderColor = "black;";
             popupWindow.style.borderWidth = "2px";
             popupWindow.style.borderStyle = "solid";
@@ -57,38 +79,13 @@ function showPopup(title) {
     }
     var content;
     //illustrations
-    if(title === 'Boombot')
-    {
-        popupWindow.style.width = 'fit-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'scroll';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">An original character designed by me</p>' +
-                    '<br>' + '<div>' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot1.jpg">' + 
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot2.jpg">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot3.jpg">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot4.jpg">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot5.jpg">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/boombot6.jpg">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/0.1.jpg">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/character_design/Boombot/0.jpg">' +
-                    '</div>' /*
-                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/g8ex6K" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';*/
-    }
     if(title === 'The scientist')
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
         content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">An original character designed by me</p>' +
-                    '<br>' + '<div>' +
+                    '<br>' + '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/scientist.jpg">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/scientist2.jpg">' +
@@ -105,7 +102,7 @@ function showPopup(title) {
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
         content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">An original character designed by me</p>' +
-                    '<br>' + '<div>' +
+                    '<br>' + '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/055/950/443/large/rooveloft-character-design.jpg?1668100140">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/055/950/447/large/rooveloft-picture1.jpg?1668100153">' +
@@ -118,13 +115,22 @@ function showPopup(title) {
                     '</div>' +
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/g8ex6K" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
+    if(title === 'Red building')
+    {
+        popupWindow.style.width = 'fit-content';
+        popupContent.style.textAlign = 'center';
+        popupContent.style.overflowY = 'scroll';
+        content = '<br>' + '<div class="single-image">' +
+                    '<img style="margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/red-building.jpg">' + 
+                    '<br>' + '</div>'
+    }
     if(title === 'NY street')
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<br>' + '<div>' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/ny-street.jpg">' + 
+        content = '<br>' + '<div class="single-image">' +
+                    '<img style="margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/ny-street.jpg">' + 
                     '<br>' + '</div>'
     }
     if(title === 'Window')
@@ -132,8 +138,8 @@ function showPopup(title) {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<br>' + '<div>' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/window.jpg">' + 
+        content = '<br>' + '<div class="single-image">' +
+                    '<img style= "margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/window.jpg">' + 
                     '<br>' + '</div>'
     }
     if(title === 'Kolkata bus')
@@ -141,8 +147,8 @@ function showPopup(title) {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<br>' + '<div>' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/074/460/283/large/shaunak-ghosh-howrah-bridge-view.jpg?1712130652">' + 
+        content = '<br>' + '<div class="single-image">' +
+                    '<img style="margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/074/460/283/large/shaunak-ghosh-howrah-bridge-view.jpg?1712130652">' + 
                     '<br>' + '</div>'
     }
     if(title === 'Smile')
@@ -150,7 +156,7 @@ function showPopup(title) {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<br>' + '<div>' +
+        content = '<br>' + '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/smile.jpg">' + 
                     '<br>' + '</div>'
     }
@@ -160,7 +166,7 @@ function showPopup(title) {
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
         content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%"> A research station</p>' +
-                    '<br>' + '<div>' +
+                    '<br>' + '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/outpost.jpg">' + 
                     '<div>'
     }
@@ -169,8 +175,8 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Keyframe study from the Nueva York lunar train chase scene from Spider-Man: Across the Spider-Verse</p>' +
-                    '<br>' + '<div>' +
+        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Keyframe study from Spider-Man: Across the Spider-Verse</p>' +
+                    '<br>' + '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/433/large/shaunak-ghosh-2099angry.jpg?1706880052">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/235/139/large/shaunak-ghosh-1.jpg?1706894718">' +
@@ -191,13 +197,6 @@ function showPopup(title) {
                     '</div>' +
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/YBlbRK" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
-    if(title === 'Winter Snow')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/070/844/180/large/shaunak-ghosh-winter-snow.jpg?1703704109">';
-    }
     if(title === 'Chief')
     {
         popupWindow.style.width = 'max-content';
@@ -217,31 +216,9 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/070/230/950/large/shaunak-ghosh-2099.jpg?1702042534">';
-    }
-    if(title === 'Woman with greys')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="https://64.media.tumblr.com/ec26ea016282788b93f5861825ae93bb/32702db007ff36e3-b2/s2048x3072/9e24d9431bae9f79d7f5ef8ef29f4968e2b7376b.jpg">';
-    }
-    if(title === 'Ahsoka the white')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.overflowY = 'scroll';
-        popupContent.style.textAlign = 'center';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Scene study from Star Wars: Rebels series finale</p>' +
-                    '<br>' + '<div>' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/969/335/large/shaunak-ghosh-ahsoka-final.jpg?1696664227">' + 
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/969/331/large/shaunak-ghosh-1.jpg?1696664218">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/969/349/large/shaunak-ghosh-2.jpg?1696664253">' +
-                    '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/969/340/large/shaunak-ghosh-sketch.jpg?1696664237">' +
-                    '</div>' +
-                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/DvKXle" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+        content = '<div class="single-image">' +  
+                '<img class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/070/230/950/large/shaunak-ghosh-2099.jpg?1702042534">' +
+                '</div>';
     }
     if(title === 'Xamira')
     {
@@ -249,7 +226,7 @@ function showPopup(title) {
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
         content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">An original character designed by me</p>' +
-                    '<br>' + '<div>' +
+                    '<br>' + '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/318/296/large/shaunak-ghosh-wand-girl.jpg?1697531154">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/318/300/large/shaunak-ghosh-wankd-girl.jpg?1697531161">' +
@@ -264,20 +241,13 @@ function showPopup(title) {
                     '</div>' +
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/el1XKG" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
-    if(title === 'Woman in dark')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/896/473/large/shaunak-ghosh-dual-light-woman.jpg?1696491324">';
-    }
     if(title === 'Crater')
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
         content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Caption</p>' +
-                    '<br>' + '<div>' +
+                    '<br>' + '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/794/837/large/shaunak-ghosh-crater.jpg?1696261010">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/794/877/large/shaunak-ghosh-crater4.jpg?1696261049">' +
@@ -291,33 +261,13 @@ function showPopup(title) {
                     '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/DvKlwe" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
 
     }
-    if(title === 'Spider-Punk(Comics)')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'scroll';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Caption</p>' +
-                    '<br>' + '<div>' +
-                    '<img margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/008/458/large/rooveloft-spider-punk.jpg?1694331946">' + 
-                    '<br>' +
-                    '<img margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/008/542/large/rooveloft-sketch.jpg?1694332242">' + 
-                    '</div>' +
-                    '<img margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/008/546/large/rooveloft-spider-punk.jpg?1694332250"></img>'; 
-    }
-    if(title === 'Low Poly Man')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2023/low_poly_man.jpg">';
-    }
     if(title === 'Cliffs')
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
         content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Caption</p>' +
-                    '<br>' + '<div>' +
+                    '<br>' + '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/717/643/large/shaunak-ghosh-rocks.jpg?1696045957">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/717/647/large/shaunak-ghosh-rocfks.jpg?1696045968">' +
@@ -338,7 +288,7 @@ function showPopup(title) {
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
         content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%;">Caption</p>' +
-                    '<br>' + '<div>' +
+                    '<br>' + '<div class="content">' +
                     '<img class="multiple-image-content box" src="https://64.media.tumblr.com/2864ec6559e1d98502361e4fad5947ad/de30fdfc00a5a888-34/s2048x3072/1c558702a498c43246f7d09e753a6ee254de41f7.jpg">' + 
                     '<br>' + 
                     '<img class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/067/284/133/large/shaunak-ghosh-untitled-1-2.jpg?1695022530">' + 
@@ -358,13 +308,13 @@ function showPopup(title) {
                     '<img class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/067/253/274/large/shaunak-ghosh-378801179-988286972396455-7686516756908011341-n.jpg?1694940096">'
                     '</div>'
     }
-    if(title === 'Casual illustrations 2022')
+    if(title === 'Casual illustrations')
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
         content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%;">Caption</p>' +
-                    '<br>' + '<div>' +
+                    '<br>' + '<div class="content">' +
                     '<img class="multiple-image-content box" src="assets/work/illustrations/2022/mandalorian_character.jpg">' + 
                     '<br>' + 
                     '<img class="multiple-image-content box" src="assets/work/illustrations/2022/Xamira.jpg">' + 
@@ -382,7 +332,9 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2022/spaceman.jpg">';
+        content = '<div class="content">' +
+                    '<img class="image-content box" src="assets/work/illustrations/2022/spaceman.jpg">'
+                    + '</div>'
     }
     //gamedev
     if(title === 'Dwarf\'s Journey')
@@ -404,7 +356,7 @@ function showPopup(title) {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<div>' +
+        content = '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/071/903/787/large/shaunak-ghosh-axe-render.jpg?1706192468">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/071/903/791/large/shaunak-ghosh-axe1.jpg?1706192473">' +
@@ -424,7 +376,7 @@ function showPopup(title) {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<div>' +
+        content = '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/070/198/274/large/shaunak-ghosh-stx.jpg?1701964805">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/070/198/198/large/shaunak-ghosh-screenshot-78.jpg?1701964716">' +
@@ -444,7 +396,7 @@ function showPopup(title) {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<div>' +
+        content = '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/729/514/large/shaunak-ghosh-coushion-render.jpg?1698508448">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/729/490/large/shaunak-ghosh-coushion.jpg?1698508429">' +
@@ -460,7 +412,7 @@ function showPopup(title) {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<div>' +
+        content = '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/068/599/917/large/shaunak-ghosh-can-render.jpg?1698217736">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/068/599/920/large/shaunak-ghosh-can.jpg?1698217174">' +
@@ -476,7 +428,7 @@ function showPopup(title) {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<div>' +
+        content = '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/071/682/800/large/shaunak-ghosh-crystals.jpg?1705691719">' + 
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/071/682/803/large/shaunak-ghosh-crystals1.jpg?1705691726">' +
