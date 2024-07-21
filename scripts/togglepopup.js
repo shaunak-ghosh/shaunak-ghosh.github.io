@@ -119,8 +119,8 @@ function showPopup(title) {
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'scroll';
-        content = '<br>' + '<div class="single-image">' +
+        popupContent.style.overflowY = 'hidden';
+        content = '<div class="single-image">' +
                     '<img style="margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/red-building.jpg">' + 
                     '<br>' + '</div>'
     }
@@ -128,8 +128,8 @@ function showPopup(title) {
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'scroll';
-        content = '<br>' + '<div class="single-image">' +
+        popupContent.style.overflowY = 'hidden';
+        content = '<div class="single-image">' +
                     '<img style="margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/ny-street.jpg">' + 
                     '<br>' + '</div>'
     }
@@ -137,8 +137,8 @@ function showPopup(title) {
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'scroll';
-        content = '<br>' + '<div class="single-image">' +
+        popupContent.style.overflowY = 'hidden';
+        content = '<div class="single-image">' +
                     '<img style= "margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/window.jpg">' + 
                     '<br>' + '</div>'
     }
@@ -146,8 +146,8 @@ function showPopup(title) {
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'scroll';
-        content = '<br>' + '<div class="single-image">' +
+        popupContent.style.overflowY = 'hidden';
+        content = '<div class="single-image">' +
                     '<img style="margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/074/460/283/large/shaunak-ghosh-howrah-bridge-view.jpg?1712130652">' + 
                     '<br>' + '</div>'
     }
@@ -155,8 +155,8 @@ function showPopup(title) {
     {
         popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'scroll';
-        content = '<br>' + '<div class="content">' +
+        popupContent.style.overflowY = 'hidden';
+        content = '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/smile.jpg">' + 
                     '<br>' + '</div>'
     }
@@ -164,9 +164,8 @@ function showPopup(title) {
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'scroll';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%"> A research station</p>' +
-                    '<br>' + '<div class="content">' +
+        popupContent.style.overflowY = 'hidden';
+        content =  '<div class="single-image">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/outpost.jpg">' + 
                     '<div>'
     }
@@ -175,7 +174,7 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Keyframe study from Spider-Man: Across the Spider-Verse</p>' +
+        content = '<p style="font-size:25px; text-align: left; margin-top:-10%; margin-bottom: 5%">Keyframe study from Spider-Man: Across the Spider-Verse</p>' +
                     '<br>' + '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/433/large/shaunak-ghosh-2099angry.jpg?1706880052">' + 
                     '<br>' + 
@@ -202,23 +201,18 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="assets/work/illustrations/2023/chief.jpg">';
+        content =  '<div class="single-image">' +
+                    '<img style="margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2023/chief.jpg">' + 
+                    '<div>'
     }
     if(title === 'Swinging through New York')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<img class="image-content box" src="https://64.media.tumblr.com/4678b75930d6aceb3cd440f0b694e47e/bb0fbfcc154d43b5-f0/s2048x3072/a32502219fef9e1725d7532843c2f2022e792889.jpg">';
-    }
-    if(title === 'Spider-Man 2099')
-    {
-        popupWindow.style.width = 'max-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<div class="single-image">' +  
-                '<img class="image-content box" src="https://cdna.artstation.com/p/assets/images/images/070/230/950/large/shaunak-ghosh-2099.jpg?1702042534">' +
-                '</div>';
+        content =  '<div class="content">' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://64.media.tumblr.com/4678b75930d6aceb3cd440f0b694e47e/bb0fbfcc154d43b5-f0/s2048x3072/a32502219fef9e1725d7532843c2f2022e792889.jpg">' + 
+                    '<div>'
     }
     if(title === 'Xamira')
     {
@@ -332,9 +326,9 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content = '<div class="content">' +
-                    '<img class="image-content box" src="assets/work/illustrations/2022/spaceman.jpg">'
-                    + '</div>'
+        content =  '<div class="content">' +
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2022/spaceman.jpg">' + 
+                    '<div>'
     }
     //gamedev
     if(title === 'Dwarf\'s Journey')

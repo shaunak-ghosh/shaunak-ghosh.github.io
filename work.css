@@ -406,12 +406,14 @@ a:hover
         height: 100vh;
         min-width: 100vw;
         border: none;
+        
     }
     #popup-content
     {
         height: 100%;
         padding-bottom: 20%;
-        width: 100%;
+        width: 100%;        
+        overflow: hidden;
     }
     .content
     {
@@ -423,7 +425,10 @@ a:hover
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5%;
+    }
+    .single-image img
+    {
+        width: 90vw;
     }
     .image-content
     {
@@ -501,6 +506,11 @@ a:hover
     {
         padding: 0.5%;
     }
+    .note
+    {
+        margin-top: 5%;
+        margin-left: 10px;
+    }
 }
 @media screen and (max-width:639px)
 {
@@ -539,7 +549,7 @@ a:hover
 {   
     #popup-title
     {
-        font-size: 20px;
+        font-size: 18px;
         padding: 2%;
     }
     #popup-content
@@ -579,21 +589,18 @@ a:hover
     {
         padding-top: 24%;
     }
-    @media screen and (max-width:450px)
+    .suggest
     {
-        .suggest
-        {
-            font-size: 17px;
-        }
-        .suggest img
-        {
-            height: 48%;
-        }
-        .grid-item strong
-        {
-            font-size: 16px;
-        }
-    }    
+        font-size: 17px;
+    }
+    .suggest img
+    {
+        height: 48%;
+    }
+    .grid-item strong
+    {
+        font-size: 16px;
+    }
 }
 .nothing
 {
