@@ -1,5 +1,1 @@
-single category images
-    while maximized: set width: auto, height: something
-    while restored: set width: something, height auto
-
-title: change window title font size on mobile resolution
+change main body overflow to hidden when panel is visible and back to scroll when turned off

@@ -151,30 +151,21 @@ function showPopup(title) {
                     '<img style="margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/074/460/283/large/shaunak-ghosh-howrah-bridge-view.jpg?1712130652">' + 
                     '<br>' + '</div>'
     }
-    if(title === 'Smile')
-    {
-        popupWindow.style.width = 'fit-content';
-        popupContent.style.textAlign = 'center';
-        popupContent.style.overflowY = 'hidden';
-        content = '<div class="content">' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/smile.jpg">' + 
-                    '<br>' + '</div>'
-    }
     if(title === 'Research station')
     {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content =  '<div class="single-image">' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/outpost.jpg">' + 
+        content =  '<div class="wide-image">' +
+                    '<img style="margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2024/outpost.jpg">' + 
                     '<div>'
     }
     if(title === 'Nueva York train chase')
     {
-        popupWindow.style.width = 'max-content';
+        popupWindow.style.width = 'fit-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'scroll';
-        content = '<p style="font-size:25px; text-align: left; margin-top:-10%; margin-bottom: 5%">Keyframe study from Spider-Man: Across the Spider-Verse</p>' +
+        content = '<p style="font-size:25px; text-align: left; margin-bottom: 5%">Keyframe study from Spider-Man: Across the Spider-Verse</p>' +
                     '<br>' + '<div class="content">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/433/large/shaunak-ghosh-2099angry.jpg?1706880052">' + 
                     '<br>' + 
@@ -184,17 +175,17 @@ function showPopup(title) {
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/211/large/shaunak-ghosh-3.jpg?1706879595">' +
                     '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/072/225/274/large/shaunak-ghosh-4.jpg?1706879664">' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/072/225/274/large/shaunak-ghosh-4.jpg?1706879664">' +
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/072/225/318/large/shaunak-ghosh-5.jpg?1706879717">' +
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/337/large/shaunak-ghosh-6.jpg?1706879741">' +
                     '<br>' + 
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/357/large/shaunak-ghosh-7.jpg?1706879777">' + 
+                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdnb.artstation.com/p/assets/images/images/072/225/357/large/shaunak-ghosh-7.jpg?1706879777">' +
                     '<br>' + 
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://cdna.artstation.com/p/assets/images/images/072/225/404/large/shaunak-ghosh-8.jpg?1706879823">' +
                     '</div>' +
-                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/YBlbRK" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
+                    '<p class="suggest" style="background-color: rgb(244, 229, 186); margin-left:0; text-align: left; align-self: start;"><a href="https://www.artstation.com/artwork/aoryzk" class="underline" style=" border: none;">View this on Artstation<img src="assets/home/external-link.svg" style="margin-left: 15px;"></a></p>';
     }
     if(title === 'Chief')
     {
@@ -210,8 +201,8 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content =  '<div class="content">' +
-                    '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="https://64.media.tumblr.com/4678b75930d6aceb3cd440f0b694e47e/bb0fbfcc154d43b5-f0/s2048x3072/a32502219fef9e1725d7532843c2f2022e792889.jpg">' + 
+        content =  '<div class="single-image">' +
+                    '<img style="margin-bottom: 3%" class="multiple-image-content box" src="https://64.media.tumblr.com/4678b75930d6aceb3cd440f0b694e47e/bb0fbfcc154d43b5-f0/s2048x3072/a32502219fef9e1725d7532843c2f2022e792889.jpg">' + 
                     '<div>'
     }
     if(title === 'Xamira')
@@ -326,7 +317,7 @@ function showPopup(title) {
         popupWindow.style.width = 'max-content';
         popupContent.style.textAlign = 'center';
         popupContent.style.overflowY = 'hidden';
-        content =  '<div class="content">' +
+        content =  '<div class="single-image">' +
                     '<img style="height: 100%; width: 100%; margin-bottom: 3%" class="multiple-image-content box" src="assets/work/illustrations/2022/spaceman.jpg">' + 
                     '<div>'
     }

@@ -731,6 +731,18 @@ progress::-webkit-progress-value
     {
         margin-bottom: 0%;
     }
+    .work-head
+    {
+        height: fit-content;
+    }
+    .work-head a
+    {
+        font-size: 16px;
+    }
+    .work-head img
+    {
+        height: 22px;
+    }
 }
 /*height mqs*/
 @media screen and (min-height:800px)

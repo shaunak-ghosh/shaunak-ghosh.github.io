@@ -227,9 +227,9 @@ a:hover
 {
     width: fit-content;
     max-width: 80vw;
+    min-width: 50vw;
     height: auto;
-    max-height: auto;
-    
+    max-height: auto;    
     right: 0;
     background-color: var(--popup-background);
     border-radius: 5px;
@@ -238,8 +238,7 @@ a:hover
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid black;
-    box-shadow: 15px 15px black;
-    
+    box-shadow: 15px 15px black;    
 }
 .popup-head
 {
@@ -277,6 +276,32 @@ a:hover
     width: 100%;
     margin-bottom: 35px;
 }
+.single-image img
+{
+    width: auto;
+    max-height: 70vh;
+}
+.wide-image img
+{
+    max-height: 60vh;
+}
+.nothing
+{
+    width: 95%;
+    height: 50vh;
+    margin-top: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nothing p
+{
+    width: fit-content;
+    padding: 2%;
+    font-size: 25px;
+    background-color: var(--background);
+}
 @media screen and (max-width:1041px) and (min-width: 520px)
 {
     .skill-contain
@@ -287,10 +312,6 @@ a:hover
     {
         padding-left: 20px;
     }
-}
-.single-image img
-{
-    width: 55%;
 }
 @media screen and (max-width:1660px)
 {
@@ -346,6 +367,16 @@ a:hover
         border-radius: 55px;
         height: 20px;
         margin-top: 3px;
+    }    
+    .single-image img
+    {
+        width: auto;
+        max-height: 50vh;
+
+    }
+    .wide-image img
+    {
+        max-height: 60vh;
     }
 }
 @media screen and (max-width:1200px)
@@ -397,21 +428,18 @@ a:hover
 }
 @media screen and (max-width:768px)
 {
-    #window
-    {
-        display: none;
-    }
+    #window{display: none;}
     .popup-sub-container
     {
         height: 100vh;
         min-width: 100vw;
         border: none;
-        
     }
+    #popup-content, .popup-head{position: sticky;}
     #popup-content
     {
         height: 100%;
-        padding-bottom: 20%;
+        padding-bottom: 18%;
         width: 100%;        
         overflow: hidden;
     }
@@ -602,20 +630,44 @@ a:hover
         font-size: 16px;
     }
 }
-.nothing
+@media screen and (max-width:768px) and (min-width: 639px)
 {
-    width: 95%;
-    height: 50vh;
-    margin-top: 2%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .single-image img
+    {
+        width: auto;
+        max-height: 65vh;
+    }
+    .wide-image
+    {
+        width: 90vw;
+    }
 }
-.nothing p
+@media screen and (max-width:1200px) and (min-width: 768px)
 {
-    width: fit-content;
-    padding: 2%;
-    font-size: 25px;
-    background-color: var(--background);
+    #popup-window
+    {
+        min-width: 70vw;
+    }
+}
+@media screen and (max-width:1660px) and (min-width: 1200px)
+{
+    #popup-window
+    {
+        min-width: 60vw;
+    }
+}
+@media screen and (max-width:639px) and (min-width: 420px)
+{
+    .single-image img
+    {
+        height: auto;
+        width: auto;
+    }
+}
+@media screen and (max-width:6520px) and (min-width: 420px)
+{
+    .single-image img
+    {
+        max-width: 90vw;
+    }
 }
